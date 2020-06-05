@@ -80,3 +80,75 @@ function crb_load() {
   require_once( 'vendor/autoload.php' );
   \Carbon_Fields\Carbon_Fields::boot();
 }
+
+
+
+//// перенеси потом в плагин нахой
+function get_declension($word,$case) {
+  $dir_path = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/al_theme/';
+  $file_path = $dir_path.'/db/sklon.csv';
+
+  $data = kama_parse_csv_file($file_path);
+
+  $formated_word = 'error...';
+
+  foreach($data as $row){
+    if ($row[0] === $word)
+    $formated_word = $row[$case] ? $row[$case] : 'error...';
+  }
+
+
+  return $formated_word;
+
+}
+
+
+
+
+
+
+
+function kama_parse_csv_file( $file_path, $file_encodings = ['cp1251','UTF-8'], $col_delimiter = ';', $row_delimiter = "\r\n" ){
+  if( !file_exists($file_path) )
+    return 'false';
+
+  $cont = trim( file_get_contents( $file_path) );
+  $encoded_cont = mb_convert_encoding( $cont, 'UTF-8', mb_detect_encoding($cont, $file_encodings) );
+  unset( $cont );
+  if( !$row_delimiter ){
+    $row_delimiter = "\r\n";
+    if( false === strpos($encoded_cont, "\r\n") )
+      $row_delimiter = "\n";
+  }
+  $lines = explode( $row_delimiter, trim($encoded_cont) );
+  $lines = array_filter( $lines );
+  $lines = array_map( 'trim', $lines );
+  if( !$col_delimiter ){
+    $lines10 = array_slice( $lines, 0, 30 );
+    foreach( $lines10 as $line ){
+      if( !strpos( $line, ',') ) $col_delimiter = ';';
+      if( !strpos( $line, ';') ) $col_delimiter = ',';
+      if( $col_delimiter ) break;
+        }
+    if( !$col_delimiter ){
+            $delim_counts = [ ";" =>[], "," =>[] ];
+      foreach( $lines10 as $line ){
+        $delim_counts[','][] = substr_count( $line, ',' );
+        $delim_counts[';'][] = substr_count( $line, ';' );
+      }
+      $delim_counts = array_map( 'array_filter', $delim_counts ); // уберем нули
+      $delim_counts = array_map( 'array_count_values', $delim_counts );
+      $delim_counts = array_map( 'max', $delim_counts ); // берем только макс. значения вхождений
+      if( $delim_counts[';'] === $delim_counts[','] )
+        return array('Не удалось определить разделитель колонок.');
+      $col_delimiter = array_search( max($delim_counts), $delim_counts );
+    }
+  }
+  $data = [];
+  foreach( $lines as $key => $line ){
+    $data[] = str_getcsv( $line, $col_delimiter ); // linedata
+    unset( $lines[$key] );
+  }
+  return $data;
+
+}
