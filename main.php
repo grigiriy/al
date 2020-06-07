@@ -9,7 +9,7 @@ the_post();
 
 get_template_part('theme-helpers/template-parts/firstScreen');
 
-echo '<h2>Headline 2</h2>';
+set_query_var( 'subtitle_types', 'Автоломбард под залог ПТС любой техники в городе' );
 get_template_part('theme-helpers/template-parts/types');
 get_template_part('theme-helpers/template-parts/textBlock');
 

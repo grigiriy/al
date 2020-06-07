@@ -147,7 +147,6 @@ function get_declension($word,$case) {
   return $formated_word;
 }
 
-//////////////
 
 function get_headline($post_id,$parent_id,$case){
   if ( is_page_template('main.php') ) {
@@ -155,7 +154,7 @@ function get_headline($post_id,$parent_id,$case){
   } else if ( is_page_template('page-calc.php') ) {
     $headline = 'Расчет кредита под залог авто';
   } else {
-    $city = strval($parent_id) === '0' ? 'Москва' : get_the_title($parent_id);
+    $city = get_city($parent_id);
 
     if( get_the_title($post_id) === 'Круглосуточный автоломбард' ){
       $headline = get_the_title($post_id) . ' ' . get_bloginfo('name') . ' в вашем городе';
@@ -165,4 +164,10 @@ function get_headline($post_id,$parent_id,$case){
   }
 
   return $headline;
+}
+
+
+function get_city($post_id){
+  $city = strval($post_id) === '0' ? 'Москва' : get_the_title($post_id);
+  return $city;
 }
