@@ -1,7 +1,7 @@
 <div id="calculator" class="main-page__calculator calculator">
     <div class="calculator__container">
         <div class="calculator__content">
-        <h2 class="calculator__title">Калькулятор займа под ПТС в Москве</h2>
+        <h2 class="calculator__title"><?= $subtitle . ' ' . get_declension(get_city($post->ID),'1'); ?></h2>
             <p class="calculator__desc">Рассчитайте сумму к возврату, ставку и ежемесячный платёж.</p>
             <ul class="calculator__form-list">
                 <li class="calculator__form-item">

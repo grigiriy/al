@@ -4,7 +4,7 @@
 
   <div class="uk-container">
 
-    <h2 class="color-f2 uk-text-center mb-4">Какую сумму вы бы хотели получить?</h2>
+    <p class="h2 color-f2 uk-text-center mb-4">Какую сумму вы бы хотели получить?</>
 
     <div class="form-block w-form">
       <form data-name="Заявка Москва" class="" onsubmit="return false;">
