@@ -9,11 +9,13 @@ the_post();
 
 get_template_part('theme-helpers/template-parts/firstScreen');
 
-set_query_var( 'subtitle_types', 'Автоломбард под залог ПТС любой техники в городе' );
+set_query_var( 'subtitle', 'Автоломбард под залог ПТС любой техники в городе' );
+set_query_var( 'text', 'types_text' );
 get_template_part('theme-helpers/template-parts/types');
 get_template_part('theme-helpers/template-parts/textBlock');
 
-echo '<h2>Headline 2</h2>';
+set_query_var( 'subtitle', 'Самое выгодное кредитование под залог автомобиля в' );
+set_query_var( 'text', 'advantages_text' );
 get_template_part('theme-helpers/template-parts/advantages');
 get_template_part('theme-helpers/template-parts/textBlock');
 

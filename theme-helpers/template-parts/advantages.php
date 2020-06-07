@@ -1,7 +1,7 @@
 <div class="uk-section">
   <div class="uk-container uk-position-relative">
     <div class="in-header">
-      <h3 class="uk-h2 uk-text-center">Автоломбард — деньги под залог ПТС в Москве</h3>
+      <h2 class="uk-h2 uk-text-center"><?= $subtitle . ' ' . get_declension(get_city($post->ID),'1'); ?></h2>
       <p class="uk-text-center padding-lr-50">В нашей компании вы без проблем получите деньги в кредит под залог ПТС или автомобиля в  Москве и Московской области,  всего за 30 минут со следующими <b>приемуществами:</b> </p>
     </div>
     <div class="uk-child-width-1-2@s uk-child-width-1-3@l uk-grid-default uk-grid-match uk-grid" uk-grid="" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .block-block; delay: 300;">

@@ -1,6 +1,6 @@
 <div class="uk-section padding-bottom-small">
   <div class="in-header">
-    <h2 class="uk-h2 uk-text-center"><?= $subtitle_types . ' ' . get_city($post->ID); ?></h2>
+    <h2 class="uk-h2 uk-text-center"><?= $subtitle . ' ' . get_city($post->ID); ?></h2>
     <p class="uk-text-center padding-lr-50">Автоломбард выдает займы под залог легковых, грузовых автомобилей, спецтехники, мототехники, водного и другого транспорта</p>
   </div>
   <div class="uk-child-width-1-2@s uk-child-width-1-5@l uk-grid-collapse uk-grid-match uk-grid" uk-grid="">
