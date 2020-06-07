@@ -21,3 +21,14 @@ h6 {
 .main-bg_onhov:hover {
   background-color: #3577b7 !important;
 }
+.main-block {
+  min-height: 500px;
+}
+.first_screen_list img {
+  min-width: 45px;
+  margin-right: 30px;
+}
+.first_screen_list p {
+  margin-bottom: auto;
+  margin-top: auto;
+}
