@@ -147,6 +147,21 @@ function get_declension($word,$case) {
   return $formated_word;
 }
 
+function get_city($post_id){
+  $city = strval($post_id) === '0' ? 'Москва' : get_the_title($post_id);
+  return $city;
+}
+
+function get_declension_city($atts){
+
+	$params = shortcode_atts( array(
+		'case' => 'Москва',
+	), $atts );
+
+  $word = get_city(get_the_ID());
+  return get_declension($word,$params['case']);
+}
+add_shortcode('declension_city', 'get_declension_city');
 
 function get_headline($post_id,$parent_id,$case){
   if ( is_page_template('main.php') ) {
@@ -164,10 +179,4 @@ function get_headline($post_id,$parent_id,$case){
   }
 
   return $headline;
-}
-
-
-function get_city($post_id){
-  $city = strval($post_id) === '0' ? 'Москва' : get_the_title($post_id);
-  return $city;
 }
