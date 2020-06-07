@@ -1,0 +1,23 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+.main-text {
+  color: #3577b7 !important;
+}
+.main-border {
+  border-color: #3577b7 !important;
+}
+.main-bg {
+  background-color: #3577b7 !important;
+}
+
+.main-bg_onhov:hover {
+  background-color: #3577b7 !important;
+}

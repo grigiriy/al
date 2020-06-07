@@ -33,9 +33,6 @@ echo '<h2>Headline 2</h2>';
 get_template_part('theme-helpers/template-parts/order');
 
 echo '<h2>Headline 2</h2>';
-get_template_part('theme-helpers/template-parts/terms');
-
-echo '<h2>Headline 2</h2>';
 get_template_part('theme-helpers/template-parts/faq');
 endwhile;
 get_footer();

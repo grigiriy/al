@@ -1,0 +1,11 @@
+.app {
+  padding-top: 150px;
+}
+
+.form-block {
+  width: 100%;
+}
+
+.main-bg_onhov:hover .number-card {
+  color: #fff !important;
+}

@@ -1,91 +1,39 @@
-<section class="background-f2 uk-overflow-hidden main-block" style="background-image: url(http://localhost:8888/wp-content/themes/al_theme/css/images/money.png);
-background-repeat: no-repeat;
-background-position-x: 100%;">        
+<section class="background-f2 uk-overflow-hidden main-block">        
 
   <div class="uk-container uk-position-relative">
 
-    <div class="uk-grid uk-position-relative">
+    <div class="scene-parallax" id="scene1" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; position: relative; pointer-events: none;">        
+      <div class="layer" data-depth="0.4" style="transform: translate3d(20px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"><div class="back-circ1 circleanim"></div></div>
+      <div class="layer" data-depth="-0.2" style="transform: translate3d(-10px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"><div class="back-circ2 circleoanim"></div></div>
+      <div class="layer" data-depth="0.2" style="transform: translate3d(10px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"><div class="back-circ3 circletanim"></div></div>
+    </div>
+
+    <div class="uk-grid uk-position-relative" uk-grid="">
       <div class="uk-width-1-1 uk-width-4-5@m uk-width-3-5@l padding-main uk-first-column">
 
-        <h1>Займы под залог ПТС в <?= get_declension(get_the_title(),'1') ?></h1>
+        <h1>Автоломбард <span class="orange">Москва</span></h1>
+        <p>Автоломбард в городе Москва выдает деньги под залог ПТС автомобиля за&nbsp;30&nbsp;минут&nbsp;на&nbsp;выгодных для клиента условиях.</p>
 
-        
+        <div class="uk-child-width-auto uk-grid-default uk-margin uk-flex font-weight-700 uk-grid" uk-grid="">
 
-        <div class="d-flex mx-n40">
-            <div class="mw-50">
-                <svg class="main-text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
-                    <g>
-                        <path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0
-                        c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7
-                        C514.5,101.703,514.499,85.494,504.502,75.496z"/>
-                    </g>
-                    <!-- Icons made by Freepik (http://freepik.com/) from Flaticon (https://flaticon.com) -->
-                </svg>
-                <p>До 5 000 000 рублей на срок до 3 лет</p>
+          <div class="icon-horizon uk-first-column">
+            <div class="icon-horizon-text">                                      
+              <div class="uk-margin-remove-bottom">Займы до 3 000 000 ₽</div>       
+              <div class="deepblue">Авто остаётся у вас</div> 
             </div>
-            <div class="mw-50">
-                <svg class="main-text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
-                    <g>
-                        <path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0
-                        c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7
-                        C514.5,101.703,514.499,85.494,504.502,75.496z"/>
-                    </g>
-                    <!-- Icons made by Freepik (http://freepik.com/) from Flaticon (https://flaticon.com) -->
-                </svg>
-                <p>Без справок с места работы и поручителей</p>
+          </div>     
+
+
+          <div class="icon-horizon">
+            <div class="icon-horizon-text">                                      
+              <div class="uk-margin-remove-bottom">100% одобрения</div>       
+              <div class="deepblue">Ставка от 2% в месяц</div> 
             </div>
-            <div class="mw-50">
-                <svg class="main-text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
-                    <g>
-                        <path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0
-                        c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7
-                        C514.5,101.703,514.499,85.494,504.502,75.496z"/>
-                    </g>
-                    <!-- Icons made by Freepik (http://freepik.com/) from Flaticon (https://flaticon.com) -->
-                </svg>
-                <p>Одобрение за 5 минут, выдача за 30 минут</p>
-            </div>
-            <div class="mw-50">
-                <svg class="main-text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
-                    <g>
-                        <path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0
-                        c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7
-                        C514.5,101.703,514.499,85.494,504.502,75.496z"/>
-                    </g>
-                    <!-- Icons made by Freepik (http://freepik.com/) from Flaticon (https://flaticon.com) -->
-                </svg>
-                <p>С любой кредитной историей</p>
-            </div>
-            <div class="mw-50">
-                <svg class="main-text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
-                    <g>
-                        <path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0
-                        c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7
-                        C514.5,101.703,514.499,85.494,504.502,75.496z"/>
-                    </g>
-                    <!-- Icons made by Freepik (http://freepik.com/) from Flaticon (https://flaticon.com) -->
-                </svg>
-                <p>После выбычи займа авто остается у вас</p>
-            </div>
-            <div class="translate_08">
-                <a class="uk-button uk-button-primary uk-margin-right uk-margin-bottom" href="#modal-center1" uk-toggle="">Оставить заявку</a>
-            </div>
-    </div>
+          </div>     
 
         </div>
 
-
-        
-
-
-
-
-
+        <a class="uk-button uk-button-primary uk-margin-right uk-margin-bottom" href="#modal-center1" uk-toggle="">Оставить заявку</a>
       </div>
 
       <div class="uk-width-1-1 uk-width-1-5@m uk-width-2-5@l">                 
@@ -94,3 +42,6 @@ background-position-x: 100%;">
     </div>
   </div>
 </section>
+
+
+<?php get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
