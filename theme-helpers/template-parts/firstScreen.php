@@ -11,7 +11,7 @@
     <div class="uk-grid uk-position-relative" uk-grid="">
       <div class="uk-width-1-1 uk-width-4-5@m uk-width-3-5@l padding-main uk-first-column">
 
-        <h1>Автоломбард <span class="orange">Москва</span></h1>
+        <h1><?= get_headline($post->ID,$post->post_parent,'0') ?></h1>
         <p>Автоломбард в городе Москва выдает деньги под залог ПТС автомобиля за&nbsp;30&nbsp;минут&nbsp;на&nbsp;выгодных для клиента условиях.</p>
 
         <div class="uk-child-width-auto uk-grid-default uk-margin uk-flex font-weight-700 uk-grid" uk-grid="">
@@ -43,5 +43,13 @@
   </div>
 </section>
 
+<pre>
+<?php
+print_r($post)
+?>
+
+</pre>
 
 <?php get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
+
+

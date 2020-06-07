@@ -83,31 +83,6 @@ function crb_load() {
 
 
 
-//// перенеси потом в плагин нахой
-function get_declension($word,$case) {
-  $dir_path = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/al_theme/';
-  $file_path = $dir_path.'/db/sklon.csv';
-
-  $data = kama_parse_csv_file($file_path);
-
-  $formated_word = 'error...';
-
-  foreach($data as $row){
-    if ($row[0] === $word)
-    $formated_word = $row[$case] ? $row[$case] : 'error...';
-  }
-
-
-  return $formated_word;
-
-}
-
-
-
-
-
-
-
 function kama_parse_csv_file( $file_path, $file_encodings = ['cp1251','UTF-8'], $col_delimiter = ';', $row_delimiter = "\r\n" ){
   if( !file_exists($file_path) )
     return 'false';
@@ -151,4 +126,43 @@ function kama_parse_csv_file( $file_path, $file_encodings = ['cp1251','UTF-8'], 
   }
   return $data;
 
+}
+
+
+
+//// перенеси потом в плагин нахой
+function get_declension($word,$case) {
+  $dir_path = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/al_theme/';
+  $file_path = $dir_path.'/db/sklon.csv';
+
+  $data = kama_parse_csv_file($file_path);
+
+  $formated_word = 'error...';
+
+  foreach($data as $row){
+    if ($row[0] === $word)
+    $formated_word = $row[$case] ? $row[$case] : 'error...';
+  }
+
+  return $formated_word;
+}
+
+//////////////
+
+function get_headline($post_id,$parent_id,$case){
+  if ( is_page_template('main.php') ) {
+    $headline = 'Автоломбард под залог авто ПТС в городе ' . get_declension(get_the_title($post_id),$case);
+  } else if ( is_page_template('page-calc.php') ) {
+    $headline = 'Расчет кредита под залог авто';
+  } else {
+    $city = strval($parent_id) === '0' ? 'Москва' : get_the_title($parent_id);
+
+    if( get_the_title($post_id) === 'Круглосуточный автоломбард' ){
+      $headline = get_the_title($post_id) . ' ' . get_bloginfo('name') . ' в вашем городе';
+    } else {
+      $headline = get_the_title($post_id) . ' в городе ' . get_declension($city,$case);
+    }
+  }
+
+  return $headline;
 }
