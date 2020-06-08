@@ -2,6 +2,7 @@
 
 <div class="row">
         <div class="give-loan-wrapper">
+            <?php $subtitle = ($subtitle[1] === null) ? $subtitle[0] : $subtitle[0] . ' ' . get_declension(get_city($post->ID),$subtitle[1]); ?>
             <h2 class="give-loan-title"><?= $subtitle; ?></h2>
             <p class="give_loan_down">Мы предлагаем максимально простую процедуру получения займа</p>
             <div class="container give_loan">

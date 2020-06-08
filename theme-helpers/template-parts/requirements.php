@@ -1,6 +1,7 @@
 <div class="hiden-requirements d-lg-block container">
     <div class=" pt-5 mt-5">
-        <h2 class="requirements-text text-center"><?= $subtitle . ' ' .get_bloginfo() . ' ' . get_declension(get_city($post->ID),'1'); ?></h2>
+        <?php $subtitle = ($subtitle[1] === null) ? $subtitle[0] : $subtitle[0] . ' ' . get_declension(get_city($post->ID),$subtitle[1]); ?>
+        <h2 class="requirements-text text-center"><?= $subtitle; ?></h2>
     </div>
     <div class="requirements pt-5">
         <div class="">

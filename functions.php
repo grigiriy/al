@@ -153,15 +153,20 @@ function get_city($post_id){
 }
 
 function get_declension_city($atts){
-
 	$params = shortcode_atts( array(
 		'case' => 'Москва',
 	), $atts );
 
-  $word = get_city(get_the_ID());
+  if( get_post_meta(get_the_ID())['_wp_page_template'][0] === 'main.php'){
+    $word = get_city(get_the_ID());
+  } else {
+    $word = get_city(get_post(get_the_ID())->post_parent);
+  }
   return get_declension($word,$params['case']);
 }
 add_shortcode('declension_city', 'get_declension_city');
+
+
 
 function get_headline($post_id,$parent_id,$case){
   if ( is_page_template('main.php') ) {

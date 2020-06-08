@@ -9,7 +9,8 @@ the_post();
 
 get_template_part('theme-helpers/template-parts/firstScreen');
 
-echo '<h2>Headline 2</h2>';
+set_query_var( 'subtitle', ['Выгодно оформить кредит под залог ПТС на машину в','1'] );
+set_query_var( 'text', 'types_text' );
 get_template_part('theme-helpers/template-parts/advantages');
 get_template_part('theme-helpers/template-parts/textBlock');
 

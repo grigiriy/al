@@ -18,6 +18,32 @@ Container::make( 'theme_options', 'Настроечки' )
             Field::make( 'text', 'subtitle', 'Вопрос (h3)' ),
             Field::make( 'rich_text', 'text', 'Ответ' ),
         ]),
+
+        Field::make( 'complex', 'credit_pts_faq', 'Кредит под ПТС' )
+        ->set_collapsed( true )
+        ->add_fields( [
+            Field::make( 'text', 'subtitle', 'Вопрос (h3)' ),
+            Field::make( 'rich_text', 'text', 'Ответ' ),
+        ]),
+        Field::make( 'complex', 'credit_auto_faq', 'Кредит под залог авто' )
+        ->set_collapsed( true )
+        ->add_fields( [
+            Field::make( 'text', 'subtitle', 'Вопрос (h3)' ),
+            Field::make( 'rich_text', 'text', 'Ответ' ),
+        ]),
+        Field::make( 'complex', 'zaim_pts_faq', 'Займ под ПТС' )
+        ->set_collapsed( true )
+        ->add_fields( [
+            Field::make( 'text', 'subtitle', 'Вопрос (h3)' ),
+            Field::make( 'rich_text', 'text', 'Ответ' ),
+        ]),
+        Field::make( 'complex', 'zaim_auto_faq', 'Займ под залог автомобиля' )
+        ->set_collapsed( true )
+        ->add_fields( [
+            Field::make( 'text', 'subtitle', 'Вопрос (h3)' ),
+            Field::make( 'rich_text', 'text', 'Ответ' ),
+        ]),
+        
         Field::make( 'complex', 'spec_faq', 'FAQ спецтехники' )
         ->set_collapsed( true )
         ->add_fields( [
