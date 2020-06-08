@@ -9,3 +9,10 @@
 .main-bg_onhov:hover .number-card {
   color: #fff !important;
 }
+
+.position-loan-give-foto img,
+.position-loan-give-foto-two img {
+  width: auto;
+  max-width: none;
+  display: inherit;
+}

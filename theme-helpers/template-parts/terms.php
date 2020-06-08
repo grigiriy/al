@@ -1,8 +1,8 @@
 <div class="uslovia">
     <div class="container pt-2">
         <div class="row">
-            <div class="col-12 text-center">
-                <p class="rating-text-one">Условия займа</p>
+            <div class="col-8 offset-2 text-center">
+                <h2 class="rating-text-one"><?= $subtitle; ?></h2>
                 <p class="rating-text-two">Подробные условия займа и требования у заемщику и авто</p>
             </div>
         </div>

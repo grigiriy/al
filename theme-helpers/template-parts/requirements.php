@@ -1,6 +1,6 @@
 <div class="hiden-requirements d-lg-block container">
     <div class=" pt-5 mt-5">
-        <p class="requirements-text text-center">Требования</p>
+        <h2 class="requirements-text text-center"><?= $subtitle . ' ' .get_bloginfo() . ' ' . get_declension(get_city($post->ID),'1'); ?></h2>
     </div>
     <div class="requirements pt-5">
         <div class="">
@@ -10,7 +10,7 @@
                     <div class="user pt-5 pl-1 ">
                         <div class="user-table ">
                             <div class="user-user-svg d-flex justify-content-center">
-                                <img src="https://zaim-pod-zalog-pts.ru/img/requirements_svg/user.svg" alt="user">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/user.svg" alt="user">
                             </div>
                         </div>
                         <p class=" pt-5 requirements-title-text">
@@ -23,7 +23,7 @@
                             <li>Не рассматривается кредитная история</li>
                         </ul>
                         <div class="foto-one d-flex justify-content-end">
-                            <img src="https://zaim-pod-zalog-pts.ru/img/requirements/flag-requirements.png" alt="">
+                            <img src="<?= get_template_directory_uri(); ?>/css/images/flag-requirements.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <div class="auto pt-5 pl-1  ">
                         <div class="user-table ">
                             <div class="car-car-svg d-flex justify-content-center">
-                                <img src="https://zaim-pod-zalog-pts.ru/img/requirements_svg/car.svg" alt="user">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/car.svg" alt="user">
                             </div>
                         </div>
                         <p class="pt-5 requirements-title-text">
@@ -45,7 +45,7 @@
                             <li>Возможен как оригинал ПТС, так и дубликат. Пометки в ПТС не вносятся</li>
                         </ul>
                         <div class="foto-two d-flex justify-content-end">
-                            <img src="https://zaim-pod-zalog-pts.ru/img/requirements/car-requirements.png" alt="">
+                            <img src="<?= get_template_directory_uri(); ?>/css/images/car-requirements.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                     <div class="auto pt-5 pl-1  ">
                         <div class="user-table ">
                             <div class="user-user-svg d-flex justify-content-center">
-                                <img src="https://zaim-pod-zalog-pts.ru/img/requirements_svg/document.svg" alt="user">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/document.svg" alt="user">
                             </div>
                         </div>
                         <p class="pt-5 requirements-title-text">
@@ -65,7 +65,7 @@
                             <li>Свидетельство о регистрации транспортного средства (СТС)</li>
                         </ul>
                         <div class="foto-tree d-flex justify-content-end">
-                            <img src="https://zaim-pod-zalog-pts.ru/img/requirements/document-requirements.png" alt="">
+                            <img src="<?= get_template_directory_uri(); ?>/css/images/document-requirements.png" alt="">
                         </div>
                     </div>
                 </div>
