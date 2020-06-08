@@ -148,6 +148,9 @@ function get_declension($word,$case) {
 }
 
 function get_city($post_id){
+  if( get_post_meta($post_id)['_wp_page_template'][0] !== 'main.php'){
+    $post_id = get_post($post_id)->post_parent;
+  }
   $city = strval($post_id) === '0' ? 'Москва' : get_the_title($post_id);
   return $city;
 }
@@ -157,16 +160,15 @@ function get_declension_city($atts){
 		'case' => 'Москва',
 	), $atts );
 
-  if( get_post_meta(get_the_ID())['_wp_page_template'][0] === 'main.php'){
-    $word = get_city(get_the_ID());
-  } else {
-    $word = get_city(get_post(get_the_ID())->post_parent);
-  }
+  $word = get_city(get_the_ID());
   return get_declension($word,$params['case']);
 }
 add_shortcode('declension_city', 'get_declension_city');
 
-
+function get_brand(){
+  return get_bloginfo();
+}
+add_shortcode('brand', 'get_brand');
 
 function get_headline($post_id,$parent_id,$case){
   if ( is_page_template('main.php') ) {
@@ -182,6 +184,5 @@ function get_headline($post_id,$parent_id,$case){
       $headline = get_the_title($post_id) . ' в городе ' . get_declension($city,$case);
     }
   }
-
   return $headline;
 }

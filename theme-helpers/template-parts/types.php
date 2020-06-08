@@ -1,8 +1,8 @@
 <div class="uk-section padding-bottom-small">
   <div class="in-header">
 
-    <?php $subtitle = ($subtitle[1] === null) ? $subtitle[0] : $subtitle[0] . ' ' . get_declension(get_city($post->ID),$subtitle[1]); ?>
-    <h2 class="uk-h2 uk-text-center"><?= $subtitle; ?></h2>
+    <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
+    <h2 class="uk-h2 uk-text-center"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
     <p class="uk-text-center padding-lr-50">Автоломбард выдает займы под залог легковых, грузовых автомобилей, спецтехники, мототехники, водного и другого транспорта</p>
   </div>
   <div class="uk-child-width-1-2@s uk-child-width-1-5@l uk-grid-collapse uk-grid-match uk-grid" uk-grid="">

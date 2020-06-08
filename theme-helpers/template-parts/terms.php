@@ -1,9 +1,9 @@
 <div class="uslovia">
     <div class="container pt-2">
         <div class="row">
-            <div class="col-8 offset-2 text-center">
-                <?php $subtitle = ($subtitle[1] === null) ? $subtitle[0] : $subtitle[0] . ' ' . get_declension(get_city($post->ID),$subtitle[1]); ?>
-                <h2 class="rating-text-one"><?= $subtitle; ?></h2>
+            <div class="col-8 offset-2 text-center" id="tut">
+            <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
+                <h2 class="rating-text-one"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
                 <p class="rating-text-two">Подробные условия займа и требования у заемщику и авто</p>
             </div>
         </div>

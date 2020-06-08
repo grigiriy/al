@@ -8,7 +8,7 @@
     <?php $faqs = carbon_get_theme_option( $faq_type.'_faq' );
     foreach ($faqs as $faq){ ?>
       <li class="uk-open">
-        <a class="uk-accordion-title" href="#"><h3><?= $faq['subtitle']; ?></h3></a>
+        <a class="uk-accordion-title" href="#"><h3><?= apply_filters( 'the_content', $faq['subtitle'] ); ?></h3></a>
         <div class="uk-accordion-content" aria-hidden="false">
           <p><?= apply_filters( 'the_content', $faq['text']); ?></p>
         </div>
