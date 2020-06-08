@@ -25,6 +25,7 @@ get_template_part('theme-helpers/template-parts/calc');
 set_query_var( 'subtitle', 'Новые условия выдачи денег под ПТС без сдачи автомобиля' );
 get_template_part('theme-helpers/template-parts/terms');
 
+
 set_query_var( 'subtitle', 'Требования автоломбарда под залог авто в' );
 set_query_var( 'text', 'requirements_text' );
 get_template_part('theme-helpers/template-parts/requirements');
@@ -33,7 +34,8 @@ get_template_part('theme-helpers/template-parts/textBlock');
 set_query_var( 'subtitle', 'Онлайн заявка в автоломбард с правом вождения' );
 get_template_part('theme-helpers/template-parts/order');
 
-echo '<h2>Headline 2</h2>';
+
+set_query_var( 'faq_type', 'main' );
 get_template_part('theme-helpers/template-parts/faq');
 
 endwhile;

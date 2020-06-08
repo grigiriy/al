@@ -72,7 +72,7 @@
             </div>
         </div>
     </div>
-    <div class="single-requirements requirements-slider slick-initialized slick-slider slick-dotted" style=""><img src="https://zaim-pod-zalog-pts.ru/img/arrow/right_arrow.svg" class="prev-slider-two slick-arrow" alt="1" style="">
+    <div class="single-requirements requirements-slider slick-initialized slick-slider slick-dotted" style=""><img src="<?= get_template_directory_uri(); ?>/css/images/right_arrow.svg" class="prev-slider-two slick-arrow" alt="1" style="">
         <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"><div class="container slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 0px;" tabindex="-1">
            <div class="s-slide s-slide-3"></div>
         </div><div class="container single-slide slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="0" role="tabpanel" id="slick-slide30" aria-describedby="slick-slide-control30">
@@ -90,5 +90,17 @@
         </div></div></div>
         
         
-    <img src="https://zaim-pod-zalog-pts.ru/img/arrow/left_arrow.svg" class="next-slider-two slick-arrow" alt="2" style=""><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control30" aria-controls="slick-slide30" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control31" aria-controls="slick-slide31" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control32" aria-controls="slick-slide32" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+    <img src="<?= get_template_directory_uri(); ?>/css/images/left_arrow.svg" class="next-slider-two slick-arrow" alt="2" style="">
+    <ul class="slick-dots" style="" role="tablist">
+        <li class="slick-active" role="presentation">
+            <button type="button" role="tab" id="slick-slide-control30" aria-controls="slick-slide30" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button>
+        </li>
+        <li role="presentation">
+            <button type="button" role="tab" id="slick-slide-control31" aria-controls="slick-slide31" aria-label="2 of 3" tabindex="-1">2</button>
+        </li>
+        <li role="presentation">
+            <button type="button" role="tab" id="slick-slide-control32" aria-controls="slick-slide32" aria-label="3 of 3" tabindex="-1">3</button>
+        </li>
+    </ul>
+</div>
 </div>
