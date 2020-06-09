@@ -20,6 +20,12 @@ switch (get_the_title()) {
     case 'Займы под залог авто':
         $page_type = 'zaim_auto';
         break;
+    case 'Кредит для ИП под залог авто ПТС':
+        $page_type = 'business';
+        break;
+    case 'Круглосуточный автоломбард':
+        $page_type = '24h';
+        break;
     default:
         $page_type = 'main';
 }
@@ -33,7 +39,7 @@ set_query_var( 'subtitle_arr', [
     carbon_get_theme_option($page_type)[0]['advantages_case'],
     carbon_get_theme_option($page_type)[0]['advantages_sub_after']
 ]);
-set_query_var( 'text', 'types_text' );
+set_query_var( 'text', 'advantages_text' );
 get_template_part('theme-helpers/template-parts/advantages');
 get_template_part('theme-helpers/template-parts/textBlock');
 
@@ -63,6 +69,7 @@ set_query_var( 'subtitle_arr', [
 get_template_part('theme-helpers/template-parts/terms');
 
 
+set_query_var( 'text', 'requirements_text' );
 set_query_var( 'subtitle_arr', [
     carbon_get_theme_option($page_type)[0]['requirements_sub'],
     carbon_get_theme_option($page_type)[0]['requirements_case'],
@@ -80,7 +87,7 @@ set_query_var( 'subtitle_arr', [
 get_template_part('theme-helpers/template-parts/order');
 
 
-set_query_var( 'faq_type', 'credit_pts' );
+set_query_var( 'faq_type', $page_type );
 get_template_part('theme-helpers/template-parts/faq');
 
 endwhile;
