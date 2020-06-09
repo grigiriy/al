@@ -39,8 +39,8 @@ set_query_var( 'subtitle_arr', [
     carbon_get_theme_option($page_type)[0]['advantages_case'],
     carbon_get_theme_option($page_type)[0]['advantages_sub_after']
 ]);
-set_query_var( 'text', 'advantages_text' );
 get_template_part('theme-helpers/template-parts/advantages');
+set_query_var( 'text', 'advantages_text' );
 get_template_part('theme-helpers/template-parts/textBlock');
 
 
@@ -48,8 +48,9 @@ set_query_var( 'subtitle_arr', [
     carbon_get_theme_option($page_type)[0]['types_sub'],
     carbon_get_theme_option($page_type)[0]['types_case'],
     carbon_get_theme_option($page_type)[0]['types_sub_after']
-]);
-get_template_part('theme-helpers/template-parts/types');
+    ]);
+    get_template_part('theme-helpers/template-parts/types');
+set_query_var( 'text', 'types_text' );
 get_template_part('theme-helpers/template-parts/textBlock');
 
 
@@ -69,13 +70,13 @@ set_query_var( 'subtitle_arr', [
 get_template_part('theme-helpers/template-parts/terms');
 
 
-set_query_var( 'text', 'requirements_text' );
 set_query_var( 'subtitle_arr', [
     carbon_get_theme_option($page_type)[0]['requirements_sub'],
     carbon_get_theme_option($page_type)[0]['requirements_case'],
     carbon_get_theme_option($page_type)[0]['requirements_sub_after']
 ]);
 get_template_part('theme-helpers/template-parts/requirements');
+set_query_var( 'text', 'requirements_text' );
 get_template_part('theme-helpers/template-parts/textBlock');
 
 
