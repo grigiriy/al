@@ -417,22 +417,6 @@ Container::make( 'theme_options', 'Управление контентом' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
-            ->set_width( 50 ),
-            Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
-                ->set_width( 20 )
-                ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
-                ->set_width( 30 ),
-
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
-                ->set_width( 50 ),
-            Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
-                ->set_width( 20 )
-                ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
-                ->set_width( 30 ),
-
             Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
@@ -447,14 +431,6 @@ Container::make( 'theme_options', 'Управление контентом' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
             Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
-                ->set_width( 30 ),
-                
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
-            ->set_width( 50 ),
-            Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
-                ->set_width( 20 )
-                ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
                 ->set_width( 30 ),
 
             Field::make( 'text', 'order_sub', 'Подзаг заявки' )
@@ -827,13 +803,6 @@ Container::make( 'theme_options', 'Управление контентом' )
         ]),
         
         Field::make( 'complex', 'truck_faq', 'FAQ грузовых' )
-        ->set_collapsed( true )
-        ->add_fields( [
-            Field::make( 'text', 'subtitle', 'Вопрос (h3)' ),
-            Field::make( 'rich_text', 'text', 'Ответ' ),
-        ]),
-        
-        Field::make( 'complex', 'spec_faq', 'FAQ спецтехники' )
         ->set_collapsed( true )
         ->add_fields( [
             Field::make( 'text', 'subtitle', 'Вопрос (h3)' ),
