@@ -48,7 +48,7 @@ function disable_wp_emojis_in_tinymce( $plugins ) {
 // }
 function theme_scripts()
 {
-    wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js',['jquery'], STATIC_FILES_BUILD_VERSION, true);
+    wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/plugins/bootstrap.js',['jquery'], STATIC_FILES_BUILD_VERSION, true);
     wp_enqueue_script('maskedinput', get_template_directory_uri() . '/js/plugins/maskedinput.js',['bootstrap'], STATIC_FILES_BUILD_VERSION, true);
     wp_enqueue_script('master', get_template_directory_uri() . '/js/main.js',['maskedinput'], STATIC_FILES_BUILD_VERSION, true);
 }

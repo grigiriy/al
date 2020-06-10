@@ -34,7 +34,7 @@
               <p>Одобрение за 5 минут, выдача за 30 минут</p>
             </div>
             <div class="col-lg-6 col-12 d-flex my-1">
-              <a class="uk-button uk-button-primary uk-margin-right uk-margin-bottom" href="#modal-center1" uk-toggle="">Оставить заявку</a>
+              <a class="uk-button uk-button-primary uk-margin-right uk-margin-bottom" data-toggle="modal" data-target="#formModal">Оставить заявку</a>
             </div>
           </div>   
         </div>
