@@ -32,8 +32,8 @@
                                 aria-expanded="false"    
                             >Займы</div>
                             <div class="dropdown-menu" aria-labelledby="zaim_dd">
-                                <a class="dropdown-item" href="zajmy-pod-zalog-avto/">Займ под залог авто</a>
-                                <a class="dropdown-item" href="zajmy-pod-zalog-pts/">Займ под залог ПТС авто</a>
+                                <a class="dropdown-item" href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займ под залог авто</a>
+                                <a class="dropdown-item" href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-pts/">Займ под залог ПТС авто</a>
                             </div>
                         </li>
                         <li class="nav-item mr-2 dropdown">
@@ -45,15 +45,15 @@
                                 aria-expanded="false"    
                             >Кредиты</div>
                             <div class="dropdown-menu" aria-labelledby="cred_dd">
-                                <a class="dropdown-item" href="kredit-pod-zalog-avto/">Кредит под залог авто</a>
-                                <a class="dropdown-item" href="kredit-pod-zalog-pts/">Кредит под залог ПТС авто</a>
+                                <a class="dropdown-item" href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог авто</a>
+                                <a class="dropdown-item" href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог ПТС авто</a>
                             </div>
                         </li>
                         <li class="nav-item mr-2  nav-link-faq">
-                            <a class="nav-link not_link_style" href="bystrye-dengi-pod-pts/">Быстрые деньги</a>
+                            <a class="nav-link not_link_style" href="<?= get_city_link($post->ID);?>bystrye-dengi-pod-pts/">Быстрые деньги</a>
                         </li>
                         <li class="nav-item nav-item-last nav-link-contacts">
-                            <a class="nav-link not_link_style" href="yuridicheskie-licza/">Юр. Лица</a>
+                            <a class="nav-link not_link_style" href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
                         </li>
                     </ul>
                     <!-- <div class="form-inline my-2 my-lg-0 f-flex justify-content-center ">

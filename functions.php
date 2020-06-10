@@ -156,6 +156,14 @@ function get_city($post_id){
   return $city;
 }
 
+function get_city_link($post_id){
+  if( get_post_meta($post_id)['_wp_page_template'][0] !== 'main.php'){
+    $post_id = get_post($post_id)->post_parent;
+  }
+  $city = strval($post_id) === '0' ? '/' : get_the_permalink($post_id);
+  return $city;
+}
+
 function get_declension_city($atts){
 	$params = shortcode_atts( array(
 		'case' => 'Москва',
