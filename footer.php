@@ -77,21 +77,20 @@
           <div>         
             <div class="footer-head">Ссылки:</div>
             <a href="/">Автоломбард</a>
-            <a href="/zaymy-pod-zalog-pts">Займы под залог ПТС</a>
-            <a href="/zaymy-pod-zalog-avto">Займы под залог авто</a>
-            <a href="/kredit-pod-zalog-pts">Кредит под залог ПТС</a>
-            <a href="/kredit-pod-zalog-avto">Кредит под залог Авто</a>
+            <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-pts/">Займы под залог ПТС</a>
+            <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займы под залог авто</a>
+            <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог ПТС</a>
+            <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог Авто</a>
           </div>
         </div>
 
         <div class="">
           <div>         
             <div class="footer-head second-head"> </div>
-            <a href="/dengi-pod-zalog-pts">Деньги под залог ПТС</a>
-            <a href="/dengi-pod-zalog-avto">Деньги под залог авто</a>
-            <a href="/dengi-pod-zalog-nedvizhimosti">Под залог недвижимости</a>
-            <a href="/politika-konfidencialnosti">Политика конфиденциальности</a>
-            <a href="mailto:info@avtolombard24.com?subject=%D0%A1%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE" class="footer-link">Сотрудничество</a>
+            <a href="<?= get_city_link($post->ID);?>bystrye-dengi-pod-pts/">Быстрые деньги</a>
+            <a href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
+            <a href="<?= get_city_link($post->ID);?>refinansirovanie/">Рефинансирование</a>
+
           </div>
         </div>
 
