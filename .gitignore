@@ -1,5 +1,5 @@
 .DS_Store
-/js/bootstrap.js
+/js/plugins/
 /node_modules/
 /vendor/
 /css/images/
