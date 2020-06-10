@@ -21,6 +21,14 @@ h6 {
 .main-bg_onhov:hover {
   background-color: #3577b7 !important;
 }
+
+.default-text {
+  color: #32354e;
+}
+.default-text:hover {
+  color: #333;
+}
+
 .main-block {
   min-height: 500px;
 }
@@ -31,4 +39,8 @@ h6 {
 .first_screen_list p {
   margin-bottom: auto;
   margin-top: auto;
+}
+a.not_link_style {
+  color: inherit !important;
+  border-bottom: inherit;
 }
