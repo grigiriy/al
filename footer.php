@@ -118,6 +118,10 @@
   </div>
 </footer>
 
+<?php
+get_template_part('theme-helpers/template-parts/modal','cities');
+?>
+
 <?php wp_footer() ?>
 </body>
 </html>
