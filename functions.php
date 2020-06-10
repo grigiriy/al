@@ -51,6 +51,8 @@ function theme_scripts()
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/plugins/bootstrap.js',['jquery'], STATIC_FILES_BUILD_VERSION, true);
     wp_enqueue_script('maskedinput', get_template_directory_uri() . '/js/plugins/maskedinput.js',['bootstrap'], STATIC_FILES_BUILD_VERSION, true);
     wp_enqueue_script('master', get_template_directory_uri() . '/js/main.js',['maskedinput'], STATIC_FILES_BUILD_VERSION, true);
+    wp_enqueue_script('nouislider', get_template_directory_uri() . '/js/plugins/nouislider.js',['master'], STATIC_FILES_BUILD_VERSION, true);
+    wp_enqueue_script('calc', get_template_directory_uri() . '/js/donor/calc.js',['nouislider'], STATIC_FILES_BUILD_VERSION, true);
 }
 // add_action('wp_print_styles', 'theme_styles');
 add_action('wp_print_styles', 'theme_scripts');

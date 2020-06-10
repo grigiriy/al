@@ -14,6 +14,7 @@
 <!-- HOLY SHIT! -->
 <link href="/wp-content/themes/al_theme/css/donor/normalize.css" rel="stylesheet" type="text/css">
 <link href="/wp-content/themes/al_theme/css/donor/webflow.css" rel="stylesheet" type="text/css">
+<link href="/wp-content/themes/al_theme/css/donor/nouislider.css" rel="stylesheet" type="text/css">
 
 <link href="/wp-content/themes/al_theme/css/donor/s4.css" rel="stylesheet" type="text/css">
 <link href="/wp-content/themes/al_theme/css/donor/s7.css" rel="stylesheet" type="text/css">
