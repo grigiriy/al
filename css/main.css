@@ -228,3 +228,39 @@ footer a:hover {
 .bluecar {
   top: 130px;
 }
+.form-output {
+  margin-top: 0;
+  top: 0;
+  position: static;
+}
+.form-calculator__label-text {
+  font-style: normal;
+}
+.form-output .new-button {
+  margin-top: 14px;
+}
+.form-calculator {
+  /* margin-top: 85px; */
+  width: auto;
+}
+.calculator .custom-calculator-output {
+  margin-top: 0;
+  padding-top: 0;
+}
+.form-calculator__label-text {
+  margin: 0;
+  top: 0;
+}
+.form-calculator__input {
+  margin: 0;
+}
+.form-calculator__label-text,
+.calculator .noUi-target {
+  position: static !important;
+}
+.noUi-horizontal {
+  margin: 20px 0;
+}
+.form-calculator__price {
+  margin-bottom: 0;
+}
