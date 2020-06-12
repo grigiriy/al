@@ -2,7 +2,7 @@
     <p class="lead">Остались вопросы? Звоните по телефону автоломбарда:</p>
 <p class="display-4 h1 bolder">+7 (495) 128-28-90</p>
 <p class="lead">
-<button data-toggle="modal" data-target="#formModal" class="form-button w-button uk-button uk-button-primary uk-button-small-hor-pad uk-margin-bottom uk-button-small px-5">Оставить заявку</button>
+<button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оставить заявку</button>
 </p>
 </div>
 <?php get_template_part('theme-helpers/template-parts/form','horizontal'); ?>

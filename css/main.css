@@ -96,3 +96,26 @@ a.not_link_style {
 .subfooter p {
   color: inherit;
 }
+
+.bg-f2 {
+  background-color: #f2f2f2;
+}
+
+.new-button {
+  background-color: #e2003d;
+  background: #f02b2b;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 13px 46px -13px rgba(240, 43, 43, 1);
+  -moz-box-shadow: 4px 13px 46px -13px rgba(240, 43, 43, 1);
+  box-shadow: 4px 13px 46px -13px rgba(240, 43, 43, 1);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff !important;
+  width: 200px;
+  height: 54px;
+  border: none;
+}

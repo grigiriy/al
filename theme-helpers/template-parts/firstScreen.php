@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-12 d-flex mt-3">
-              <a class="uk-button uk-button-primary uk-margin-right uk-margin-bottom" data-toggle="modal" data-target="#formModal">Оставить заявку</a>
+              <button class="new-button" data-toggle="modal" data-target="#formModal">Оставить заявку</button>
             </div> 
         </div>
       </div>

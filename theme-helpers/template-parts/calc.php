@@ -63,7 +63,7 @@
                                         <input type="tel" name="phone" class="form-control form-control-phone" placeholder="+7 (___) ___-__-__">
                                     </div>
                                     <div class="form-line-right form-line-right-2">
-                                        <button class="red-button" type="button">Получить одобрение</button>
+                                        <button class="new-button" type="button">Получить одобрение</button>
                                     </div>
                                 </div>
                             </div>

@@ -14,7 +14,7 @@
             <input class="uk-input w-input phone-input" type="text" placeholder="Номер телефона" name="phone" data-name="phone" id="phone">
           </div>
           <div class="uk-width-1-1 uk-width-1-1@s uk-width-1-1@m uk-width-1-5@l mr-auto">
-            <input type="submit" value="Оформить займ онлайн" data-wait="Пожалуйста, подождите." class="form-button  w-button uk-button uk-button-primary uk-button-small-hor-pad uk-margin-bottom uk-button-small button-width-full">
+          <button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оформить займ онлайн</button>
           </div>
         </div> 
 
