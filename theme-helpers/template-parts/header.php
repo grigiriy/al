@@ -21,7 +21,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-                    <div class="fill" style="width: 200px;"></div>
                     <ul class="navbar-nav align-items-center mt-lg-0 d-flex justify-content-between mb-0">
                         <li class="nav-item mr-2 dropdown">
                             <div class="nav-link dropdown-toggle"
@@ -56,14 +55,12 @@
                             <a class="nav-link not_link_style" href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
                         </li>
                     </ul>
-                    <!-- <div class="form-inline my-2 my-lg-0 f-flex justify-content-center ">
-                        <button class="btn btn-outline-primary my-2 my-sm-0 pt-3 pb-3 pr-4 pl-4" type="button"><b>Заказать звонок</b></button>
-                    </div> -->
                     <div class="nav-item">
-                    <a class="nav-link phone-number" href="tel:+78005552027">8 (800) 555-20-27<br> 
-                        <span class="phone-number__details">Звонок бесплатный</span>
-                    </a>
-                </div> 
+                        <a class="nav-link phone-number" href="tel:+78005552027">8 (800) 555-20-27</a>
+                    </div> 
+                    <div class="nav-item">
+                        <button data-toggle="modal" data-target="#formModal" type="submit" data-wait="Пожалуйста, подождите." class="new-button">Заказать звонок</button>
+                    </div> 
                 </div>
             </nav>
         </div>
@@ -72,9 +69,10 @@
                 <div class="mob-hamburger"></div>
                 <div class="geo location-name">Москва</div>
                 <div class="nav-item phone-wrapper">  
-                    <a class="nav-link phone-number" href="tel:+78005552027">8 (800) 555-20-27<br> 
-                        <span class="phone-number__details">Звонок бесплатный</span>
-                    </a>
+                    <a class="nav-link phone-number" href="tel:+78005552027">8 (800) 555-20-27</a>
+                </div>     
+                <div class="nav-item phone-wrapper">  
+                    <button data-toggle="modal" data-target="#formModal" type="submit" data-wait="Пожалуйста, подождите." class="new-button">Заказать звонок</button>
                 </div>     
             </div>
             <ul class="nav-mobile">

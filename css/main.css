@@ -119,3 +119,12 @@ a.not_link_style {
   height: 54px;
   border: none;
 }
+
+.nav-link,
+.phone-number {
+  font-size: 14px;
+}
+.nav-item:last-child {
+  margin-right: 0;
+  z-index: 100;
+}
