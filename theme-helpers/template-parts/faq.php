@@ -1,4 +1,4 @@
-<div class="uk-section uk-section-default padding-bottom-small uk-overflow-hidden">
+<div class="uk-section bg-f2 my-5 pb-5 uk-section-default padding-bottom-small uk-overflow-hidden">
   <div class="uk-container uk-position-relative">
 
     <h2 class="uk-text-center uk-h2">Ответы на вопросы</h2>
