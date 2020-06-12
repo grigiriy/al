@@ -15,20 +15,6 @@ h6 {
   color: #333333;
 }
 
-.main-text {
-  color: #3577b7 !important;
-}
-.main-border {
-  border-color: #3577b7 !important;
-}
-.main-bg {
-  background-color: #3577b7 !important;
-}
-
-.main-bg_onhov:hover {
-  background-color: #3577b7 !important;
-}
-
 .default-text {
   color: #32354e;
 }
@@ -125,8 +111,9 @@ a.not_link_style {
 }
 .phone-number:hover,
 footer a:hover,
-header a:hover {
-  color: #15008f;
+header a:hover,
+.location-name {
+  color: #15008f !important;
 }
 .nav-item:last-child {
   margin-right: 0;
@@ -146,4 +133,24 @@ footer a:hover {
 
 .conditions-one-text img {
   max-width: 20px;
+}
+.full-contact-width {
+  box-shadow: none;
+}
+.background-deepblue,
+.give-loan-rotat,
+.user-table,
+.main-bg_onhov:hover,
+.main-bg,
+.calculator .noUi-connect {
+  background: rgb(0, 23, 145);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 23, 145, 1) 0%,
+    rgba(0, 27, 171, 1) 100%
+  );
+}
+.form-block,
+.form-block a {
+  color: #f2f2f2;
 }
