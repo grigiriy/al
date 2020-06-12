@@ -11,7 +11,7 @@
                     <div class="user pt-5 pl-1 ">
                         <div class="user-table ">
                             <div class="user-user-svg d-flex justify-content-center">
-                                <img src="<?= get_template_directory_uri(); ?>/css/images/user.svg" alt="user">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_male.png" alt="user">
                             </div>
                         </div>
                         <p class=" pt-5 requirements-title-text">
@@ -32,7 +32,7 @@
                     <div class="auto pt-5 pl-1  ">
                         <div class="user-table ">
                             <div class="car-car-svg d-flex justify-content-center">
-                                <img src="<?= get_template_directory_uri(); ?>/css/images/car.svg" alt="user">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_car.png" alt="user">
                             </div>
                         </div>
                         <p class="pt-5 requirements-title-text">
@@ -54,7 +54,7 @@
                     <div class="auto pt-5 pl-1  ">
                         <div class="user-table ">
                             <div class="user-user-svg d-flex justify-content-center">
-                                <img src="<?= get_template_directory_uri(); ?>/css/images/document.svg" alt="user">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_doc.png" alt="user">
                             </div>
                         </div>
                         <p class="pt-5 requirements-title-text">

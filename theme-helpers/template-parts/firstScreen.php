@@ -14,29 +14,29 @@
 
           <div class="row ml-lg-n5">
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-3">
-              <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg"" alt="">
+              <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
               <p>До 5 000 000 рублей на срок до 3 лет</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-3">
-              <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg"" alt="">
+              <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
               <p>С любой кредитной историей</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-3">
-              <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg"" alt="">
+              <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
               <p>Без справок с места работы и поручителей</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-3">
-              <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg"" alt="">
+              <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
               <p>После выбычи займа авто остается у вас</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-3">
-              <img src="<?= get_template_directory_uri(); ?>/css/images/check.svg"" alt="">
+              <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
               <p>Одобрение за 5 минут, выдача за 30 минут</p>
             </div>
-            <div class="col-lg-6 col-12 d-flex my-1">
+          </div>
+          <div class="col-lg-6 col-12 d-flex mt-3">
               <a class="uk-button uk-button-primary uk-margin-right uk-margin-bottom" data-toggle="modal" data-target="#formModal">Оставить заявку</a>
-            </div>
-          </div>   
+            </div> 
         </div>
       </div>
       <img class="ml-5 mt-5 bluecar uk-scrollspy-inview uk-animation-slide-right" src="<?= get_template_directory_uri(); ?>/css/images/car-blue.png" uk-scrollspy="cls: uk-animation-slide-right; delay: 1000" style="" width="1000" height="512">
