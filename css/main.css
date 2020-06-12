@@ -1,3 +1,10 @@
+html,
+body {
+  font-size: 14px;
+}
+p {
+  text-align: center;
+}
 p,
 h1,
 h2,
@@ -43,4 +50,16 @@ h6 {
 a.not_link_style {
   color: inherit !important;
   border-bottom: inherit;
+}
+
+/* order steps */
+.give-loan-rotat,
+.give-loan-rotat *,
+.user-table,
+.user-table * {
+  transform: none;
+}
+.foto-one-load-give img {
+  right: 41px;
+  z-index: inherit;
 }

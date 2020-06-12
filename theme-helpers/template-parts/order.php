@@ -16,7 +16,7 @@
                                 </p>
                             </div>
                             <div class="text-with-foto">
-                                <p class="text-give-loan-conten pl-4">Мы свяжемся
+                                <p class="text-give-loan-conten px-2">Мы свяжемся
                                     с вами в течение минуты</p>
                             </div>
                             <div class="foto-one-load-give d-flex align-items-center">
@@ -34,7 +34,7 @@
                                 <p class="text-give-loan pt-3">Оцениваем <br> автомобиль</p>
                             </div>
                             <div class="text-with-foto">
-                                <p class="text-give-loan-conten pl-4">Если машина "на ходу", проверка займёт примерно 8 минут</p>
+                                <p class="text-give-loan-conten px-2">Если машина "на ходу", проверка займёт примерно 8 минут</p>
                             </div>
                             <div class="foto-one-load-give d-flex align-items-center">
                                 <img src="<?= get_template_directory_uri(); ?>/css/images/load_give_car.png" alt="">
@@ -51,7 +51,7 @@
                                 <p class="text-give-loan pt-3">Оформляем <br> договор</p>
                             </div>
                             <div class="text-with-foto">
-                                <p class="text-give-loan-conten pl-4">Только договор займа, никакой купли-продажи. Это займёт 10 минут</p>
+                                <p class="text-give-loan-conten px-2">Только договор займа, никакой купли-продажи. Это займёт 10 минут</p>
                             </div>
                             <div class="foto-one-load-give d-flex align-items-center">
                                 <img src="<?= get_template_directory_uri(); ?>/css/images/liad_give_docum.png" alt="">
@@ -69,7 +69,7 @@
                                 <p class="text-give-loan pt-3">Получаете <br> деньги</p>
                             </div>
                             <div class="text-with-foto">
-                                <p class="text-give-loan-conten pl-4">Сразу же выдаём нужную сумму наличными или на карту любого банка</p>
+                                <p class="text-give-loan-conten px-2">Сразу же выдаём нужную сумму наличными или на карту любого банка</p>
                             </div>
                             <div class="foto-one-load-give d-flex align-items-center">
                                 <img src="<?= get_template_directory_uri(); ?>/css/images/load_give_money.png" alt="">
