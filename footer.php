@@ -58,56 +58,39 @@
 </div>
 </div>
 
-<footer>
-  <div class="footer pt-5 pb-4">
-    <div class="uk-container">
-      <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-expand@m uk-grid-default uk-grid-match uk-grid" uk-grid="">
-        <div class="uk-width-1-3@m uk-first-column">
-          <div>      
-            <img src="<?= get_template_directory_uri(); ?>/css/images/logo-foot.svg">  
-            <p class="uk-width-4-5@m weight100">Автоломбард в городе Москва – верный способ взять займ под залог ПТС или автомобиля. Одобрение по заявки займет всего 5 минут, а&nbsp;денежные средства будут у Вас сразу после подписания договора.
-            </p>       
-            <p class="deepgray">© «Автоломбард Автозайм», 2019 г.</p>
-          </div>
+<footer class="footer">
+  <div class="pt-5 pb-4 container">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div class="footer-logo">      
+          <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png">  
         </div>
+      </div>
+      <div class="col-12 col-lg-2">         
+        <div class="footer-head">Ссылки:</div>
+        <a href="/">Автоломбард</a>
+        <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-pts/">Займы под залог ПТС</a>
+        <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займы под залог авто</a>
+        <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог ПТС</a>
+        <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог Авто</a>
+      </div>
 
+      <div class="col-12 col-lg-3">           
+          <div class="footer-head second-head"> </div>
+          <a href="<?= get_city_link($post->ID);?>bystrye-dengi-pod-pts/">Быстрые деньги</a>
+          <a href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
+          <a href="<?= get_city_link($post->ID);?>refinansirovanie/">Рефинансирование</a>
+      </div>
 
-
-        <div class="">
-          <div>         
-            <div class="footer-head">Ссылки:</div>
-            <a href="/">Автоломбард</a>
-            <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-pts/">Займы под залог ПТС</a>
-            <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займы под залог авто</a>
-            <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог ПТС</a>
-            <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог Авто</a>
-          </div>
-        </div>
-
-        <div class="">
-          <div>         
-            <div class="footer-head second-head"> </div>
-            <a href="<?= get_city_link($post->ID);?>bystrye-dengi-pod-pts/">Быстрые деньги</a>
-            <a href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
-            <a href="<?= get_city_link($post->ID);?>refinansirovanie/">Рефинансирование</a>
-
-          </div>
-        </div>
-
-        <div class="">
-          <div>                  
-            <div class="footer-head">Контакты:</div>
-            <a href="https://vk.com/avtozaimlombard" class="footer-icon"><img src="<?= get_template_directory_uri(); ?>/css/images/vk-social-logotype.svg" _target="blank"></a>
-            <a href="https://instagram.com/avtolombard_zaim" class="footer-icon"><img src="<?= get_template_directory_uri(); ?>/css/images/instagram-social.svg" _target="blank"></a>
-            <a href="https://ok.ru/avtozaimlombard" class="footer-icon"><img src="<?= get_template_directory_uri(); ?>/css/images/odnoklassniki-logo.svg" _target="blank"></a>
-            <a href="#modal-center1" uk-toggle="">Заказать обратный звонок</a>          
-            <a href="tel:88005517172" class="phone-block-number uk-margin-remove-bottom foot-phone">8 800 551 71 72</a>  
-            <div class="foot-rezhim">Ежедневно с 08:00 до 20:00</div>
-          </div>
-        </div>
-
-
-      </div>  
+      <div class="col-12 col-lg-3">           
+        <div class="footer-head">Контакты:</div>
+        <a href="https://vk.com/avtozaimlombard" class="footer-icon"><img src="<?= get_template_directory_uri(); ?>/css/images/vk-social-logotype.svg" _target="blank"></a>
+        <a href="https://instagram.com/avtolombard_zaim" class="footer-icon"><img src="<?= get_template_directory_uri(); ?>/css/images/instagram-social.svg" _target="blank"></a>
+        <a href="https://ok.ru/avtozaimlombard" class="footer-icon"><img src="<?= get_template_directory_uri(); ?>/css/images/odnoklassniki-logo.svg" _target="blank"></a>
+        <a href="#modal-center1" uk-toggle="">Заказать обратный звонок</a>          
+        <a href="tel:88005517172" class="phone-block-number uk-margin-remove-bottom foot-phone">8 800 551 71 72</a>  
+        <div class="foot-rezhim">Ежедневно с 08:00 до 20:00</div>
+      </div>
     </div>
   </div>
   <div class="subfooter">  
