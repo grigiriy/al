@@ -74,7 +74,9 @@ a.not_link_style {
   right: 41px;
   z-index: inherit;
 }
-
+.logo {
+  height: auto;
+}
 .footer-logo {
   text-align: center;
 }
