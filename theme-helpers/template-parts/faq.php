@@ -2,7 +2,7 @@
   <div class="uk-container uk-position-relative">
 
     <h2 class="uk-text-center uk-h2">Ответы на вопросы</h2>
-    <p class="uk-text-center weight300 padding-lr-50">Вопросы о деятельности автоломбарда в Москве. Мы собрали самые популярные вопросы и подробно ответили на них.</p>
+    <p class="px-5 subtitle">Вопросы о деятельности автоломбарда в Москве. Мы собрали самые популярные вопросы и подробно ответили на них.</p>
 
     <ul id="faq_accordion" class="uk-accordion">
     <?php $faqs = carbon_get_theme_option( $faq_type.'_faq' );

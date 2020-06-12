@@ -57,6 +57,7 @@
                     </ul>
                     <div class="nav-item">
                         <a class="nav-link phone-number" href="tel:+78005552027">8 (800) 555-20-27</a>
+                        <span>Звонок бесплатный</span>
                     </div> 
                     <div class="nav-item">
                         <button data-toggle="modal" data-target="#formModal" type="submit" data-wait="Пожалуйста, подождите." class="new-button">Заказать звонок</button>

@@ -37,6 +37,7 @@ set_query_var( 'subtitle_arr', [
     carbon_get_theme_option('main')[0]['types_sub_after']
 ]);
 get_template_part('theme-helpers/template-parts/types');
+set_query_var( 'text', 'types_text' );
 get_template_part('theme-helpers/template-parts/textBlock');
 
 
@@ -54,6 +55,7 @@ set_query_var( 'subtitle_arr', [
     carbon_get_theme_option('main')[0]['requirements_sub_after']
 ]);
 get_template_part('theme-helpers/template-parts/requirements');
+set_query_var( 'text', 'requirements_text' );
 get_template_part('theme-helpers/template-parts/textBlock');
 
 

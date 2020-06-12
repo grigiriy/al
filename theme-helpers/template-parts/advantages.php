@@ -3,7 +3,7 @@
     <div class="in-header">
     <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
       <h2 class="uk-h2 uk-text-center"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
-      <p class="uk-text-center padding-lr-50">В нашей компании вы без проблем получите деньги в кредит под залог ПТС или автомобиля в  <?= get_declension(get_city($post->ID),'1'); ?>,  всего за 30 минут со следующими <b>приемуществами:</b> </p>
+      <p class="uk-text-center padding-lr-50 subtitle">В нашей компании вы без проблем получите деньги в кредит под залог ПТС или автомобиля в  <?= get_declension(get_city($post->ID),'1'); ?>,  всего за 30 минут со следующими <b>приемуществами:</b> </p>
     </div>
     <div class="uk-child-width-1-2@s uk-child-width-1-3@l uk-grid-default uk-grid-match uk-grid" uk-grid="" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .block-block; delay: 300;">
 

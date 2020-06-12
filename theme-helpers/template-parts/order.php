@@ -4,7 +4,7 @@
         <div class="give-loan-wrapper">
         <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
             <h2 class="give-loan-title"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
-            <p class="give_loan_down">Мы предлагаем максимально простую процедуру получения займа</p>
+            <p class="give_loan_down subtitle">Мы предлагаем максимально простую процедуру получения займа</p>
             <div class="container give_loan">
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-12">

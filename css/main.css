@@ -14,7 +14,9 @@ h5,
 h6 {
   color: #333333;
 }
-
+h3 {
+  font-size: 1.4rem;
+}
 .default-text {
   color: #32354e;
 }
@@ -195,4 +197,25 @@ footer a:hover {
 
 .subtitle {
   font-size: 18px;
+}
+.uk-accordion li .uk-accordion-content p,
+.conditions-two-text,
+.conditions-3-text {
+  font-size: 14px;
+}
+.conditions-one-text,
+.conditions-two-text,
+.conditions-3-text {
+  color: inherit;
+}
+
+.nav-item {
+  position: relative;
+}
+.phone-number + span {
+  position: absolute;
+  margin-top: -10px;
+  font-size: 12px;
+  right: 12px;
+  opacity: 0.4;
 }

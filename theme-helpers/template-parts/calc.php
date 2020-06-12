@@ -3,7 +3,7 @@
         <div class="calculator__content">
         <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
             <h2 class="calculator__title"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
-            <p class="calculator__desc">Рассчитайте сумму к возврату, ставку и ежемесячный платёж.</p>
+            <p class="calculator__desc subtitle text-center">Рассчитайте сумму к возврату, ставку и ежемесячный платёж.</p>
             <ul class="calculator__form-list">
                 <li class="calculator__form-item">
                     <input type="radio" name="summ-form" id="summ-summ" checked="true" class="visually-hidden toggle-summ-form">
