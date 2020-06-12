@@ -23,9 +23,11 @@ h3 {
 .default-text:hover {
   color: #333;
 }
-
 .main-block {
-  min-height: 500px;
+  min-height: 600px;
+  background-image: url(http://localhost:8888/wp-content/themes/al_theme/css/images/money.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
 }
 .first_screen_list img {
   width: 45px;
@@ -218,4 +220,11 @@ footer a:hover {
   font-size: 12px;
   right: 12px;
   opacity: 0.4;
+}
+.arrow-load-give {
+  transform: rotate(-90deg);
+}
+
+.bluecar {
+  top: 130px;
 }
