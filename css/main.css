@@ -67,3 +67,19 @@ a.not_link_style {
 .footer-logo {
   text-align: center;
 }
+
+.bottom-contact {
+  z-index: auto;
+}
+.footer {
+  background-color: #f2f2f2;
+}
+.subfooter {
+  background-color: #d6dde7;
+}
+.footer a,
+.footer .foot-rezhim,
+.footer .footer-head,
+.subfooter p {
+  color: inherit;
+}
