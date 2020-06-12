@@ -12,7 +12,7 @@
 
   <div class="uk-container">
 
-    <div class="uk-child-width-1-1 uk-child-width-1-4@s uk-grid-default uk-grid-match uk-grid" uk-grid="">
+    <div class="uk-child-width-1-1 uk-child-width-1-4@s uk-grid-default uk-grid-match uk-grid">
       <div class="uk-first-column">
         <div class="uk-first-column flex-center">      
           <div class="con-head-main">Контакты</div>         
@@ -84,9 +84,18 @@
 
       <div class="col-12 col-lg-3">           
         <div class="footer-head">Контакты:</div>
-        <a href="https://vk.com/avtozaimlombard" class="footer-icon"><img src="<?= get_template_directory_uri(); ?>/css/images/vk-social-logotype.svg" _target="blank"></a>
-        <a href="https://instagram.com/avtolombard_zaim" class="footer-icon"><img src="<?= get_template_directory_uri(); ?>/css/images/instagram-social.svg" _target="blank"></a>
-        <a href="https://ok.ru/avtozaimlombard" class="footer-icon"><img src="<?= get_template_directory_uri(); ?>/css/images/odnoklassniki-logo.svg" _target="blank"></a>
+        <a href="https://vk.com/avtozaimlombard" class="footer-icon">
+          <img src="<?= get_template_directory_uri(); ?>/css/images/vk-social-logotype.svg" _target="blank">
+          <img style="display:none" src="<?= get_template_directory_uri(); ?>/css/images/vk-social-logotype--hover.svg" _target="blank">
+        </a>
+        <a href="https://instagram.com/avtolombard_zaim" class="footer-icon">
+          <img src="<?= get_template_directory_uri(); ?>/css/images/instagram-social.svg" _target="blank">
+          <img style="display:none" src="<?= get_template_directory_uri(); ?>/css/images/instagram-social--hover.svg" _target="blank">
+        </a>
+        <a href="https://ok.ru/avtozaimlombard" class="footer-icon">
+          <img src="<?= get_template_directory_uri(); ?>/css/images/odnoklassniki-logo.svg" _target="blank">
+          <img style="display:none" src="<?= get_template_directory_uri(); ?>/css/images/odnoklassniki-logo--hover.svg" _target="blank">
+        </a>
         <a href="#modal-center1" uk-toggle="">Заказать обратный звонок</a>          
         <a href="tel:88005517172" class="phone-block-number uk-margin-remove-bottom foot-phone">8 800 551 71 72</a>  
         <div class="foot-rezhim">Ежедневно с 08:00 до 20:00</div>
