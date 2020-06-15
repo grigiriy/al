@@ -2,7 +2,7 @@
     <div class="header-wrapper">
         <div class="header header-pc">
             <nav class="navbar navbar-expand-lg navbar-light top-menu fixed-navbar">
-                <a href="#">
+                <a href="/">
                     <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png" class="logo mr-4" alt="logo">
                 </a>
                 <div class="navbar-brand mr-auto location" data-toggle="modal" data-target="#citiesModal">

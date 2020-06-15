@@ -1,7 +1,7 @@
-<div class="jumbotron text-center bg-transparent pb-0">
+<div class="jumbotron text-center bg-transparent my-2">
     <p class="lead">Остались вопросы? Звоните по телефону автоломбарда:</p>
-<p class="display-4 h1 bolder">+7 (495) 128-28-90</p>
-<p class="lead">
+<p class="display-4 h1 bolder my-4">+7 (495) 128-28-90</p>
+<p class="lead mb-3">
 <button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оставить заявку</button>
 </p>
 </div>

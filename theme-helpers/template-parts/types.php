@@ -3,7 +3,7 @@
 
     <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
     <h2 class="uk-h2 uk-text-center"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
-    <p class="uk-text-center padding-lr-50 subtitle">Автоломбард выдает займы под залог легковых, грузовых автомобилей, спецтехники, мототехники, водного и другого транспорта</p>
+    <p class="uk-text-center padding-lr-50 subtitle">Мы выдаем займы под залог легковых, грузовых автомобилей, спецтехники, мотоциклов.</p>
   </div>
   <div class="uk-child-width-1-2@s uk-child-width-1-5@l uk-grid-collapse uk-grid-match uk-grid" uk-grid="">
 
