@@ -7,7 +7,7 @@
           <div class="row ml-lg-n5">
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-              <p>До 5 000 000 рублей на срок до 3 лет</p>
+              <p>До 10 000 000 рублей на срок до 3 лет</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
@@ -15,11 +15,11 @@
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-              <p>Без справок с места работы и поручителей</p>
+              <p>Без комиссий и справок с работы</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-              <p>После выбычи займа авто остается у вас</p>
+              <p>После выдычи займа автомобиль остается у вас</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">

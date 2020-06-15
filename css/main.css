@@ -307,3 +307,24 @@ section {
 .document ul li {
   font-size: 14px;
 }
+
+.give-loan-rotat {
+  height: 300px;
+}
+.text-with-foto p {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .arrow-load-give {
+    transform: rotate(0);
+    position: static;
+    margin: 30px auto;
+  }
+  .nomber-give-loan,
+  .text-give-loan {
+    left: auto;
+  }
+  .nomber-give-loan {
+    margin-right: 10px;
+  }
+}
