@@ -17,7 +17,8 @@ h6 {
 h1 {
   font-size: 3rem;
 }
-h3 {
+h3,
+.h3 {
   font-size: 1.4rem;
 }
 .default-text {
@@ -300,4 +301,9 @@ section {
   .nav-item .new-button {
     width: 160px;
   }
+}
+.user ul li,
+.auto ul li,
+.document ul li {
+  font-size: 14px;
 }
