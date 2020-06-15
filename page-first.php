@@ -30,7 +30,7 @@ switch (get_the_title()) {
         $page_type = 'main';
 }
 
-
+set_query_var('image', (isset(carbon_get_theme_option($page_type)[0]['img']) && !empty(carbon_get_theme_option($page_type)[0]['img'])) ? carbon_get_theme_option($page_type)[0]['img'] : get_template_directory_uri().'/css/images/car-blue.png');
 get_template_part('theme-helpers/template-parts/firstScreen');
 
 

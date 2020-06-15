@@ -461,10 +461,13 @@ Container::make( 'theme_options', 'Управление контентом' )
             Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
-                ->set_width( 20 )
-                ->set_options( $sklons ),
+            ->set_width( 20 )
+            ->set_options( $sklons ),
             Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
-                ->set_width( 30 ),
+            ->set_width( 30 ),
+            
+            Field::make( 'image', 'img', 'Картинка первого экрана' )
+            ->set_value_type( 'url' )
         ]),
 
 
@@ -614,6 +617,9 @@ Container::make( 'theme_options', 'Управление контентом' )
                 ->set_options( $sklons ),
             Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
                 ->set_width( 30 ),
+
+            Field::make( 'image', 'img', 'Картинка первого экрана' )
+                ->set_value_type( 'url' )
         ]),
 
 
@@ -669,6 +675,9 @@ Container::make( 'theme_options', 'Управление контентом' )
                 ->set_options( $sklons ),
             Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
                 ->set_width( 30 ),
+
+            Field::make( 'image', 'img', 'Картинка первого экрана' )
+                ->set_value_type( 'url' )
         ]),
 
 
@@ -725,6 +734,9 @@ Container::make( 'theme_options', 'Управление контентом' )
                 ->set_options( $sklons ),
             Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
                 ->set_width( 30 ),
+
+            Field::make( 'image', 'img', 'Картинка первого экрана' )
+                ->set_value_type( 'url' )
         ]),
 
 

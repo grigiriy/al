@@ -14,6 +14,9 @@ h5,
 h6 {
   color: #333333;
 }
+h1 {
+  font-size: 3rem;
+}
 h3 {
   font-size: 1.4rem;
 }
@@ -109,10 +112,6 @@ a.not_link_style {
   border: none;
 }
 
-.nav-link,
-.phone-number {
-  font-size: 14px;
-}
 .user ul li,
 .auto ul li,
 .document ul li {
@@ -272,4 +271,33 @@ footer a:hover {
 section {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.navbar-nav {
+  position: relative;
+}
+.nav-link,
+.phone-number {
+  font-size: 18px;
+}
+@media (max-width: 1279px) {
+  .nav-link,
+  .phone-number {
+    font-size: 16px;
+  }
+  .nav-item {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1180px) {
+  .nav-link,
+  .phone-number {
+    font-size: 14px;
+  }
+  .logo {
+    width: 130px;
+  }
+  .nav-item .new-button {
+    width: 160px;
+  }
 }

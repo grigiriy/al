@@ -134,7 +134,7 @@ function kama_parse_csv_file( $file_path, $file_encodings = ['cp1251','UTF-8'], 
 
 
 
-//// перенеси потом в плагин нахой
+//// перенеси потом в плагин
 function get_declension($word,$case) {
   $dir_path = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/al_theme/';
   $file_path = $dir_path.'/db/sklon.csv';

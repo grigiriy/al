@@ -7,6 +7,7 @@ get_header();
 while ( have_posts() ) :
 the_post();
 
+set_query_var('image', get_template_directory_uri().'/css/images/car-blue.png');
 get_template_part('theme-helpers/template-parts/firstScreen');
 
 set_query_var( 'subtitle_arr', [
