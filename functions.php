@@ -198,3 +198,6 @@ function get_headline($post_id,$parent_id,$case){
   }
   return $headline;
 }
+
+/** Отключаем автоформатирование */
+remove_filter( 'the_content', 'wpautop' );
