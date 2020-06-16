@@ -73,8 +73,15 @@ a.not_link_style {
 }
 .footer-logo {
   text-align: center;
+  width: 220px;
 }
-
+.footer-logo p {
+  text-align: left;
+  color: inherit;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
 .bottom-contact {
   z-index: auto;
 }

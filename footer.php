@@ -28,28 +28,21 @@
 
       <div>
         <div> 
-
           <div class="con-head">Звоните:</div>
-
           <div class="con-text text-small uk-margin-remove-bottom">
-
             <div class="phone-wrap inmap-phone">
               <a href="tel:88005517172" class="phone-number">8 800 551 71 72</a>
             </div>   
-
             Ежедневно с 08:00 до 20:00
           </div>
-
         </div>
       </div>
-
       <div>
         <div>                  
           <div class="con-head">Пишите:</div>
           <div class="con-text text-small uk-margin-remove-bottom">info@avtolombard24.com</div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
@@ -64,6 +57,7 @@
       <div class="col-12 col-lg-4">
         <div class="footer-logo">      
           <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png">  
+          <p>Автоломбард&nbsp;<?= do_shortcode('[brand]'); ?> ©&nbsp;2020&nbsp;год</p>
         </div>
       </div>
       <div class="col-12 col-lg-2">         
