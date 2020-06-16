@@ -404,3 +404,16 @@ section {
 .form-output__content {
   max-width: none;
 }
+.small_town {
+  opacity: 0;
+  height: 0px;
+}
+ul.all_cities button {
+  transition: all 0.2s;
+  opacity: 0;
+}
+ul.all_cities .small_town {
+  transition: all 0.2s;
+  opacity: 1;
+  height: auto;
+}

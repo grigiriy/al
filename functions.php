@@ -132,7 +132,10 @@ function kama_parse_csv_file( $file_path, $file_encodings = ['cp1251','UTF-8'], 
 
 }
 
-
+function new_taxonomies_for_pages() {
+  register_taxonomy_for_object_type( 'category', 'page' );
+  }
+ add_action( 'init', 'new_taxonomies_for_pages' );
 
 //// перенеси потом в плагин
 function get_declension($word,$case) {
