@@ -5,10 +5,10 @@
       <p class="text-white text-center subtitle">Пройдите опрос и получите одобрение по сумме</p>
         <form data-name="Заявка Москва" class="mb-5" onsubmit="return false;">
         <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between ">
-          <div class="w-lg-100 w-75 w-xs-100 mx-auto mx-lg-1 my-2 my-lg-0">
+          <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0">
               <input class="uk-input w-input phone-input" type="text" placeholder="Номер телефона" name="phone" data-name="phone" id="phone">
             </div>
-            <div class="w-lg-100 w-75 w-xs-100 mx-auto mx-lg-1 my-2 my-lg-0 text-center">
+            <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0 text-center">
               <button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оформить займ онлайн</button>
             </div>
           </div> 

@@ -12,22 +12,17 @@
 <section class="bg-f2">
   <div class="container" id="contacts">
 
-    <div class="uk-child-width-1-1 uk-child-width-1-4@s uk-grid-default uk-grid-match uk-grid">
-      <div class="uk-first-column">
-        <div class="uk-first-column flex-center">      
+  <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between">
+  <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0">
           <div class="con-head-main">Контакты</div>         
-        </div>
       </div>
 
-      <div>
-        <div>         
+      <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0">
           <div class="con-head">Центральный офис:</div>
           <div class="con-text text-small uk-margin-remove-bottom">Москва, ул. Льва Толстого, 18Б</div>
-        </div>
       </div>
 
-      <div>
-        <div> 
+      <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0">
           <div class="con-head">Звоните:</div>
           <div class="con-text text-small uk-margin-remove-bottom">
             <div class="phone-wrap inmap-phone">
@@ -35,14 +30,11 @@
             </div>   
             Ежедневно с 08:00 до 20:00
           </div>
-        </div>
       </div>
-      <div>
-        <div>                  
+      <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0">
           <div class="con-head">Пишите:</div>
           <div class="con-text text-small uk-margin-remove-bottom">info@avtolombard24.com</div>
         </div>
-      </div>
     </div>
   </div>
   </section>
@@ -57,42 +49,47 @@
 <footer class="footer">
   <div class="pt-5 pb-4 container">
     <div class="row">
-      <div class="col-12 col-lg-4">
+      <div class="col-12-xs col-8 offset-xs-0 offset-2 offset-lg-0 col-lg-4">
         <div class="footer-logo">      
           <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png">  
           <p>Автоломбард&nbsp;<?= do_shortcode('[brand]'); ?> ©&nbsp;2020&nbsp;год</p>
         </div>
       </div>
-      <div class="col-12 col-lg-2">         
+      <div class="col-12-xs col-8 offset-xs-0 offset-2 offset-lg-0 col-lg-2">         
         <div class="footer-head">Ссылки:</div>
-        <a href="/">Автоломбард</a>
-        <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-pts/">Займы под залог ПТС</a>
-        <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займы под залог авто</a>
-        <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог ПТС</a>
-        <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог Авто</a>
+        <div class="footer-list">
+          <a href="/">Автоломбард</a>
+          <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-pts/">Займы под залог ПТС</a>
+          <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займы под залог авто</a>
+          <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог ПТС</a>
+          <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог Авто</a>
+        </div>
       </div>
 
-      <div class="col-12 col-lg-3">           
-          <div class="footer-head second-head"> </div>
+      <div class="col-12-xs col-8 offset-xs-0 offset-2 offset-lg-0 col-lg-3">           
+        <div class="footer-list">
           <a href="<?= get_city_link($post->ID);?>bystrye-dengi-pod-pts/">Быстрые деньги</a>
           <a href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
           <a href="<?= get_city_link($post->ID);?>refinansirovanie/">Рефинансирование</a>
+        </div>
       </div>
 
-      <div class="col-12 col-lg-3">           
+      <div class="col-12-xs col-8 offset-xs-0 offset-2 offset-lg-0 col-lg-3">           
         <div class="footer-head">Контакты:</div>
-        <a href="https://vk.com/avtozaimlombard" class="footer-icon">
-          <img src="<?= get_template_directory_uri(); ?>/css/images/vk-social-logotype.svg" _target="blank">
-          <img style="display:none" src="<?= get_template_directory_uri(); ?>/css/images/vk-social-logotype--hover.svg" _target="blank">
-        </a>
-        <a href="https://instagram.com/avtolombard_zaim" class="footer-icon">
-          <img src="<?= get_template_directory_uri(); ?>/css/images/instagram-social.svg" _target="blank">
-          <img style="display:none" src="<?= get_template_directory_uri(); ?>/css/images/instagram-social--hover.svg" _target="blank">
-        </a>
-        <a href="https://ok.ru/avtozaimlombard" class="footer-icon">
-          <img src="<?= get_template_directory_uri(); ?>/css/images/odnoklassniki-logo.svg" _target="blank">
-          <img style="display:none" src="<?= get_template_directory_uri(); ?>/css/images/odnoklassniki-logo--hover.svg" _target="blank">
-        </a>
+        <div class="footer-list">
+          <a href="https://vk.com/avtozaimlombard" class="footer-icon">
+            <img src="<?= get_template_directory_uri(); ?>/css/images/vk-social-logotype.svg" _target="blank">
+            <img style="display:none" src="<?= get_template_directory_uri(); ?>/css/images/vk-social-logotype--hover.svg" _target="blank">
+          </a>
+          <a href="https://instagram.com/avtolombard_zaim" class="footer-icon">
+            <img src="<?= get_template_directory_uri(); ?>/css/images/instagram-social.svg" _target="blank">
+            <img style="display:none" src="<?= get_template_directory_uri(); ?>/css/images/instagram-social--hover.svg" _target="blank">
+          </a>
+          <a href="https://ok.ru/avtozaimlombard" class="footer-icon">
+            <img src="<?= get_template_directory_uri(); ?>/css/images/odnoklassniki-logo.svg" _target="blank">
+            <img style="display:none" src="<?= get_template_directory_uri(); ?>/css/images/odnoklassniki-logo--hover.svg" _target="blank">
+          </a>
+        </div>
         <a href="#modal-center1" uk-toggle="">Заказать обратный звонок</a>          
         <a href="tel:88005517172" class="phone-block-number uk-margin-remove-bottom foot-phone">8 800 551 71 72</a>  
         <div class="foot-rezhim">Ежедневно с 08:00 до 20:00</div>

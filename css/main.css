@@ -98,12 +98,15 @@ a.not_link_style {
   height: auto;
 }
 .footer-logo {
+  margin: 0;
   text-align: center;
   width: 220px;
+  height: 100%;
 }
 .footer-logo p {
   text-align: left;
   color: inherit;
+
   margin-top: 10px;
   font-size: 16px;
   line-height: 20px;
@@ -382,6 +385,7 @@ section {
     position: static;
   }
 }
+
 .location-name::after {
   content: none;
 }
