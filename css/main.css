@@ -33,6 +33,26 @@ h3,
   background-repeat: no-repeat;
   background-position-x: 100%;
 }
+
+.form-block {
+  width: 100%;
+}
+
+.main-bg_onhov:hover .number-card {
+  color: #fff !important;
+}
+
+.position-loan-give-foto img,
+.position-loan-give-foto-two img {
+  width: auto;
+  max-width: none;
+  display: inherit;
+}
+
+header {
+  top: 0;
+}
+
 .first_screen_list img {
   width: 45px;
   height: 45px;
@@ -96,10 +116,6 @@ a.not_link_style {
 .footer .footer-head,
 .subfooter p {
   color: inherit;
-}
-
-.bg-f2 {
-  background-color: #f2f2f2;
 }
 
 .new-button {
@@ -168,10 +184,6 @@ footer a:hover {
     rgba(0, 27, 171, 1) 100%
   );
 }
-.form-block,
-.form-block a {
-  color: #f2f2f2;
-}
 
 #faq_accordion p,
 #faq_accordion h3 {
@@ -200,7 +212,7 @@ footer a:hover {
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 18px !important;
   text-align: center;
   margin: 1.5rem auto 2.5rem;
 }
@@ -278,9 +290,23 @@ footer a:hover {
 }
 section {
   margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
-
+.bg-f2 {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+}
+.bg-f2 + .bg-f2 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+.background-deepblue + .bg-f2 {
+  margin-top: 0;
+}
+.bg-f2 + .background-deepblue {
+  margin-top: 0;
+  padding-top: 20px;
+}
 .navbar-nav {
   position: relative;
 }
@@ -334,4 +360,7 @@ section {
   .nomber-give-loan {
     margin-right: 10px;
   }
+}
+.calculator {
+  margin-top: inherit;
 }

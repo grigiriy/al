@@ -6,7 +6,7 @@
             <p class="subtitle">Наши требования для выдачи денег под залог ПТС</p>
         </div>
         <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-start my-4">
+            <div class="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-start mt-4">
                 <div class="user pt-5 pl-1 ">
                     <div class="user-table ">
                         <div class="user-user-svg d-flex justify-content-center">
@@ -25,7 +25,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-start my-4">
+            <div class="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-start mt-4">
                 <div class="auto pt-5 pl-1">
                     <div class="user-table ">
                         <div class="car-car-svg d-flex justify-content-center">
@@ -44,7 +44,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-start my-4 ">
+            <div class="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-start mt-4 ">
                 <div class="auto pt-5 pl-1">
                     <div class="user-table">
                         <div class="user-user-svg d-flex justify-content-center">

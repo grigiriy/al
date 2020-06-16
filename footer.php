@@ -1,16 +1,16 @@
-<div class="jumbotron text-center bg-transparent my-2">
+<section><div class="text-center bg-transparent ">
     <p class="lead">Остались вопросы? Звоните по телефону автоломбарда:</p>
 <p class="display-4 h1 bolder my-4">+7 (495) 128-28-90</p>
 <p class="lead mb-3">
 <button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оставить заявку</button>
 </p>
 </div>
+</section>
 <?php get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
 
 
-<div class="bottom-contact mt-0 border-0" id="contacts">
-
-  <div class="uk-container">
+<section class="bg-f2">
+  <div class="container" id="contacts">
 
     <div class="uk-child-width-1-1 uk-child-width-1-4@s uk-grid-default uk-grid-match uk-grid">
       <div class="uk-first-column">
@@ -45,11 +45,14 @@
       </div>
     </div>
   </div>
-</div>
-<div class="container-fluid" style="max-height:500px;overflow-y:hidden">
-    <img src="<?= get_template_directory_uri(); ?>/css/images/bg-map.jpg" class="w-100" alt="">
-</div>
-</div>
+  </section>
+
+  <section class="bg-f2">
+    <div class="container-fluid" style="max-height:500px;overflow-y:hidden">
+      <img src="<?= get_template_directory_uri(); ?>/css/images/bg-map.jpg" class="w-100" alt="">
+    </div>
+  </section>
+
 
 <footer class="footer">
   <div class="pt-5 pb-4 container">

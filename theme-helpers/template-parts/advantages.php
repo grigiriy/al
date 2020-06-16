@@ -1,4 +1,4 @@
-<div class="uk-section bg-f2">
+<section class="bg-f2">
   <div class="uk-container uk-position-relative">
     <div class="in-header">
     <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
@@ -52,4 +52,4 @@
 
     </div>
   </div>
-</div>
+</section>

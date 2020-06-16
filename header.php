@@ -29,7 +29,6 @@
 
 <!-- part 3 -->
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/fonts.css">
-<link rel="stylesheet" href="/wp-content/themes/al_theme/css/custom.css">
 <!-- HOLY SHIT! -->
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/main.css">
 
@@ -37,7 +36,5 @@
 <body>
 
 
-<?php
-get_template_part('theme-helpers/template-parts/header');
-?>
 <div class="app">
+  <?php get_template_part('theme-helpers/template-parts/header'); ?>

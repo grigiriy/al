@@ -1,10 +1,10 @@
 <?php get_template_part('theme-helpers/template-parts/form-horizontal'); ?>
 
-<section class="row">
-    <div class="give-loan-wrapper text-center">
+<section>
+    <div class="row give-loan-wrapper text-center">
         <div class="container">
             <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
-            <h2 class="text-center"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
+            <h2><?= apply_filters( 'the_content', $subtitle ); ?></h2>
             <p class="subtitle">Как быстро получить займ под залог ПТС</p>
             <div class="row">
                 <div class="col-lg-3 col-sm-8 offset-sm-2 offset-lg-0 offset-0 col-12">
