@@ -17,6 +17,10 @@ h6 {
 h1 {
   font-size: 3rem;
 }
+h2 {
+  font-size: 1.7rem !important;
+  font-weight: 700 !important;
+}
 h3,
 .h3 {
   font-size: 1.4rem;
@@ -240,7 +244,9 @@ footer a:hover {
 .arrow-load-give {
   transform: rotate(-90deg);
 }
-
+label.control {
+  display: inline-block !important;
+}
 .bluecar {
   top: 130px;
 }
@@ -363,4 +369,9 @@ section {
 }
 .calculator {
   margin-top: inherit;
+}
+
+#quizForm form {
+  max-width: 500px;
+  margin: 0 auto;
 }
