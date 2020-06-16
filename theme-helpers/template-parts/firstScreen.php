@@ -31,11 +31,11 @@
           </div>
         </div>
       </div>
-      <img class="ml-5 mt-5 bluecar uk-scrollspy-inview uk-animation-slide-right" src="<?= $image; ?>" uk-scrollspy="cls: uk-animation-slide-right; delay: 1000" style="" width="1000" height="512">
+      <div class="fst_screen_img">
+        <img class="ml-5 mt-5 bluecar uk-scrollspy-inview uk-animation-slide-right" src="<?= $image; ?>">
+      </div>
     </div>
   </div>
 </section>
 
 <?php get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
-
-

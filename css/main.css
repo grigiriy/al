@@ -209,7 +209,7 @@ footer a:hover {
 }
 
 .uk-open > .uk-accordion-title::before {
-  background-image: url(/wp-content/themes/al_theme/css/images/arrow-loan-table.svg);
+  background-image: url(/wp-content/themes/al_theme/css/images/arrow_loan_give.svg);
   transition: all 0.2s;
   margin-top: 6px;
   height: 20px;
@@ -384,6 +384,12 @@ section {
   .phone-number + span {
     position: static;
   }
+  .fst_screen_img {
+    display: none;
+  }
+  .main-block {
+    background-image: none;
+  }
 }
 
 .location-name::after {
@@ -416,4 +422,23 @@ ul.all_cities .small_town {
   transition: all 0.2s;
   opacity: 1;
   height: auto;
+}
+
+.main-bg_onhov {
+  z-index: 1;
+}
+.main-bg_onhov:hover {
+  z-index: 2;
+}
+@media (max-width: 450px) {
+  section {
+    padding: 0 10px;
+  }
+  .bg-f2 {
+    padding: 40px 10px;
+  }
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
 }
