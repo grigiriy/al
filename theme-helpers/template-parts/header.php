@@ -1,6 +1,6 @@
 <header>
     <div class="header-wrapper">
-        <div class="header header-pc">
+        <div class="header">
             <nav class="navbar navbar-expand-lg navbar-light top-menu fixed-navbar">
                 <a href="/">
                     <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png" class="logo mr-4" alt="logo">
@@ -64,35 +64,6 @@
                     </div> 
                 </div>
             </nav>
-        </div>
-        <div class="header header-mobile">
-            <div class="header-mob-wrapper">
-                <div class="mob-hamburger"></div>
-                <div class="geo location-name">Москва</div>
-                <div class="nav-item phone-wrapper">  
-                    <a class="nav-link phone-number" href="tel:+78005552027">8 (800) 555-20-27</a>
-                </div>     
-                <div class="nav-item phone-wrapper">  
-                    <button data-toggle="modal" data-target="#formModal" type="submit" data-wait="Пожалуйста, подождите." class="new-button">Заказать звонок</button>
-                </div>     
-            </div>
-            <ul class="nav-mobile">
-                <li class="nav-item mr-2 nav-link-calc">
-                    <div class="nav-link " href="#">Займы</div>
-                </li>
-                <li class="nav-item mr-2 nav-link-treb">
-                    <div class="nav-link " href="#">Кредиты</div>
-                </li>
-                <li class="nav-item mr-2  nav-link-faq">
-                    <div class="nav-link" href="#">Быстрые деньги</div>
-                </li>
-                <li class="nav-item nav-item-last nav-link-contacts">
-                    <div class="nav-link " href="#">Юр. Лица</div>
-                </li>
-                <!-- <li class="form-inline my-2 my-lg-0 f-flex justify-content-center ">
-                    <button class="btn btn-outline-primary my-2 my-sm-0 pt-3 pb-3 pr-4 pl-4" type="button"><b>Заказать звонок</b></button>
-                </li> -->
-            </ul>
         </div>
     </div>
 </header>

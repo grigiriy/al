@@ -56,7 +56,9 @@ h3,
 header {
   top: 0;
 }
-
+.navbar {
+  background: #fff;
+}
 .first_screen_list img {
   width: 45px;
   height: 45px;
@@ -366,6 +368,22 @@ section {
   .nomber-give-loan {
     margin-right: 10px;
   }
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-item > .new-button {
+    margin: 2rem auto;
+  }
+  .phone-number {
+    align-items: center;
+  }
+  .phone-number + span {
+    position: static;
+  }
+}
+.location-name::after {
+  content: none;
 }
 .calculator {
   margin-top: inherit;
