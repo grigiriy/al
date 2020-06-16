@@ -375,3 +375,10 @@ section {
   max-width: 500px;
   margin: 0 auto;
 }
+
+.form-output {
+  width: 100%;
+}
+.form-output__content {
+  max-width: none;
+}

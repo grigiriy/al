@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="col-12 col-lg-6">
-                        <div class="form-calculator__output form-output mt-3">
+                        <div class="form-output mt-3">
                             <div class="form-output__content">
                                 <div class="form-info-wrapper">
                                     <div class="form-line">
