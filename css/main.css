@@ -31,12 +31,6 @@ h3,
 .default-text:hover {
   color: #333;
 }
-.main-block {
-  min-height: 600px;
-  background-image: url(http://localhost:8888/wp-content/themes/al_theme/css/images/money.png);
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-}
 
 .form-block {
   width: 100%;
@@ -253,7 +247,10 @@ label.control {
   display: inline-block !important;
 }
 .bluecar {
-  top: 130px;
+  /* top: 130px; */
+  top: 50px;
+  max-width: 50%;
+  max-height: 450px;
 }
 .form-output {
   margin-top: 0;
@@ -262,9 +259,6 @@ label.control {
 }
 .form-calculator__label-text {
   font-style: normal;
-}
-.form-output .new-button {
-  margin-top: 14px;
 }
 .form-calculator {
   /* margin-top: 85px; */
@@ -387,11 +381,10 @@ section {
   .fst_screen_img {
     display: none;
   }
-  .main-block {
-    background-image: none;
-  }
 }
-
+.main-block {
+  min-height: 500px;
+}
 .location-name::after {
   content: none;
 }
@@ -406,7 +399,17 @@ section {
 
 .form-output {
   width: 100%;
+  height: 100%;
 }
+.form-line-right {
+  font-size: 26px;
+  line-height: 36px;
+}
+.form-line-left {
+  padding-top: 0;
+  line-height: 36px;
+}
+
 .form-output__content {
   max-width: none;
 }
@@ -441,4 +444,28 @@ ul.all_cities .small_town {
   .h1 {
     font-size: 2.5rem;
   }
+}
+.first_screen_list {
+  height: 60px;
+}
+.text-calc * {
+  color: #4e5c69;
+}
+.text-calc a {
+  color: #15008f;
+}
+.text-calc a:hover {
+  text-decoration: none;
+  color: #e2003d;
+}
+.text-calc .control input:checked ~ .control_indicator,
+.text-calc .control input ~ .control_indicator {
+  background: #f2f2f2;
+}
+#calculator .text-calc * {
+  line-height: 1;
+}
+.form-calculator__label-text {
+  font-size: 18px;
+  line-height: 24px;
 }

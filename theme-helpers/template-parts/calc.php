@@ -43,7 +43,7 @@
                         </form>
                     </div>
 
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 px-0 px-lg-3">
                         <div class="form-output mt-3">
                             <div class="form-output__content">
                                 <div class="form-info-wrapper">
@@ -66,11 +66,18 @@
                                             <span class="sum-return" id="calc_payments_sum">2 448 000 ₽</span>
                                         </div>
                                     </div>
-                                    <div class="form-line">
-                                        <div class="form-line-left form-line-left-1  form-line-left-11">
+                                    <div class="text-calc">
+                                        <label class="py-0 form-chek-small control control-checkbox">
+                                            <input class="uk-checkbox form-chek-small" type="checkbox" id="checkbox-10" name="checkbox-10" data-name="Checkbox 10" required="" checked=""> 
+                                            <noindex class="subtitle font-weight-normal">Согласие с <a href="/politika-konfidencialnosti" target="_blank" class="subtitle link">политикой конфиденциальности</a>. </noindex> 
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </div>
+                                    <div class="form-line d-flex mt-3">
+                                        <div class="w-100">
                                             <input type="tel" name="phone" class="form-control form-control-phone" placeholder="+7 (___) ___-__-__">
                                         </div>
-                                        <div class="form-line-right form-line-right-2">
+                                        <div class="w-100 ml-2">
                                             <button class="new-button" type="button">Отправить заявку</button>
                                         </div>
                                     </div>

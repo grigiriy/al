@@ -19,7 +19,7 @@
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-              <p>После выдычи займа автомобиль остается у вас</p>
+              <p>После выдычи займа авто остается у вас</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">

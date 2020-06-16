@@ -26,13 +26,13 @@
             </div>
             <div class="col-xl-4 col-md-4 offset-1 offset-md-1 col-11 mb-3 d-flex uslov_list">
                 <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="tick">
-                <p><b>Максимальная сумма займа</b>
-                <br>до 90% от рыночной стоимости автомобиля</p>
+                <p><b>Без справок 2-НДФЛ</b>
+                <br>о подтверждении дохода</p>
             </div>
             <div class="col-xl-4 col-md-4 offset-1 offset-md-2 col-11 mb-3 d-flex uslov_list">
                 <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="tick">
-                <p><b>Без справок 2-НДФЛ</b>
-                <br>о подтверждении дохода</p>
+                <p><b>Максимальная сумма займа</b>
+                <br>до 90% от рыночной стоимости автомобиля</p>
             </div>
             <div class="col-xl-4 col-md-4 offset-1 offset-md-1 col-11 mb-3 d-flex uslov_list">
                 <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="tick">

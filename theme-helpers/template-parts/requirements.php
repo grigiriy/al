@@ -13,7 +13,7 @@
                             <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_male.png" alt="user">
                         </div>
                     </div>
-                    <p class="pt-3 pt-3 h3">
+                    <p class="pt-3 pt-3 h3 text-left pl-3">
                         К заемщику:
                     </p>
                     <ul class="py-3 pr-3">
@@ -32,7 +32,7 @@
                             <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_car.png" alt="user">
                         </div>
                     </div>
-                    <p class="pt-3 pt-3 h3">
+                    <p class="pt-3 pt-3 h3 text-left pl-3">
                         К авто:
                     </p>
                     <ul class="py-3 pr-3">
@@ -51,7 +51,7 @@
                             <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_doc.png" alt="user">
                         </div>
                     </div>
-                    <p class="pt-3 pt-3 h3">
+                    <p class="pt-3 pt-3 h3 text-left pl-3">
                         К документам:
                     </p>
                     <ul class="py-3 pr-3">
