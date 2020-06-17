@@ -12,13 +12,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333333;
+  color: #32354e;
 }
 h1 {
   font-size: 3rem;
 }
 h2 {
-  font-size: 1.7rem !important;
+  font-size: 2.4rem !important;
   font-weight: 700 !important;
 }
 h3,
@@ -110,6 +110,7 @@ a.not_link_style {
 }
 .footer {
   background-color: #f2f2f2;
+  padding-bottom: 0;
 }
 .subfooter {
   background-color: #d6dde7;
@@ -340,6 +341,10 @@ section {
     width: 160px;
   }
 }
+.nav-link.phone-number {
+  margin-top: -20px;
+  opacity: 1;
+}
 .user ul li,
 .auto ul li,
 .document ul li {
@@ -468,4 +473,7 @@ ul.all_cities .small_town {
 .form-calculator__label-text {
   font-size: 18px;
   line-height: 24px;
+}
+.text-lightcolor p {
+  color: #6a6a6a;
 }

@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 col-12">
+        <div class="col-lg-7 col-12 mt-5">
           <h1><?= get_headline($post->ID,$post->post_parent,'0') ?></h1>
           <div class="row ml-lg-n5">
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
@@ -26,7 +26,7 @@
               <p>Одобрение за 5 минут, выдача за 30 минут</p>
             </div>
             <div class="col-lg-6 col-12 d-flex mt-0">
-              <button class="new-button" data-toggle="modal" data-target="#formModal">Оставить заявку</button>
+              <button class="new-button" data-toggle="modal" data-target="#formModal">Отправить заявку</button>
             </div> 
           </div>
         </div>
