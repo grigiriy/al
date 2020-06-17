@@ -7,26 +7,26 @@
           <div class="row ml-lg-n5">
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-              <p>До 10 000 000 рублей на срок до 3 лет</p>
+              <p>До 10 000 000 рублей<br>на срок до 3 лет</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-              <p>С любой кредитной историей</p>
+              <p>С любой<br>кредитной историей</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-              <p>Без комиссий и справок с работы</p>
+              <p>Без комиссий<br>и справок с работы</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-              <p>После выдычи займа авто остается у вас</p>
+              <p>После выдычи займа<br>авто остается у вас</p>
             </div>
             <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
               <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-              <p>Одобрение за 5 минут, выдача за 30 минут</p>
+              <p>Одобрение за 5 минут,<br>выдача за 30 минут</p>
             </div>
             <div class="col-lg-6 col-12 d-flex mt-0">
-              <button class="new-button" data-toggle="modal" data-target="#formModal">Отправить заявку</button>
+              <button class="new-button gross_btn" data-toggle="modal" data-target="#formModal">Отправить заявку</button>
             </div> 
           </div>
         </div>

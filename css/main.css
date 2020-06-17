@@ -21,6 +21,9 @@ h2 {
   font-size: 2.4rem !important;
   font-weight: 700 !important;
 }
+.gross_btn.new-button {
+  width: 280px;
+}
 @media (max-width: 768px) {
   h2 {
     font-size: 2.2rem !important;
@@ -323,12 +326,14 @@ section {
   position: relative;
 }
 .nav-link,
-.phone-number {
+.phone-number,
+.location-name {
   font-size: 18px;
 }
 @media (max-width: 1279px) {
   .nav-link,
-  .phone-number {
+  .phone-number,
+  .location-name {
     font-size: 16px;
   }
   .nav-item {
@@ -337,7 +342,8 @@ section {
 }
 @media (max-width: 1180px) {
   .nav-link,
-  .phone-number {
+  .phone-number,
+  .location-name {
     font-size: 14px;
   }
   .logo {
@@ -474,9 +480,6 @@ ul.all_cities .small_town {
 }
 @media (max-width: 991px) {
   .arrow-load-give {
-    /* transform: rotate(0);
-    position: static;
-    margin: 30px auto; */
     display: none;
   }
   .nomber-give-loan,
