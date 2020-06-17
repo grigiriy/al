@@ -11,3 +11,17 @@ function set_calc(e) {
   calcResult();
   $('html,body').animate({ scrollTop: $('#calculator').offset().top }, 'slow');
 }
+
+$(document).ready(function () {
+  $('.slick_mob').slick({
+    centerMode: true,
+    mobileFirst: true,
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: 'unslick',
+      },
+    ],
+  });
+});

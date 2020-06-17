@@ -20,8 +20,8 @@
                 ]); ?>
                 <ul class="">
                 <?php foreach ($cities as $city){ ?>
-                    <li>
-                        <a class="text-white <?= has_category( ['big_city'], $city ) ? '' : 'small_town'; ?>" href="<?= get_the_permalink($city->ID)?>"><?= get_the_title($city->ID); ?></a>
+                    <li class="<?= has_category( ['big_city'], $city ) ? '' : 'small_town'; ?>">
+                        <a class="text-white" href="<?= get_the_permalink($city->ID)?>"><?= get_the_title($city->ID); ?></a>
                     </li>
                 <?php } ?>
                     <button type="button" class="btn btn-link" onclick="showCities(this)">

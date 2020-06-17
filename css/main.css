@@ -21,6 +21,11 @@ h2 {
   font-size: 2.4rem !important;
   font-weight: 700 !important;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.2rem !important;
+  }
+}
 h3,
 .h3 {
   font-size: 1.4rem;
@@ -358,36 +363,7 @@ section {
 .text-with-foto p {
   color: #fff;
 }
-@media (max-width: 991px) {
-  .arrow-load-give {
-    transform: rotate(0);
-    position: static;
-    margin: 30px auto;
-  }
-  .nomber-give-loan,
-  .text-give-loan {
-    left: auto;
-  }
-  .nomber-give-loan {
-    margin-right: 10px;
-  }
-  .nav-item {
-    width: 100%;
-    text-align: center;
-  }
-  .nav-item > .new-button {
-    margin: 2rem auto;
-  }
-  .phone-number {
-    align-items: center;
-  }
-  .phone-number + span {
-    position: static;
-  }
-  .fst_screen_img {
-    display: none;
-  }
-}
+
 .main-block {
   min-height: 500px;
 }
@@ -422,6 +398,7 @@ section {
 .small_town {
   opacity: 0;
   height: 0px;
+  list-style: none;
 }
 ul.all_cities button {
   transition: all 0.2s;
@@ -477,4 +454,90 @@ ul.all_cities .small_town {
 }
 .text-lightcolor p {
   color: #6a6a6a;
+}
+
+.mobile_phone {
+  display: none;
+}
+@media (max-width: 530px) {
+  .mobile_phone {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    font-weight: bold;
+  }
+  .mobile_phone a {
+    font-size: 16px;
+    color: #e2003d;
+  }
+}
+@media (max-width: 991px) {
+  .arrow-load-give {
+    /* transform: rotate(0);
+    position: static;
+    margin: 30px auto; */
+    display: none;
+  }
+  .nomber-give-loan,
+  .text-give-loan {
+    left: auto;
+  }
+  .nomber-give-loan {
+    margin-right: 10px;
+  }
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-item > .new-button {
+    margin: 2rem auto;
+  }
+  .phone-number {
+    align-items: center;
+  }
+  .phone-number + span {
+    position: static;
+  }
+  .fst_screen_img {
+    display: none;
+  }
+}
+.slick-arrow {
+  background-image: url(/wp-content/themes/al_theme/css/images/arrow_loan_give.svg);
+  transition: all 0.2s;
+  margin-top: 6px;
+  height: 20px;
+  width: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-size: 0;
+  background-color: transparent;
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+}
+.slick-prev {
+  transform: rotate(90deg);
+  left: 35px;
+}
+.slick-next {
+  right: 35px;
+  left: auto;
+  transform: rotate(-90deg);
+}
+.slick-slide {
+  margin-top: -30px;
+  padding-top: 50px;
+  top: auto;
+}
+.slick-slide img {
+  top: auto;
+  width: auto;
+}
+.slick-slide .user-table {
+  margin-top: 20px;
+}
+.slick_advantages .img-block img {
+  margin: 0 auto;
 }

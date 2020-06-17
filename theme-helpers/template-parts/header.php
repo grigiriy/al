@@ -9,7 +9,11 @@
                     <img src="<?= get_template_directory_uri(); ?>/css/images/location.svg">
                     <span class="location-name"><?= get_city($post->ID) ?></span>
                 </div>
-            
+
+                <div class="mobile_phone">
+                    <a href="tel:+78005552027">8 (800) 555-20-27</a>
+                </div> 
+
                 <button
                     class="navbar-toggler"
                     type="button"
