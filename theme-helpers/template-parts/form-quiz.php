@@ -2,15 +2,17 @@
   <div class="full-contact-width mw-100 py-5 uk-overflow-hidden" id="quizForm">
     <div class="container">
       <h2 class="text-center mb-3 text-white">Какую сумму вы бы хотели получить?</h2>
-      <p class="text-white text-center subtitle">Пройдите опрос и получите одобрение по сумме</p>
+      <p class="text-white text-center subtitle">от 25 000 до 10 000 000 рублей</p>
         <form data-name="Заявка Москва" class="mb-5" onsubmit="return false;">
           <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between">
 
             <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0">
-              <input class="uk-input w-input phone-input" type="text" placeholder="Номер телефона" name="phone" data-name="phone" id="phone">
+
+              <input class="uk-input w-input phone-input" type="number" placeholder="300 000 ₽" name="" data-name="" id="quiz" min="25000" max="10000000">
+
             </div>
             <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0 text-center">
-              <button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оформить займ онлайн</button>
+              <button onclick="set_calc(this)" type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оформить займ онлайн</button>
             </div>
             
           </div> 

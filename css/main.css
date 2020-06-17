@@ -192,6 +192,7 @@ footer a:hover {
 #faq_accordion p,
 #faq_accordion h3 {
   margin-bottom: 0;
+  text-align: center;
 }
 .footer .footer-icon:hover {
   opacity: 1;
