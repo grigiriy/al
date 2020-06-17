@@ -67,7 +67,7 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
                 <div class="give-loan-rotat">
                     <div class="d-flex justify-content-center pt-3 ">
                         <p class="nomber-give-loan ">4</p>
-                        <p class="text-give-loan pt-3">Получаеть <br> деньги</p>
+                        <p class="text-give-loan pt-3">Получить <br> деньги</p>
                     </div>
                     <div class="text-with-foto">
                         <p class=" px-2">Выдаем деньги наличными или на карту любого банка</p>
