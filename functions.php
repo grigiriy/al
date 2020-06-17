@@ -205,3 +205,36 @@ function get_headline($post_id,$parent_id,$case){
 
 /** Отключаем автоформатирование */
 remove_filter( 'the_content', 'wpautop' );
+
+
+
+function get_form_header($pos,$post_id){
+  // нужно будет рефакторнуть, а то адок
+
+  if(is_city($post_id) === false){
+    $form_title = carbon_get_theme_option('forms')[0]['base_'.$pos.'_form_tit'];
+    $form_subtitle = carbon_get_theme_option('forms')[0]['base_'.$pos.'_form_sub'];
+  } else {
+    $form_title = ( carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_tit_case'] ) ?
+    carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_tit'].' '.get_declension(get_city($post_id),carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_tit_case']).' '.carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_tit_after'] :
+      carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_tit'].' '.carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_tit_after'];
+
+    $form_subtitle = ( carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_sub_case'] ) ?
+    carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_sub'].' '.get_declension(get_city($post_id),carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_sub_case']).' '.carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_sub_after'] :
+    carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_sub'].' '.carbon_get_theme_option('forms')[0]['city_'.$pos.'_form_sub_after'];
+  }
+  return [
+    'title'=>$form_title,
+    'subtitle'=>$form_subtitle
+  ];
+}
+
+function is_city($post_id){
+  if(
+    get_post($post_id)->post_parent !== 0 ||
+    (get_post($post_id)->post_parent === 0 && is_page_template('main.php') )
+  ){
+    return true;
+  }
+  return false;
+}

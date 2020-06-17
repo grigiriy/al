@@ -1,8 +1,13 @@
+<?php
+$form_title = $form_arr['title'];
+$form_subtitle = $form_arr['subtitle'];
+?>
+
 <section class="background-deepblue">
   <div class="full-contact-width mw-100 py-5 uk-overflow-hidden" id="odobrenie">
     <div class="container">
-      <h2 class="text-center text-white">Автоломбард — быстрое одобрение займа</h2>
-      <p class="text-center text-white subtitle">Автоломбард в <?= get_declension(get_city($post->ID),'1'); ?> одобряет выдачу займа с любой кредитной историей, без справок и поручителей на подходящих условиях под залог ПТС автомобиля. Для получения понадобятся 3 документа: ПТС, СТС и паспорт. </p>
+      <h2 class="text-center text-white"><?= $form_title; ?></h2>
+      <p class="text-center text-white subtitle"><?= $form_subtitle; ?></p>
         <form data-name="Заявка Москва" class="mt-n2" onsubmit="return false;">
           <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between">
           <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0">
@@ -18,7 +23,7 @@
               <input class="uk-input w-input" type="text" placeholder="Год выпуска" name="year" data-name="year" id="year">
             </div>
             <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0 text-center">
-              <button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оформить займ онлайн</button>
+              <button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Получить одобрение</button>
             </div>
           </div>
           <div class="text-white text-center mt-4">

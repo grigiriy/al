@@ -38,4 +38,6 @@
   </div>
 </section>
 
-<?php get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
+<?php
+set_query_var( 'form_arr', get_form_header('top',$post->ID));
+get_template_part('theme-helpers/template-parts/form','horizontal'); ?>

@@ -36,434 +36,435 @@ use Carbon_Fields\Field;
 
 Container::make( 'theme_options', 'Управление контентом' )
     ->add_tab( __('subtitles'), [
-        Field::make( 'complex', 'main', 'Подзаги главной' )
+        Field::make( 'complex', 'main', 'Заголовки главной' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields([
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
+            Field::make( 'text', 'types_sub', 'Заголовок типов' )
                 ->set_width( 50 ),
             Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
+            Field::make( 'text', 'types_sub_after', 'Заголовок типов (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
                 ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
+
         ]),
 
 
 
-        Field::make( 'complex', 'credit_pts', 'Подзаги кредита под птс' )
+        Field::make( 'complex', 'credit_pts', 'Заголовки кредита под птс' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
             ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
+            Field::make( 'text', 'types_sub', 'Заголовок типов' )
                 ->set_width( 50 ),
             Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
+            Field::make( 'text', 'types_sub_after', 'Заголовок типов (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
                 
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
         ]),
 
 
 
-        Field::make( 'complex', 'credit_auto', 'Подзаги кредита под авто' )
+        Field::make( 'complex', 'credit_auto', 'Заголовки кредита под авто' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
+            Field::make( 'text', 'types_sub', 'Заголовок типов' )
                 ->set_width( 50 ),
             Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
+            Field::make( 'text', 'types_sub_after', 'Заголовок типов (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
             ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
         ]),
 
 
 
-        Field::make( 'complex', 'zaim_pts', 'Подзаги займов под птс' )
+        Field::make( 'complex', 'zaim_pts', 'Заголовки займов под птс' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
             ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
+            Field::make( 'text', 'types_sub', 'Заголовок типов' )
                 ->set_width( 50 ),
             Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
+            Field::make( 'text', 'types_sub_after', 'Заголовок типов (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
                 
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
         ]),
 
 
 
-        Field::make( 'complex', 'zaim_auto', 'Подзаги займов под авто' )
+        Field::make( 'complex', 'zaim_auto', 'Заголовки займов под авто' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
             ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
+            Field::make( 'text', 'types_sub', 'Заголовок типов' )
                 ->set_width( 50 ),
             Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
+            Field::make( 'text', 'types_sub_after', 'Заголовок типов (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
                 
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
         ]),
 
 
 
-        Field::make( 'complex', 'fast_money', 'Подзаги быстрых денег' )
+        Field::make( 'complex', 'fast_money', 'Заголовки быстрых денег' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
+            Field::make( 'text', 'types_sub', 'Заголовок типов' )
                 ->set_width( 50 ),
             Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
+            Field::make( 'text', 'types_sub_after', 'Заголовок типов (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
                 
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
         ]),
 
 
 
-        Field::make( 'complex', 'business', 'Подзаги ИП/юр.лиц' )
+        Field::make( 'complex', 'business', 'Заголовки ИП/юр.лиц' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
             ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
+            Field::make( 'text', 'types_sub', 'Заголовок типов' )
                 ->set_width( 50 ),
             Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
+            Field::make( 'text', 'types_sub_after', 'Заголовок типов (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
                 
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
             ->set_width( 20 )
             ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
             ->set_width( 30 ),
             
             Field::make( 'image', 'img', 'Картинка первого экрана' )
@@ -472,150 +473,150 @@ Container::make( 'theme_options', 'Управление контентом' )
 
 
 
-        Field::make( 'complex', 'calc', 'Подзаги калькулятора' )
+        Field::make( 'complex', 'calc', 'Заголовки калькулятора' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
         ]),
 
 
 
-        Field::make( 'complex', 'refinance', 'Подзаги рефинансирования' )
+        Field::make( 'complex', 'refinance', 'Заголовки рефинансирования' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
+            Field::make( 'text', 'types_sub', 'Заголовок типов' )
                 ->set_width( 50 ),
             Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
+            Field::make( 'text', 'types_sub_after', 'Заголовок типов (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
                 
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
         ]),
 
 
 
-        Field::make( 'complex', 'truck', 'Подзаги грузовые авто' )
+        Field::make( 'complex', 'truck', 'Заголовки грузовые авто' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
             ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
                 
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
 
             Field::make( 'image', 'img', 'Картинка первого экрана' )
@@ -624,56 +625,56 @@ Container::make( 'theme_options', 'Управление контентом' )
 
 
 
-        Field::make( 'complex', 'spec', 'Подзаги спецтехника' )
+        Field::make( 'complex', 'spec', 'Заголовки спецтехника' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields( [
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
             ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
                 
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
 
             Field::make( 'image', 'img', 'Картинка первого экрана' )
@@ -682,57 +683,57 @@ Container::make( 'theme_options', 'Управление контентом' )
 
 
 
-        Field::make( 'complex', 'moto', 'Подзаги мото' )
+        Field::make( 'complex', 'moto', 'Заголовки мото' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields([
         
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
                 ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
 
             Field::make( 'image', 'img', 'Картинка первого экрана' )
@@ -741,64 +742,64 @@ Container::make( 'theme_options', 'Управление контентом' )
 
 
 
-        Field::make( 'complex', '24h', 'Подзаги круглосуточно' )
+        Field::make( 'complex', '24h', 'Заголовки круглосуточно' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields([
-            Field::make( 'text', 'types_sub', 'Подзаг типов' )
+            Field::make( 'text', 'types_sub', 'Заголовок типов' )
                 ->set_width( 50 ),
             Field::make( 'select', 'types_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'types_sub_after', 'Подзаг типов (после города)' )
+            Field::make( 'text', 'types_sub_after', 'Заголовок типов (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'advantages_sub', 'Подзаг преимуществ' )
+            Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
                 ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'advantages_sub_after', 'Подзаг преимуществ (после города)' )
+            Field::make( 'text', 'advantages_sub_after', 'Заголовок преимуществ (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'calc_sub', 'Подзаг калькулятора' )
+            Field::make( 'text', 'calc_sub', 'Заголовок калькулятора' )
             ->set_width( 50 ),
             Field::make( 'select', 'calc_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'calc_sub_after', 'Подзаг калькулятора (после города)' )
+            Field::make( 'text', 'calc_sub_after', 'Заголовок калькулятора (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'terms_sub', 'Подзаг условий' )
+            Field::make( 'text', 'terms_sub', 'Заголовок условий' )
             ->set_width( 50 ),
             Field::make( 'select', 'terms_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'terms_sub_after', 'Подзаг условий (после города)' )
+            Field::make( 'text', 'terms_sub_after', 'Заголовок условий (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'requirements_sub', 'Подзаг требований' )
+            Field::make( 'text', 'requirements_sub', 'Заголовок требований' )
             ->set_width( 50 ),
             Field::make( 'select', 'requirements_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'requirements_sub_after', 'Подзаг требований (после города)' )
+            Field::make( 'text', 'requirements_sub_after', 'Заголовок требований (после города)' )
                 ->set_width( 30 ),
         
-            Field::make( 'text', 'order_sub', 'Подзаг заявки' )
+            Field::make( 'text', 'order_sub', 'Заголовок заявки' )
             ->set_width( 50 ),
             Field::make( 'select', 'order_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'order_sub_after', 'Подзаг заявки (после города)' )
+            Field::make( 'text', 'order_sub_after', 'Заголовок заявки (после города)' )
                 ->set_width( 30 ),
 
-            Field::make( 'text', 'faq_sub', 'Подзаг вопросов' )
+            Field::make( 'text', 'faq_sub', 'Заголовок вопросов' )
             ->set_width( 50 ),
             Field::make( 'select', 'faq_case', 'Склонение города (если есть)' )
                 ->set_width( 20 )
                 ->set_options( $sklons ),
-            Field::make( 'text', 'faq_sub_after', 'Подзаг вопросов (после города)' )
+            Field::make( 'text', 'faq_sub_after', 'Заголовок вопросов (после города)' )
                 ->set_width( 30 ),
         ]),
     ])
@@ -838,6 +839,99 @@ Container::make( 'theme_options', 'Управление контентом' )
         Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
         Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
     ])
+
+
+    ->add_tab( __('forms'), [
+        Field::make( 'complex', 'forms', 'Заголовки форм' )
+        // ->set_collapsed( true )
+        ->set_max( 1 )
+        ->add_fields([
+            Field::make( 'html', 'crb_information_text_city_foot_form' )
+                ->set_html( '<h2>Форма подвала в городе</h2>' ),
+
+            Field::make( 'text', 'city_foot_form_tit', 'Начало заголовка' )
+                ->set_width( 50 ),
+            Field::make( 'select', 'city_foot_form_tit_case', 'Склонение города (если есть)' )
+                ->set_width( 20 )
+                ->set_options( $sklons ),
+            Field::make( 'text', 'city_foot_form_tit_after', 'Конец заголовка (после города)' )
+                ->set_width( 30 ),
+
+                Field::make( 'text', 'city_foot_form_sub', 'Начало подзаголовка' )
+                ->set_width( 50 ),
+            Field::make( 'select', 'city_foot_form_sub_case', 'Склонение города (если есть)' )
+                ->set_width( 20 )
+                ->set_options( $sklons ),
+            Field::make( 'text', 'city_foot_form_sub_after', 'Конец подзаголовка (после города)' )
+                ->set_width( 30 ),
+
+
+            Field::make( 'html', 'crb_information_text_base_foot_form' )
+                ->set_html( '<h2>Форма подвала без города</h2>' ),
+
+            Field::make( 'text', 'base_foot_form_tit', 'Заголовок' ),
+            Field::make( 'text', 'base_foot_form_sub', 'Подзаголовок' ),
+
+
+
+            Field::make( 'html', 'crb_information_text_city_top_form' )
+                ->set_html( '<h2>Верхняя форма в городе</h2>' ),
+
+            Field::make( 'text', 'city_top_form_tit', 'Начало заголовка' )
+                ->set_width( 50 ),
+            Field::make( 'select', 'city_top_form_tit_case', 'Склонение города (если есть)' )
+                ->set_width( 20 )
+                ->set_options( $sklons ),
+            Field::make( 'text', 'city_top_form_tit_after', 'Конец заголовка (после города)' )
+                ->set_width( 30 ),
+
+                Field::make( 'text', 'city_top_form_sub', 'Начало подзаголовка' )
+                ->set_width( 50 ),
+            Field::make( 'select', 'city_top_form_sub_case', 'Склонение города (если есть)' )
+                ->set_width( 20 )
+                ->set_options( $sklons ),
+            Field::make( 'text', 'city_top_form_sub_after', 'Конец подзаголовка (после города)' )
+                ->set_width( 30 ),
+
+
+            Field::make( 'html', 'crb_information_text_base_top_form' )
+                ->set_html( '<h2>Верхняя форма без города</h2>' ),
+
+            Field::make( 'text', 'base_top_form_tit', 'Заголовок' ),
+            Field::make( 'text', 'base_top_form_sub', 'Подзаголовок' ),
+
+
+
+            Field::make( 'html', 'crb_information_text_city_mid_form' )
+                ->set_html( '<h2>Внутренняя форма в городе</h2>' ),
+
+            Field::make( 'text', 'city_mid_form_tit', 'Начало заголовка' )
+                ->set_width( 50 ),
+            Field::make( 'select', 'city_mid_form_tit_case', 'Склонение города (если есть)' )
+                ->set_width( 20 )
+                ->set_options( $sklons ),
+            Field::make( 'text', 'city_mid_form_tit_after', 'Конец заголовка (после города)' )
+                ->set_width( 30 ),
+
+                Field::make( 'text', 'city_mid_form_sub', 'Начало подзаголовка' )
+                ->set_width( 50 ),
+            Field::make( 'select', 'city_mid_form_sub_case', 'Склонение города (если есть)' )
+                ->set_width( 20 )
+                ->set_options( $sklons ),
+            Field::make( 'text', 'city_mid_form_sub_after', 'Конец подзаголовка (после города)' )
+                ->set_width( 30 ),
+
+
+            Field::make( 'html', 'crb_information_text_base_mid_form' )
+                ->set_html( '<h2>Внутренняя форма без города</h2>' ),
+
+            Field::make( 'text', 'base_mid_form_tit', 'Заголовок' ),
+            Field::make( 'text', 'base_mid_form_sub', 'Подзаголовок' ),
+
+        ])
+    ])
+
+
     ->add_tab( __('faq_texts'), [
         Field::make( 'complex', 'main_faq', 'FAQ главной' )
         ->set_collapsed( true )
