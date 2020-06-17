@@ -15,12 +15,13 @@
                                     <input id="calc_sum" type="text" value="" placeholder="300 000 ₽" name="calc_sum" class="ml-auto form-calculator__input calc_sum_res">
                                 </div>
                                 <div id="calc_sum_range"></div>
-                                <p class="form-calculator__price under-input-wrapper custom-calculator-output custom-calculator-output-2">
+                                <p class="form-calculator__price under-input-wrapper">
                                     <span class="form-calculator__from">30 000</span>
                                     <span class="form-calculator__center form-calc-desc">1 000 000</span>
                                     <span class="form-calculator__to under-input-2">10 000 000</span>
                                 </p>
                             </label>
+
                             <label class="d-block w-100 mb-4">
                                 <div class="d-flex">
                                     <span class="align-self-center form-calculator__label-text">Срок займа</span>
@@ -54,26 +55,20 @@
                                             <span class="month">в месяц</span><span class="procent form-stv">2,5%</span>
                                         </div>
                                     </div>
-                                    <div class="form-line">
+                                    <div class="form-line mt-3">
                                         <div class="form-line-left form-line-left-1">Сумма процентов</div>
                                         <div class="form-line-right form-line-right-1">
                                             <span class="sum-procent" id="calc_overpayment">648 000 ₽</span>
                                         </div>
                                     </div>
-                                    <div class="form-line">
+                                    <div class="form-line mt-3">
                                         <div class="form-line-left form-line-left-1">Сумма к возврату</div>
                                         <div class="form-line-right form-line-right-1">
                                             <span class="sum-return" id="calc_payments_sum">2 448 000 ₽</span>
                                         </div>
                                     </div>
-                                    <div class="text-calc">
-                                        <label class="py-0 form-chek-small control control-checkbox">
-                                            <input class="uk-checkbox form-chek-small" type="checkbox" id="checkbox-10" name="checkbox-10" data-name="Checkbox 10" required="" checked=""> 
-                                            <noindex class="subtitle font-weight-normal">Согласие с <a href="/politika-konfidencialnosti" target="_blank" class="subtitle link">политикой конфиденциальности</a>. </noindex> 
-                                            <div class="control_indicator"></div>
-                                        </label>
-                                    </div>
-                                    <div class="form-line d-flex mt-3">
+     
+                                    <div class="form-line d-flex mt-5">
                                         <div class="w-100">
                                             <input type="tel" name="phone" class="form-control form-control-phone" placeholder="+7 (___) ___-__-__">
                                         </div>
@@ -81,6 +76,15 @@
                                             <button class="new-button" type="button">Отправить заявку</button>
                                         </div>
                                     </div>
+
+                                    <div class="text-calc mt-5">
+                                        <label class="py-0 form-chek-small control control-checkbox font-basic">
+                                            <input class="uk-checkbox form-chek-small" type="checkbox" id="checkbox-10" name="checkbox-10" data-name="Checkbox 10" required="" checked=""> 
+                                            <noindex class=" font-weight-normal">Согласие с <a href="/politika-konfidencialnosti" target="_blank" class=" link">политикой конфиденциальности</a>. </noindex> 
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,6 @@
 html,
-body {
+body,
+.font-basic * {
   font-size: 14px;
 }
 p {
@@ -11,11 +12,18 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   color: #32354e;
 }
-h1 {
-  font-size: 3rem;
+h1,
+.h1 {
+  font-size: 3rem !important;
 }
 h2 {
   font-size: 2.4rem !important;
@@ -404,6 +412,8 @@ section {
 .small_town {
   opacity: 0;
   height: 0px;
+}
+ul.all_cities li {
   list-style: none;
 }
 ul.all_cities button {
@@ -431,7 +441,26 @@ ul.all_cities .small_town {
   }
   h1,
   .h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
+  }
+}
+.mobile_phone {
+  display: none;
+}
+@media (max-width: 536px) {
+  .navbar-toggler {
+    right: auto;
+  }
+  .mobile_phone {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    font-weight: bold;
+  }
+  .mobile_phone a {
+    font-size: 16px;
+    color: #e2003d;
   }
 }
 .first_screen_list {
@@ -462,23 +491,11 @@ ul.all_cities .small_town {
   color: #6a6a6a;
 }
 
-.mobile_phone {
-  display: none;
-}
-@media (max-width: 530px) {
-  .mobile_phone {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 25px;
-    font-weight: bold;
-  }
-  .mobile_phone a {
-    font-size: 16px;
-    color: #e2003d;
-  }
-}
 @media (max-width: 991px) {
+  .under-input-wrapper {
+    margin-top: -10px;
+    padding-top: 0;
+  }
   .arrow-load-give {
     display: none;
   }
@@ -543,4 +560,9 @@ ul.all_cities .small_town {
 }
 .slick_advantages .img-block img {
   margin: 0 auto;
+}
+
+.calc_term_custom,
+.calc_payment_custom {
+  margin-top: 0 !important;
 }
