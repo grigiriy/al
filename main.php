@@ -21,6 +21,15 @@ get_template_part('theme-helpers/template-parts/types');
 get_template_part('theme-helpers/template-parts/textBlock');
 
 
+
+set_query_var( 'subtitle_arr', [
+    carbon_get_theme_option('main')[0]['calc_sub'],
+    carbon_get_theme_option('main')[0]['calc_case'],
+    carbon_get_theme_option('main')[0]['calc_sub_after']
+]);
+get_template_part('theme-helpers/template-parts/calc');
+
+
 set_query_var( 'subtitle_arr', [
     carbon_get_theme_option('main')[0]['advantages_sub'],
     carbon_get_theme_option('main')[0]['advantages_case'],
@@ -29,14 +38,6 @@ set_query_var( 'subtitle_arr', [
 set_query_var( 'text', 'advantages_text' );
 get_template_part('theme-helpers/template-parts/advantages');
 get_template_part('theme-helpers/template-parts/textBlock');
-
-
-set_query_var( 'subtitle_arr', [
-    carbon_get_theme_option('main')[0]['calc_sub'],
-    carbon_get_theme_option('main')[0]['calc_case'],
-    carbon_get_theme_option('main')[0]['calc_sub_after']
-]);
-get_template_part('theme-helpers/template-parts/calc');
 
 
 set_query_var( 'subtitle_arr', [

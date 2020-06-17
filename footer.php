@@ -10,7 +10,7 @@
 <?php get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
 
 
-<section class="bg-f2">
+<section class="mt-0">
   <div class="container-fluid" style="max-height:500px;overflow-y:hidden">
     <img src="<?= get_template_directory_uri(); ?>/css/images/bg-map.jpg" class="w-100" alt="">
   </div>
