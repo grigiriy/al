@@ -32,11 +32,6 @@ h2 {
 .gross_btn.new-button {
   width: 280px;
 }
-@media (max-width: 768px) {
-  h2 {
-    font-size: 2.2rem !important;
-  }
-}
 h3,
 .h3 {
   font-size: 1.4rem;
@@ -565,4 +560,12 @@ ul.all_cities .small_town {
 .calc_term_custom,
 .calc_payment_custom {
   margin-top: 0 !important;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.2rem !important;
+  }
+  .form-line-left {
+    line-height: 22px;
+  }
 }
