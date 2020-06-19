@@ -582,3 +582,7 @@ ul.all_cities .small_town {
     display: flex;
   }
 }
+
+.uk-accordion li li {
+  border: none;
+}
