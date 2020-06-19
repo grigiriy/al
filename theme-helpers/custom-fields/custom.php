@@ -833,11 +833,114 @@ Container::make( 'theme_options', 'Управление контентом' )
             <li><p>20 => Житель.Винительный (москвича)</p></li>
             <li><p>21 => Житель.предложный (москвиче)</p></li>
             </ul>
+            <p>Пример вставки кода: [declension_city case="1"] </p>
         ' ),
-        Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
-        Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
-        Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
-        Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        // Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+        // Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+        // Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+        // Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+
+        Field::make( 'complex', 'main_texts', 'Тексты главной' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        ]),
+        Field::make( 'complex', 'credit_pts_texts', 'Тексты кредитов под ПТС' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        ]),
+        Field::make( 'complex', 'credit_auto_texts', 'Тексты кредитов под авто' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        ]),
+        Field::make( 'complex', 'zaim_pts_texts', 'Тексты займов под ПТС' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        ]),
+        Field::make( 'complex', 'zaim_auto_texts', 'Тексты займов под авто' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        ]),
+        Field::make( 'complex', 'fast_money_texts', 'Тексты быстрых займов' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+        ]),
+        Field::make( 'complex', 'business_texts', 'Тексты бизнес' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        ]),
+        Field::make( 'complex', 'calc_texts', 'Тексты калькулятора' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        ]),
+        Field::make( 'complex', 'refinance_texts', 'Тексты рефинансирования' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+        ]),
+        Field::make( 'complex', 'truck_texts', 'Тексты грузового' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        ]),
+        Field::make( 'complex', 'spec_texts', 'Тексты спецтехники' )
+        ->set_collapsed( true )
+        ->set_max( 1 )
+            ->add_fields( [
+            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
+            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
+            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
+            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+        ]),
+        // Field::make( 'complex', 'moto_texts', 'FAQ главной' ),
+        // Field::make( 'complex', '24h_texts', 'FAQ главной' ),
     ])
 
 
@@ -846,36 +949,8 @@ Container::make( 'theme_options', 'Управление контентом' )
         // ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields([
-            Field::make( 'html', 'crb_information_text_city_foot_form' )
-                ->set_html( '<h2>Форма подвала в городе</h2>' ),
-
-            Field::make( 'text', 'city_foot_form_tit', 'Начало заголовка' )
-                ->set_width( 50 ),
-            Field::make( 'select', 'city_foot_form_tit_case', 'Склонение города (если есть)' )
-                ->set_width( 20 )
-                ->set_options( $sklons ),
-            Field::make( 'text', 'city_foot_form_tit_after', 'Конец заголовка (после города)' )
-                ->set_width( 30 ),
-
-                Field::make( 'text', 'city_foot_form_sub', 'Начало подзаголовка' )
-                ->set_width( 50 ),
-            Field::make( 'select', 'city_foot_form_sub_case', 'Склонение города (если есть)' )
-                ->set_width( 20 )
-                ->set_options( $sklons ),
-            Field::make( 'text', 'city_foot_form_sub_after', 'Конец подзаголовка (после города)' )
-                ->set_width( 30 ),
-
-
-            Field::make( 'html', 'crb_information_text_base_foot_form' )
-                ->set_html( '<h2>Форма подвала без города</h2>' ),
-
-            Field::make( 'text', 'base_foot_form_tit', 'Заголовок' ),
-            Field::make( 'text', 'base_foot_form_sub', 'Подзаголовок' ),
-
-
-
             Field::make( 'html', 'crb_information_text_city_top_form' )
-                ->set_html( '<h2>Верхняя форма в городе</h2>' ),
+                ->set_html( '<h1 style="color:blue">Верхняя форма в городе</h1>' ),
 
             Field::make( 'text', 'city_top_form_tit', 'Начало заголовка' )
                 ->set_width( 50 ),
@@ -895,7 +970,7 @@ Container::make( 'theme_options', 'Управление контентом' )
 
 
             Field::make( 'html', 'crb_information_text_base_top_form' )
-                ->set_html( '<h2>Верхняя форма без города</h2>' ),
+                ->set_html( '<h1 style="color:blue">Верхняя форма без города</h1>' ),
 
             Field::make( 'text', 'base_top_form_tit', 'Заголовок' ),
             Field::make( 'text', 'base_top_form_sub', 'Подзаголовок' ),
@@ -903,7 +978,7 @@ Container::make( 'theme_options', 'Управление контентом' )
 
 
             Field::make( 'html', 'crb_information_text_city_mid_form' )
-                ->set_html( '<h2>Внутренняя форма в городе</h2>' ),
+                ->set_html( '<h1 style="color:blue">Внутренняя форма в городе</h1>' ),
 
             Field::make( 'text', 'city_mid_form_tit', 'Начало заголовка' )
                 ->set_width( 50 ),
@@ -923,10 +998,37 @@ Container::make( 'theme_options', 'Управление контентом' )
 
 
             Field::make( 'html', 'crb_information_text_base_mid_form' )
-                ->set_html( '<h2>Внутренняя форма без города</h2>' ),
+                ->set_html( '<h1 style="color:blue>Внутренняя форма без города</h1>' ),
 
             Field::make( 'text', 'base_mid_form_tit', 'Заголовок' ),
             Field::make( 'text', 'base_mid_form_sub', 'Подзаголовок' ),
+
+
+            Field::make( 'html', 'crb_information_text_city_foot_form' )
+                ->set_html( '<h1 style="color:blue">Форма подвала в городе</h1>' ),
+
+            Field::make( 'text', 'city_foot_form_tit', 'Начало заголовка' )
+                ->set_width( 50 ),
+            Field::make( 'select', 'city_foot_form_tit_case', 'Склонение города (если есть)' )
+                ->set_width( 20 )
+                ->set_options( $sklons ),
+            Field::make( 'text', 'city_foot_form_tit_after', 'Конец заголовка (после города)' )
+                ->set_width( 30 ),
+
+                Field::make( 'text', 'city_foot_form_sub', 'Начало подзаголовка' )
+                ->set_width( 50 ),
+            Field::make( 'select', 'city_foot_form_sub_case', 'Склонение города (если есть)' )
+                ->set_width( 20 )
+                ->set_options( $sklons ),
+            Field::make( 'text', 'city_foot_form_sub_after', 'Конец подзаголовка (после города)' )
+                ->set_width( 30 ),
+
+
+            Field::make( 'html', 'crb_information_text_base_foot_form' )
+                ->set_html( '<h1 style="color:blue">Форма подвала без города</h1>' ),
+
+            Field::make( 'text', 'base_foot_form_tit', 'Заголовок' ),
+            Field::make( 'text', 'base_foot_form_sub', 'Подзаголовок' ),
 
         ])
     ])

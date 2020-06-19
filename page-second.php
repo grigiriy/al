@@ -18,6 +18,8 @@ switch (get_the_title()) {
         $page_type = 'main';
 }
 
+set_query_var( 'text_page', $page_type );
+
 set_query_var('image', get_template_directory_uri().'/css/images/car-blue.png');
 get_template_part('theme-helpers/template-parts/firstScreen');
 
@@ -40,6 +42,9 @@ set_query_var( 'subtitle_arr', [
 get_template_part('theme-helpers/template-parts/types');
 set_query_var( 'text', 'types_text' );
 get_template_part('theme-helpers/template-parts/textBlock');
+
+
+get_template_part('theme-helpers/template-parts/form','quiz');
 
 
 set_query_var( 'subtitle_arr', [

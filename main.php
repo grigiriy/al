@@ -7,6 +7,8 @@ get_header();
 while ( have_posts() ) :
 the_post();
 
+set_query_var( 'text_page', $page_type );
+
 set_query_var('image', get_template_directory_uri().'/css/images/car-blue.png');
 get_template_part('theme-helpers/template-parts/firstScreen');
 
@@ -22,6 +24,14 @@ get_template_part('theme-helpers/template-parts/textBlock');
 
 
 set_query_var( 'subtitle_arr', [
+    carbon_get_theme_option('main')[0]['calc_sub'],
+    carbon_get_theme_option('main')[0]['calc_case'],
+    carbon_get_theme_option('main')[0]['calc_sub_after']
+]);
+get_template_part('theme-helpers/template-parts/calc');
+
+
+set_query_var( 'subtitle_arr', [
     carbon_get_theme_option('main')[0]['advantages_sub'],
     carbon_get_theme_option('main')[0]['advantages_case'],
     carbon_get_theme_option('main')[0]['advantages_sub_after']
@@ -31,12 +41,7 @@ get_template_part('theme-helpers/template-parts/advantages');
 get_template_part('theme-helpers/template-parts/textBlock');
 
 
-set_query_var( 'subtitle_arr', [
-    carbon_get_theme_option('main')[0]['calc_sub'],
-    carbon_get_theme_option('main')[0]['calc_case'],
-    carbon_get_theme_option('main')[0]['calc_sub_after']
-]);
-get_template_part('theme-helpers/template-parts/calc');
+get_template_part('theme-helpers/template-parts/form','quiz');
 
 
 set_query_var( 'subtitle_arr', [
