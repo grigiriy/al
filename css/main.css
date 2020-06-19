@@ -22,7 +22,8 @@ h6,
   color: #32354e;
 }
 h1,
-.h1 {
+.h1,
+.footer_phone {
   font-size: 3rem !important;
 }
 h2 {
@@ -42,7 +43,9 @@ h3,
 .default-text:hover {
   color: #333;
 }
-
+.bolder {
+  font-weight: bold;
+}
 .form-block {
   width: 100%;
 }
@@ -438,6 +441,9 @@ ul.all_cities .small_town {
   .h1 {
     font-size: 2.5rem !important;
   }
+  .footer_phone {
+    font-size: 2rem !important;
+  }
 }
 .mobile_phone {
   display: none;
@@ -482,7 +488,8 @@ ul.all_cities .small_town {
   font-size: 18px;
   line-height: 24px;
 }
-.text-lightcolor p {
+.text-lightcolor p,
+.text-lightcolor li {
   color: #6a6a6a;
 }
 
@@ -532,6 +539,9 @@ ul.all_cities .small_town {
   z-index: 99;
   top: 50%;
 }
+.slick-arrow.slick-disabled {
+  opacity: 0;
+}
 .slick-prev {
   transform: rotate(90deg);
   left: 35px;
@@ -567,5 +577,8 @@ ul.all_cities .small_town {
   }
   .form-line-left {
     line-height: 22px;
+  }
+  .form-line {
+    display: flex;
   }
 }

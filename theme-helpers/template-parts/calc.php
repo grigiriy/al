@@ -69,7 +69,7 @@
                                     </div>
      
                                     <div class="form-line d-lg-flex d-block mt-5">
-                                        <div class="w-100">
+                                        <div class="w-100 mt-0 mt-lg-3">
                                             <input type="tel" name="phone" class="form-control form-control-phone" placeholder="+7 (___) ___-__-__">
                                         </div>
                                         <div class="w-100 ml-lg-2 ml-0 mt-3 mb-lg-0">
@@ -94,4 +94,3 @@
         </div>
     </div>
 </section>
-<?php get_template_part('theme-helpers/template-parts/form','quiz'); ?>

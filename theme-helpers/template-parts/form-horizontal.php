@@ -6,8 +6,10 @@ $form_subtitle = $form_arr['subtitle'];
 <section class="background-deepblue">
   <div class="full-contact-width mw-100 py-5 uk-overflow-hidden" id="odobrenie">
     <div class="container">
-      <h2 class="text-center text-white"><?= $form_title; ?></h2>
-      <p class="text-center text-white subtitle"><?= $form_subtitle; ?></p>
+      <h2 class="text-center text-white">
+      <?= apply_filters( 'the_content', $form_title ); ?>
+      </h2>
+      <p class="text-center text-white subtitle"><?= apply_filters( 'the_content', $form_subtitle ); ?></p>
         <form data-name="Заявка Москва" class="mt-n2" onsubmit="return false;">
           <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between">
           <div class="w-75 mx-auto mx-lg-1 my-2 my-lg-0">

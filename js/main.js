@@ -13,7 +13,7 @@ function set_calc(e) {
 }
 
 $(document).ready(function () {
-  $('.slick_mob').slick({
+  $('.slick_mob:not(.slick_order)').slick({
     centerMode: true,
     mobileFirst: true,
     slidesToShow: 1,
@@ -24,4 +24,17 @@ $(document).ready(function () {
       },
     ],
   });
+});
+
+$('.slick_mob.slick_order').slick({
+  infinite: false,
+  centerMode: true,
+  mobileFirst: true,
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: 'unslick',
+    },
+  ],
 });
