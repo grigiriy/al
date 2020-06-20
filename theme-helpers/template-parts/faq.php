@@ -12,7 +12,9 @@
           <h3><?= apply_filters( 'the_content', $faq['subtitle'] ); ?></h3>
         </a>
         <div id="collapse_<?= $key; ?>" class="uk-accordion-content collapse <?= ($key === 0) ? 'show' : ''; ?>" aria-labelledby="heading_<?= $key; ?>" data-parent="#faq_accordion">
-          <p><?= apply_filters( 'the_content', $faq['text']); ?></p>
+          <p>
+          <?= apply_filters( 'the_content', wpautop($faq['text'] ) ); ?>
+          </p>
         </div>
       </li>
       <?php } ?>
