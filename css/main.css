@@ -586,3 +586,8 @@ ul.all_cities .small_town {
 .uk-accordion li li {
   border: none;
 }
+
+.text-section ul {
+  margin: 20px auto;
+  width: 320px;
+}
