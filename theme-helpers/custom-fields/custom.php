@@ -998,7 +998,7 @@ Container::make( 'theme_options', 'Управление контентом' )
 
 
             Field::make( 'html', 'crb_information_text_base_mid_form' )
-                ->set_html( '<h1 style="color:blue>Внутренняя форма без города</h1>' ),
+                ->set_html( '<h1 style="color:blue">Внутренняя форма без города</h1>' ),
 
             Field::make( 'text', 'base_mid_form_tit', 'Заголовок' ),
             Field::make( 'text', 'base_mid_form_sub', 'Подзаголовок' ),
