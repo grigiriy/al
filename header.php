@@ -33,6 +33,8 @@
 <!-- HOLY SHIT! -->
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/main.css">
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/slick.css">
+
+<script src="https://api-maps.yandex.ru/2.1.77/?lang=ru_RU&apikey=927a70a9-1768-4f55-bd6a-c2255bf68c98" type="text/javascript"></script>
 <body>
 
 

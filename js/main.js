@@ -38,3 +38,33 @@ $('.slick_mob.slick_order').slick({
     },
   ],
 });
+
+ymaps.ready(function () {
+  var coords = document.querySelector('footer').getAttribute('data-coords');
+  var address = document.querySelector('footer').getAttribute('data-address');
+  var myMap = new ymaps.Map(
+    'main-map',
+    {
+      center: coords.split(','),
+      zoom: 13,
+    },
+    {
+      searchControlProvider: 'yandex#search',
+    }
+  );
+  myMap.geoObjects.add(
+    new ymaps.Placemark(
+      coords.split(','),
+      {
+        balloonContent:
+          '<div class="balloon"><b>Автоломбард «ПТС ЗАЙМ»</b><br>' +
+          address +
+          '</div>',
+      },
+      {
+        preset: 'islands#icon',
+        iconColor: '#15008f',
+      }
+    )
+  );
+});

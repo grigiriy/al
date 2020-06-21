@@ -13,14 +13,14 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
 
 
 <section class="mt-0">
-  <div class="container-fluid container-map" style="max-height:500px;overflow-y:hidden">
-      <div id="map" data-zoom='10'>
+  <div class="container-fluid container-map px-0" style="max-height:500px;overflow-y:hidden">
+      <div id="main-map" data-zoom='10' style="height: 400px">
       </div>
   </div>
 </section>
 
 
-<footer class="footer" data-coords="<?= get_city_meta($post->ID,'coord') ?>">
+<footer class="footer" data-coords="<?= get_city_meta($post->ID,'coord') ?>" data-address="<?= get_city_meta($post->ID,'address') ?>">
   <div class="pt-5 pb-4 container">
     <div class="row">
       <div class="col-12 col-sm-8 offset-0 offset-sm-2 offset-lg-0 col-lg-4">
