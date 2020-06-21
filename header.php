@@ -33,8 +33,6 @@
 <!-- HOLY SHIT! -->
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/main.css">
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/slick.css">
-
-
 <body>
 
 

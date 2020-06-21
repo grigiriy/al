@@ -13,18 +13,19 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
 
 
 <section class="mt-0">
-  <div class="container-fluid" style="max-height:500px;overflow-y:hidden">
-    <img src="<?= get_template_directory_uri(); ?>/css/images/bg-map.jpg" class="w-100" alt="">
+  <div class="container-fluid container-map" style="max-height:500px;overflow-y:hidden">
+      <div id="map" data-zoom='10'>
+      </div>
   </div>
 </section>
 
 
-<footer class="footer">
+<footer class="footer" data-coords="<?= get_city_meta($post->ID,'coord') ?>">
   <div class="pt-5 pb-4 container">
     <div class="row">
       <div class="col-12 col-sm-8 offset-0 offset-sm-2 offset-lg-0 col-lg-4">
         <div class="footer-logo">      
-          <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png">  
+        <a href="/"><img src="<?= get_template_directory_uri(); ?>/css/images/logo.png"></a>
           <p>Автоломбард&nbsp;<?= do_shortcode('[brand]'); ?> ©&nbsp;2020&nbsp;год</p>
         </div>
       </div>
@@ -49,7 +50,7 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
 
       <div class="col-12 col-sm-8 offset-0 offset-sm-2 offset-lg-0 col-lg-3">           
         <div class="footer-head">Контакты:</div>
-        <div class="foot-rezhim">Москва, ул. Льва Толстого, 18Б</div>
+        <div class="foot-rezhim"><?= get_city($post->ID).', '.get_city_meta($post->ID,'address'); ?></div>
         <a href="tel:88005517172" class="phone-block-number uk-margin-remove-bottom foot-phone">8 800 551 71 72</a>  
         <div class="foot-rezhim">Ежедневно с 08:00 до 20:00</div>
       </div>

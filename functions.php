@@ -53,7 +53,8 @@ function theme_scripts()
     wp_enqueue_script('nouislider', get_template_directory_uri() . '/js/plugins/nouislider.js',['maskedinput'], STATIC_FILES_BUILD_VERSION, true);
     wp_enqueue_script('calc', get_template_directory_uri() . '/js/donor/calc.js',['nouislider'], STATIC_FILES_BUILD_VERSION, true);
     wp_enqueue_script('slick', get_template_directory_uri() . '/js/plugins/slick.min.js',['calc'], STATIC_FILES_BUILD_VERSION, true);
-    wp_enqueue_script('master', get_template_directory_uri() . '/js/main.js',['slick'], STATIC_FILES_BUILD_VERSION, true);
+    wp_enqueue_script('map','https://api-maps.yandex.ru/2.1/?apikey=927a70a9-1768-4f55-bd6a-c2255bf68c98&lang=ru_RU',['slick'], STATIC_FILES_BUILD_VERSION, true);
+    wp_enqueue_script('master', get_template_directory_uri() . '/js/main.js',['map'], STATIC_FILES_BUILD_VERSION, true);
 }
 // add_action('wp_print_styles', 'theme_styles');
 add_action('wp_print_styles', 'theme_scripts');
@@ -162,6 +163,14 @@ function get_city($post_id){
   $city = strval($post_id) === '0' ? 'Москва' : get_the_title($post_id);
   return $city;
 }
+
+function get_city_meta($post_id,$meta){
+  if( get_post_meta($post_id)['_wp_page_template'][0] !== 'main.php'){
+    $post_id = (get_post($post_id)->post_parent !== 0) ? get_post($post_id)->post_parent : get_option('page_on_front');
+  }
+  return carbon_get_post_meta($post_id,$meta);
+}
+
 
 function get_city_link($post_id){
   if( get_post_meta($post_id)['_wp_page_template'][0] !== 'main.php'){

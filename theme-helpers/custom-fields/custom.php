@@ -33,7 +33,17 @@ use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
 
+Container::make( 'post_meta', 'Город' )
+    ->show_on_post_type( 'page' )
+    ->add_tab('Контактная информация',  [
+        Field::make( 'text', 'address', 'Адрес' )
+            ->set_width( 50 ),
+        Field::make( 'text', 'coord', 'Координаты' )
+            ->set_width( 50 ),
+        ]);
 
+
+        
 Container::make( 'theme_options', 'Управление контентом' )
     ->add_tab( __('subtitles'), [
         Field::make( 'complex', 'main', 'Заголовки главной' )
@@ -803,8 +813,6 @@ Container::make( 'theme_options', 'Управление контентом' )
                 ->set_width( 30 ),
         ]),
     ])
-
-
 
     ->add_tab( __('base_texts'), [
         Field::make( 'html', 'crb_information_text' )
