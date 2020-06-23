@@ -204,6 +204,8 @@ function get_headline($post_id,$parent_id,$case){
 
     if( get_the_title($post_id) === 'Круглосуточный автоломбард' ){
       $headline = get_the_title($post_id) . ' ' . get_bloginfo('name') . ' в вашем городе';
+    } else if( get_the_title($post_id) === 'Возьмите деньги под залог ПТС спецтехники' ){
+      $headline = get_the_title($post_id) . ' ' . get_city($post_id);
     } else {
       $headline = get_the_title($post_id) . ' в городе ' . get_declension($city,$case);
     }
@@ -248,7 +250,18 @@ function is_city($post_id){
 }
 
 
-add_action( 'admin_menu', 'linked_url' );
-function linked_url() {
-add_menu_page( 'linked_url', 'Reusable Blocks', 'read', 'edit.php?post_type=wp_block', '', 'dashicons-editor-table', 22 );
-}
+// add_action( 'admin_menu', 'linked_url' );
+// function linked_url() {
+// add_menu_page( 'linked_url', 'Reusable Blocks', 'read', 'edit.php?post_type=wp_block', '', 'dashicons-editor-table', 22 );
+// }
+
+
+
+// the seo framework settings
+add_filter( 'the_seo_framework_custom_field_description', function( $description, $args ) {
+	return do_shortcode( $description );
+}, 10, 2 );
+
+add_filter( 'the_seo_framework_title_from_custom_field', function( $title, $args ) {
+	return do_shortcode( $title );
+}, 10, 2 );

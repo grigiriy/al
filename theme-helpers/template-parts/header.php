@@ -35,8 +35,8 @@
                                 aria-expanded="false"    
                             >Займы</div>
                             <div class="dropdown-menu" aria-labelledby="zaim_dd">
-                                <a class="dropdown-item" href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займ под залог авто</a>
-                                <a class="dropdown-item" href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-pts/">Займ под залог ПТС авто</a>
+                                <a class="dropdown-item" href="<?= get_city_link($post->ID);?>zajm-pod-zalog-avto/">Займ под залог авто</a>
+                                <a class="dropdown-item" href="<?= get_city_link($post->ID);?>zajm-pod-zalog-pts/">Займ под залог ПТС авто</a>
                             </div>
                         </li>
                         <li class="nav-item mr-2 dropdown">
@@ -71,3 +71,6 @@
         </div>
     </div>
 </header>
+
+1275
+1593

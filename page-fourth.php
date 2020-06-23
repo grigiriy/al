@@ -14,7 +14,7 @@ switch (get_the_title()) {
     case 'Грузовой автоломбард под залог ПТС':
         $page_type = 'truck';
         break;
-    case 'Автоломбард спецтехники':
+    case 'Возьмите деньги под залог ПТС спецтехники':
         $page_type = 'spec';
         break;
     default:

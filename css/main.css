@@ -408,8 +408,9 @@ section {
   max-width: none;
 }
 .small_town {
-  opacity: 0;
-  height: 0px;
+  /* opacity: 0;
+  height: 0px; */
+  display: none;
 }
 ul.all_cities li {
   list-style: none;
@@ -420,8 +421,9 @@ ul.all_cities button {
 }
 ul.all_cities .small_town {
   transition: all 0.2s;
-  opacity: 1;
-  height: auto;
+  display: block;
+  /* opacity: 1;
+  height: auto; */
 }
 
 .main-bg_onhov {
