@@ -45,6 +45,7 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
           <a href="<?= get_city_link($post->ID);?>bystrye-dengi-pod-pts/">Быстрые деньги</a>
           <a href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
           <a href="<?= get_city_link($post->ID);?>refinansirovanie/">Рефинансирование</a>
+          <a href="/kalkulyator/">Калькулятор</a>
         </div>
       </div>
 
