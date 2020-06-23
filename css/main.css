@@ -407,25 +407,20 @@ section {
 .form-output__content {
   max-width: none;
 }
-.small_town {
-  /* opacity: 0;
-  height: 0px; */
-  display: none;
+.cities {
+  column-gap: 3em;
+  columns: 4 auto;
 }
-ul.all_cities li {
-  list-style: none;
+.cities div {
+  display: inline-block;
+  width: 100%;
 }
-ul.all_cities button {
-  transition: all 0.2s;
-  opacity: 0;
+.cities p {
+  text-align: left;
 }
-ul.all_cities .small_town {
-  transition: all 0.2s;
-  display: block;
-  /* opacity: 1;
-  height: auto; */
+.cities a {
+  color: inherit;
 }
-
 .main-bg_onhov {
   z-index: 1;
 }
@@ -449,22 +444,6 @@ ul.all_cities .small_town {
 }
 .mobile_phone {
   display: none;
-}
-@media (max-width: 536px) {
-  .navbar-toggler {
-    right: auto;
-  }
-  .mobile_phone {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 25px;
-    font-weight: bold;
-  }
-  .mobile_phone a {
-    font-size: 16px;
-    color: #e2003d;
-  }
 }
 .first_screen_list {
   height: 60px;
@@ -574,6 +553,10 @@ ul.all_cities .small_town {
   margin-top: 0 !important;
 }
 @media (max-width: 768px) {
+  .cities {
+    column-gap: 3em;
+    columns: 3 auto;
+  }
   h2 {
     font-size: 2.2rem !important;
   }
@@ -584,7 +567,26 @@ ul.all_cities .small_town {
     display: flex;
   }
 }
-
+@media (max-width: 536px) {
+  .cities {
+    column-gap: 3em;
+    columns: 2 auto;
+  }
+  .navbar-toggler {
+    right: auto;
+  }
+  .mobile_phone {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    font-weight: bold;
+  }
+  .mobile_phone a {
+    font-size: 16px;
+    color: #e2003d;
+  }
+}
 .uk-accordion li li {
   border: none;
 }

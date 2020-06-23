@@ -1,12 +1,13 @@
 <?php
-set_query_var( 'form_arr', get_form_header('mid',$post->ID));
+$form_arr_1['title'] = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2];
+$form_arr_1['subtitle'] = carbon_get_theme_option('forms')[0]['mid_form_sub'];
+set_query_var( 'form_arr', $form_arr_1);
 get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
 
 <section>
     <div class="container">
-        <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
-        <h2 class="text-center"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
-        <p class="subtitle">Как быстро получить займ под залог ПТС</p>
+        <h2 class="text-center">Как быстро получить займ под залог ПТС</h2>
+        <p class="subtitle">Четыре шага для получения займа</p>
         <div class="row slick_mob slick_order">
             <div class="col-lg-3 col-sm-8 offset-sm-2 offset-lg-0 offset-0 col-12">
                 <div class="give-loan-rotat">

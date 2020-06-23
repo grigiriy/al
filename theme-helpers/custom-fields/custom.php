@@ -986,30 +986,36 @@ Container::make( 'theme_options', 'Управление контентом' )
 
 
             Field::make( 'html', 'crb_information_text_city_mid_form' )
-                ->set_html( '<h1 style="color:blue">Внутренняя форма в городе</h1>' ),
+                ->set_html( '<h1 style="color:blue">Внутренняя форма </h1>' ),
+            Field::make( 'html', 'crb_information_text_city_mid_form_add' )
+                ->set_html( '<h3 style="color:#333">Заголовок в блоке subtitles</h3>' ),
+            Field::make( 'text', 'mid_form_sub', 'Подзаголовок' ),
 
-            Field::make( 'text', 'city_mid_form_tit', 'Начало заголовка' )
-                ->set_width( 50 ),
-            Field::make( 'select', 'city_mid_form_tit_case', 'Склонение города (если есть)' )
-                ->set_width( 20 )
-                ->set_options( $sklons ),
-            Field::make( 'text', 'city_mid_form_tit_after', 'Конец заголовка (после города)' )
-                ->set_width( 30 ),
+            // Field::make( 'html', 'crb_information_text_city_mid_form' )
+            //     ->set_html( '<h1 style="color:blue">Внутренняя форма в городе</h1>' ),
 
-                Field::make( 'text', 'city_mid_form_sub', 'Начало подзаголовка' )
-                ->set_width( 50 ),
-            Field::make( 'select', 'city_mid_form_sub_case', 'Склонение города (если есть)' )
-                ->set_width( 20 )
-                ->set_options( $sklons ),
-            Field::make( 'text', 'city_mid_form_sub_after', 'Конец подзаголовка (после города)' )
-                ->set_width( 30 ),
+            // Field::make( 'text', 'city_mid_form_tit', 'Начало заголовка' )
+            //     ->set_width( 50 ),
+            // Field::make( 'select', 'city_mid_form_tit_case', 'Склонение города (если есть)' )
+            //     ->set_width( 20 )
+            //     ->set_options( $sklons ),
+            // Field::make( 'text', 'city_mid_form_tit_after', 'Конец заголовка (после города)' )
+            //     ->set_width( 30 ),
+
+            //     Field::make( 'text', 'city_mid_form_sub', 'Начало подзаголовка' )
+            //     ->set_width( 50 ),
+            // Field::make( 'select', 'city_mid_form_sub_case', 'Склонение города (если есть)' )
+            //     ->set_width( 20 )
+            //     ->set_options( $sklons ),
+            // Field::make( 'text', 'city_mid_form_sub_after', 'Конец подзаголовка (после города)' )
+            //     ->set_width( 30 ),
 
 
-            Field::make( 'html', 'crb_information_text_base_mid_form' )
-                ->set_html( '<h1 style="color:blue">Внутренняя форма без города</h1>' ),
+            // Field::make( 'html', 'crb_information_text_base_mid_form' )
+            //     ->set_html( '<h1 style="color:blue">Внутренняя форма без города</h1>' ),
 
-            Field::make( 'text', 'base_mid_form_tit', 'Заголовок' ),
-            Field::make( 'text', 'base_mid_form_sub', 'Подзаголовок' ),
+            // Field::make( 'text', 'base_mid_form_tit', 'Заголовок' ),
+            // Field::make( 'text', 'base_mid_form_sub', 'Подзаголовок' ),
 
 
             Field::make( 'html', 'crb_information_text_city_foot_form' )
