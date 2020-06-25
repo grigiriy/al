@@ -12,7 +12,7 @@
                             <label class="d-block w-100 mb-4">
                                 <div class="d-flex">
                                     <span class="align-self-center form-calculator__label-text">Необходимая сумма</span>
-                                    <input id="calc_sum" type="text" value="" placeholder="300 000 ₽" name="calc_sum" class="ml-auto form-calculator__input calc_sum_res">
+                                    <input id="calc_sum" type="text" value="" placeholder="1 000 000 ₽" name="calc_sum" class="ml-auto form-calculator__input calc_sum_res">
                                 </div>
                                 <div id="calc_sum_range"></div>
                                 <p class="form-calculator__price under-input-wrapper">
@@ -25,7 +25,7 @@
                             <label class="d-block w-100 mb-4">
                                 <div class="d-flex">
                                     <span class="align-self-center form-calculator__label-text">Срок займа</span>
-                                    <input id="calc_term" type="text" name="calc_term" value=""  placeholder="24 месяца" class="ml-auto form-calculator__input calc_term_custom">
+                                    <input id="calc_term" type="text" name="calc_term" value=""  placeholder="12 месяцев" class="ml-auto form-calculator__input calc_term_custom">
                                 </div>
                                     <div id="calc_month_range"></div>
                                 <p class="form-calculator__price under-input-wrapper">
@@ -37,7 +37,7 @@
                             <label class="d-block w-100 mb-4">
                                 <div class="d-flex">
                                     <span class="align-self-center form-calculator__label-text form-calculator__label-text-2">Ежемесячный платеж</span>
-                                    <input id="calc_payment_pay" type="text" name="calc_payment" value="" placeholder="20 000 ₽" class="ml-auto form-calculator__input calc_payment_custom">
+                                    <input id="calc_payment_pay" type="text" name="calc_payment" value="" placeholder="97 487 ₽" class="ml-auto form-calculator__input calc_payment_custom">
                                 </div>
                                     <div id="calc_pay_range2"></div>
                             </label>
@@ -52,19 +52,19 @@
                                         <input id="calc_rate_range" type="hidden" value="2.5" name="calc_rate_range" class="calc-range">
                                         <div class="form-line-left form-line-left-1 form-line-left-3">Ваша ставка</div>
                                         <div class="form-line-right form-line-right-1">
-                                            <span class="month">в месяц</span><span class="procent form-stv">2,5%</span>
+                                            <span class="month">в месяц</span><span class="procent form-stv">2%</span>
                                         </div>
                                     </div>
                                     <div class="form-line mt-3">
                                         <div class="form-line-left form-line-left-1">Сумма процентов</div>
                                         <div class="form-line-right form-line-right-1">
-                                            <span class="sum-procent" id="calc_overpayment">648 000 ₽</span>
+                                            <span class="sum-procent" id="calc_overpayment">169 846 ₽</span>
                                         </div>
                                     </div>
                                     <div class="form-line mt-3">
                                         <div class="form-line-left form-line-left-1">Сумма к возврату</div>
                                         <div class="form-line-right form-line-right-1">
-                                            <span class="sum-return" id="calc_payments_sum">2 448 000 ₽</span>
+                                            <span class="sum-return" id="calc_payments_sum">1 169 846 ₽</span>
                                         </div>
                                     </div>
      

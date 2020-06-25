@@ -255,11 +255,11 @@ footer a:hover {
   position: relative;
 }
 .phone-number + span {
-  position: absolute;
   margin-top: -7px;
   font-size: 16px;
-  right: 12px;
   opacity: 0.4;
+  text-align: center;
+  display: block;
 }
 .arrow-load-give {
   transform: rotate(-90deg);
@@ -344,7 +344,7 @@ section {
   margin-right: 20px;
 }
 .phone-number {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 @media (max-width: 1279px) {
@@ -454,6 +454,9 @@ section {
   }
   .footer_phone {
     font-size: 2rem !important;
+  }
+  .first_screen_list img {
+    margin-right: 20px;
   }
 }
 .mobile_phone {
@@ -608,7 +611,8 @@ section {
 .text-section ul,
 .uk-open ul {
   margin: 20px auto;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
 }
 .uk-open p {
   max-width: 992px;
