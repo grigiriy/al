@@ -31,7 +31,7 @@ $form_subtitle = $form_arr['subtitle'];
           <div class="text-white text-center mt-4">
             <label class="form-chek-small control control-checkbox">
               <input class="uk-checkbox form-chek-small" type="checkbox" id="checkbox-10" name="checkbox-10" data-name="Checkbox 10" required="" checked=""> 
-              <noindex class="subtitle font-weight-normal">Согласие с <a href="/politika-konfidencialnosti" target="_blank" class="subtitle link">политикой конфиденциальности</a>. </noindex> 
+              <noindex class="subtitle font-weight-normal">Согласие с <a href="/privacy-policy.pdf" target="_blank" class="subtitle link">политикой конфиденциальности</a>. </noindex> 
               <div class="control_indicator"></div>
             </label>
           </div>      
