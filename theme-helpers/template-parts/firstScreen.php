@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
             <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-            <p class="mt-0">До 10 000 000 рублей<br>на срок до 3 лет</p>
+            <p class="mt-0">До 10 000 000 ₽<br>на срок до 3 лет</p>
           </div>
           <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
             <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
@@ -18,11 +18,11 @@
           </div>
           <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
             <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-            <p class="mt-0">После выдычи займа<br>авто остается у вас</p>
+            <p class="mt-0">После выдачи займа<br>авто остается у вас</p>
           </div>
           <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
             <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
-            <p class="mt-0">Одобрение за 5 минут,<br>выдача за 30 минут</p>
+            <p class="mt-0 nowrap">Решение за 5 минут,<br>выдача за 30 минут</p>
           </div>
           <div class="col-lg-6 col-12 d-flex mt-0">
             <button class="new-button gross_btn" data-toggle="modal" data-target="#formModal">Отправить заявку</button>

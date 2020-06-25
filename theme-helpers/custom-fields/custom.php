@@ -697,7 +697,6 @@ Container::make( 'theme_options', 'Управление контентом' )
         ->set_collapsed( true )
         ->set_max( 1 )
         ->add_fields([
-        
             Field::make( 'text', 'advantages_sub', 'Заголовок преимуществ' )
                 ->set_width( 50 ),
             Field::make( 'select', 'advantages_case', 'Склонение города (если есть)' )
@@ -915,10 +914,8 @@ Container::make( 'theme_options', 'Управление контентом' )
         ->set_collapsed( true )
         ->set_max( 1 )
             ->add_fields( [
-            Field::make( 'rich_text', 'types_text', 'Текст о том, что можно заложить' ),
-            Field::make( 'rich_text', 'advantages_text', 'Текст о преимуществах' ),
-            Field::make( 'rich_text', 'requirements_text', 'Текст о требованиях' ),
-            Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+                Field::make( 'rich_text', 'calc_text', 'Текст о калькуляторе' ),
+                Field::make( 'rich_text', 'terms_text', 'Текст о требованиях' ),
         ]),
         Field::make( 'complex', 'refinance_texts', 'Тексты рефинансирования' )
         ->set_collapsed( true )

@@ -60,7 +60,7 @@
                         </li>
                     </ul>
                     <div class="nav-item mt-5 mt-md-0">
-                        <a class="nav-link phone-number mt-n3" href="tel:+78005552027">8 (800) 555-20-27</a>
+                        <a class="nav-link phone-number mt-0" href="tel:+78005552027">8 (800) 555-20-27</a>
                         <span>Звонок бесплатный</span>
                     </div> 
                     <div class="nav-item">
