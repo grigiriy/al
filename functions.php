@@ -261,7 +261,3 @@ function is_city($post_id){
 add_filter( 'the_seo_framework_custom_field_description', function( $description, $args ) {
 	return do_shortcode( $description );
 }, 10, 2 );
-
-add_filter( 'the_seo_framework_title_from_custom_field', function( $title, $args ) {
-	return do_shortcode( $title );
-}, 10, 2 );
