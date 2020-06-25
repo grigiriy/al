@@ -74,6 +74,11 @@ set_query_var( 'subtitle_arr', [
 get_template_part('theme-helpers/template-parts/order');
 
 
+set_query_var( 'subtitle_arr', [
+    carbon_get_theme_option($page_type)[0]['faq_sub'],
+    carbon_get_theme_option($page_type)[0]['faq_case'],
+    carbon_get_theme_option($page_type)[0]['faq_sub_after']
+]);
 set_query_var( 'faq_type', $page_type );
 get_template_part('theme-helpers/template-parts/faq');
 

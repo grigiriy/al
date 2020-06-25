@@ -14,10 +14,10 @@ switch (get_the_title()) {
     case 'Кредит под залог авто':
         $page_type = 'credit_auto';
         break;
-    case 'Займы под залог ПТС автомобиля':
+    case 'Займ под залог ПТС':
         $page_type = 'zaim_pts';
         break;
-    case 'Займы под залог авто':
+    case 'Займ под залог авто':
         $page_type = 'zaim_auto';
         break;
     case 'Кредит для ИП под залог авто ПТС':
@@ -92,7 +92,11 @@ set_query_var( 'subtitle_arr', [
 ]);
 get_template_part('theme-helpers/template-parts/order');
 
-
+set_query_var( 'subtitle_arr', [
+    carbon_get_theme_option($page_type)[0]['faq_sub'],
+    carbon_get_theme_option($page_type)[0]['faq_case'],
+    carbon_get_theme_option($page_type)[0]['faq_sub_after']
+]);
 set_query_var( 'faq_type', $page_type );
 get_template_part('theme-helpers/template-parts/faq');
 
