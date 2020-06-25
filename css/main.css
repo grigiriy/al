@@ -136,6 +136,11 @@ a.not_link_style {
   color: inherit;
 }
 
+.footer a.default_text {
+  font-size: inherit;
+  display: inline;
+  color: #15008f !important;
+}
 .new-button {
   background-color: #e2003d;
   border-radius: 5px;
