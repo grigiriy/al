@@ -256,8 +256,8 @@ footer a:hover {
 }
 .phone-number + span {
   position: absolute;
-  margin-top: -10px;
-  font-size: 12px;
+  margin-top: -7px;
+  font-size: 16px;
   right: 12px;
   opacity: 0.4;
 }
@@ -337,10 +337,16 @@ section {
   position: relative;
 }
 .nav-link,
-.phone-number,
 .location-name {
   font-size: 18px;
 }
+.nav-item {
+  margin-right: 20px;
+}
+.phone-number {
+  font-size: 20px;
+}
+
 @media (max-width: 1279px) {
   .nav-link,
   .phone-number,
@@ -362,6 +368,9 @@ section {
   }
   .nav-item .new-button {
     width: 160px;
+  }
+  .phone-number + span {
+    font-size: 12px;
   }
 }
 .nav-link.phone-number {
@@ -604,4 +613,7 @@ section {
 .uk-open p {
   max-width: 992px;
   margin: 0 auto;
+}
+.nowrap {
+  white-space: nowrap;
 }

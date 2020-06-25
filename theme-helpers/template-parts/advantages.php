@@ -1,7 +1,7 @@
 <section class="bg-f2">
   <div class="uk-container uk-position-relative">
     <div class="in-header">
-    <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' ' . get_declension(get_city($post->ID),$subtitle_arr[1]).' '.$subtitle_arr[2]; ?>
+    <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' <span class="nowrap">' . get_declension(get_city($post->ID),$subtitle_arr[1]).'</span> '.$subtitle_arr[2]; ?>
       <h2 class="text-center"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
       <p class="subtitle">Получите деньги под залог ПТС в автоломбарде на самых выгодных условиях</p>
     </div>

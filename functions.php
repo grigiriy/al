@@ -185,7 +185,7 @@ function get_declension_city($atts){
 	), $atts );
 
   $word = get_city(get_the_ID());
-  return get_declension($word,$params['case']);
+  return '<span class="nowrap">'.get_declension($word,$params['case']).'</span>';
 }
 add_shortcode('declension_city', 'get_declension_city');
 
@@ -196,7 +196,7 @@ add_shortcode('brand', 'get_brand');
 
 function get_headline($post_id,$parent_id,$case){
   if ( is_page_template('main.php') ) {
-    $headline = 'Автоломбард под залог авто ПТС в городе ' . get_declension(get_the_title($post_id),$case);
+    $headline = 'Автоломбард под залог авто ПТС в городе <span class="nowrap">' . get_declension(get_the_title($post_id),$case).'</span>';
   } else if ( is_page_template('page-calc.php') ) {
     $headline = 'Расчет кредита под залог авто';
   } else {
@@ -259,5 +259,8 @@ function is_city($post_id){
 
 // the seo framework settings
 add_filter( 'the_seo_framework_custom_field_description', function( $description, $args ) {
-	return do_shortcode( $description );
+	return wp_kses(do_shortcode( $description),'strip' );
+}, 10, 2 );
+add_filter( 'the_seo_framework_title_from_custom_field', function( $title, $args ) {
+	return wp_kses(do_shortcode( $title),'strip' );
 }, 10, 2 );
