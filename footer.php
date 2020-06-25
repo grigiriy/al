@@ -35,8 +35,8 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
           <a href="/">Автоломбард</a>
           <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-pts/">Займы под залог ПТС</a>
           <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займы под залог авто</a>
-          <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог ПТС</a>
-          <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог Авто</a>
+          <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог ПТС</a>
+          <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог Авто</a>
         </div>
       </div>
 
