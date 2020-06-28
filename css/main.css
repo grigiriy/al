@@ -642,6 +642,13 @@ section {
   border-radius: 20px;
 }
 
+@media (max-width: 450px) {
+  .callback-popover {
+    margin: 0 30px;
+    right: auto;
+  }
+}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(28, 103, 174, 0.4);
