@@ -2,7 +2,7 @@
   <div class="uk-container uk-position-relative">
 
   <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' <span class="nowrap">' . get_declension(get_city($post->ID),$subtitle_arr[1]).'</span> '.$subtitle_arr[2]; ?>
-    <h2 class="uk-text-center uk-h2"><?= $subtitle; ?></h2>
+    <h2 class="uk-text-center uk-h2"><?= apply_filters( 'the_content', $subtitle ); ?> </h2>
     <p class="subtitle">Ответы на популярные вопросы про работу автоломбарда <?= do_shortcode('[brand]'); ?></p>
 
     <ul id="faq_accordion" class="uk-accordion">

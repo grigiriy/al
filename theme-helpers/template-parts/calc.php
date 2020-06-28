@@ -52,7 +52,7 @@
                                         <input id="calc_rate_range" type="hidden" value="2.5" name="calc_rate_range" class="calc-range">
                                         <div class="form-line-left form-line-left-1 form-line-left-3">Ваша ставка</div>
                                         <div class="form-line-right form-line-right-1">
-                                            <span class="month">в месяц</span><span class="procent form-stv">2%</span>
+                                            <span class="procent form-stv">2 %</span> <span class="month">в месяц</span>
                                         </div>
                                     </div>
                                     <div class="form-line mt-3">
