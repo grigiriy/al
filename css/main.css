@@ -63,6 +63,10 @@ h3,
 
 header {
   top: 0;
+  height: auto;
+}
+.header-wrapper {
+  height: auto;
 }
 .navbar {
   background: #fff;
@@ -519,8 +523,10 @@ section {
   .phone-number + span {
     position: static;
   }
-  .fst_screen_img {
-    display: none;
+  .bluecar {
+    top: 250px;
+    left: 50%;
+    max-width: 75%;
   }
 }
 .slick-arrow {
@@ -569,7 +575,25 @@ section {
 .calc_payment_custom {
   margin-top: 0 !important;
 }
+@media (max-width: 1180px) and (min-width: 992px) {
+  .main-block p {
+    font-size: 16px;
+  }
+  .bluecar {
+    top: 130px;
+  }
+}
+@media (max-width: 991px) and (min-width: 769px) {
+  .bluecar {
+    top: 130px;
+    max-width: 75%;
+    left: 40%;
+  }
+}
 @media (max-width: 768px) {
+  header {
+    height: 70px;
+  }
   .cities {
     column-gap: 3em;
     columns: 3 auto;
@@ -585,6 +609,9 @@ section {
   }
 }
 @media (max-width: 536px) {
+  .fst_screen_img {
+    display: none;
+  }
   .cities {
     column-gap: 3em;
     columns: 2 auto;
@@ -620,6 +647,10 @@ section {
 }
 .nowrap {
   white-space: nowrap;
+}
+
+.calculator__container {
+  z-index: auto;
 }
 .callback-bubble {
   animation: pulse 3s infinite;

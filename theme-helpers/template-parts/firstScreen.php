@@ -1,4 +1,4 @@
-<section class="main-block pt-5">
+<section class="main-block pt-5 pt-lg-0">
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-12 mt-0 mt-lg-5">
@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="fst_screen_img">
-      <img class="ml-5 mt-5 bluecar uk-scrollspy-inview uk-animation-slide-right" src="<?= $image; ?>">
+      <img class="ml-5 mt-5 mt-lg-0 bluecar uk-scrollspy-inview uk-animation-slide-right" src="<?= $image; ?>">
     </div>
   </div>
 </section>
