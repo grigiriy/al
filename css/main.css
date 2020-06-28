@@ -21,6 +21,9 @@ h6,
 .h6 {
   color: #32354e;
 }
+.nowrap {
+  white-space: nowrap;
+}
 h1,
 .h1,
 .footer_phone {
@@ -393,9 +396,20 @@ section {
 .text-with-foto p {
   color: #fff;
 }
-
+img.logo {
+  display: block !important;
+}
+.navbar-toggler {
+  right: auto !important;
+  left: auto !important;
+  position: static !important;
+}
 .main-block {
   min-height: 500px;
+}
+.location {
+  left: auto !important;
+  position: static !important;
 }
 .location-name::after {
   content: none;
@@ -461,6 +475,19 @@ section {
   }
   .first_screen_list img {
     margin-right: 20px;
+  }
+  .logo {
+    width: 80px;
+    margin-top: 10px;
+  }
+  .location {
+    max-width: 100px;
+  }
+  .location-name {
+    white-space: normal;
+  }
+  .nowrap {
+    white-space: normal;
   }
 }
 .mobile_phone {
@@ -644,9 +671,6 @@ section {
 .uk-open p {
   max-width: 992px;
   margin: 0 auto;
-}
-.nowrap {
-  white-space: nowrap;
 }
 
 .calculator__container {

@@ -10,10 +10,6 @@
                     <span class="location-name"><?= get_city($post->ID) ?></span>
                 </div>
 
-                <div class="mobile_phone">
-                    <a href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>"><?= carbon_get_theme_option('phone');?></a>
-                </div> 
-
                 <button
                     class="navbar-toggler"
                     type="button"
