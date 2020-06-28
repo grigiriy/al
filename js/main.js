@@ -72,3 +72,8 @@ ymaps.ready(function () {
     )
   );
 });
+
+function toggleCallBack(e) {
+  $(e).siblings('.callback-popover').fadeToggle(300);
+  $(e).toggleClass('active');
+}
