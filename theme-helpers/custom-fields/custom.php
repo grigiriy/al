@@ -46,6 +46,7 @@ Container::make( 'post_meta', 'Город' )
         
 Container::make( 'theme_options', 'Управление контентом' )
     ->add_tab( __('subtitles'), [
+        Field::make( 'text', 'phone', 'Телефон' ),
         Field::make( 'complex', 'main', 'Заголовки главной' )
         ->set_collapsed( true )
         ->set_max( 1 )

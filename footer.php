@@ -1,7 +1,7 @@
 <section>
   <div class="text-center bg-transparent ">
     <p class="lead">Остались вопросы? Звоните по телефону автоломбарда:</p>
-    <p class="bolder my-4 footer_phone">+7 (495) 128-28-90</p>
+    <p class="bolder my-4 footer_phone"><a class="default-text nowrap" href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>"><?= carbon_get_theme_option('phone');?></a></p>
     <p class="lead mb-3">
       <button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оставить заявку</button>
     </p>
@@ -52,7 +52,7 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
       <div class="col-12 col-sm-8 offset-0 offset-sm-2 offset-lg-0 col-lg-3">           
         <div class="footer-head">Контакты:</div>
         <div class="foot-rezhim"><?= get_city($post->ID).', '.get_city_meta($post->ID,'address'); ?></div>
-        <a href="tel:88005517172" class="phone-block-number uk-margin-remove-bottom foot-phone">8 800 551 71 72</a>  
+        <a href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>" class="phone-block-number uk-margin-remove-bottom foot-phone nowrap"><?= carbon_get_theme_option('phone');?></a>  
         <div class="foot-rezhim">Ежедневно с 08:00 до 20:00</div>
       </div>
     </div>
