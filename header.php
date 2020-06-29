@@ -11,7 +11,7 @@
 
 
 
-<!-- HOLY SHIT! -->
+<!-- donor styles -->
 <link href="/wp-content/themes/al_theme/css/donor/normalize.css" rel="stylesheet" type="text/css">
 <link href="/wp-content/themes/al_theme/css/donor/webflow.css" rel="stylesheet" type="text/css">
 <link href="/wp-content/themes/al_theme/css/donor/nouislider.css" rel="stylesheet" type="text/css">
@@ -29,11 +29,12 @@
 
 <!-- part 3 -->
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/fonts.css">
-<!-- HOLY SHIT! -->
+<!-- theme styles -->
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/main.css">
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/slick.css">
 
-<script src="https://api-maps.yandex.ru/2.1.77/?lang=ru_RU&apikey=927a70a9-1768-4f55-bd6a-c2255bf68c98" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ad3389a6-b7a1-40d0-a0a9-082e7fa02f7d&lang=ru_RU" type="text/javascript"></script>
+
 <body>
 <div class="app">
   <?php get_template_part('theme-helpers/template-parts/header'); ?>

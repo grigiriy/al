@@ -5,11 +5,14 @@
                 <a href="/">
                     <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png" class="logo mr-4" alt="logo">
                 </a>
-                <div class="navbar-brand mr-auto location" data-toggle="modal" data-target="#citiesModal">
+                <div class="desktop navbar-brand mr-auto location" data-toggle="modal" data-target="#citiesModal">
                     <img src="<?= get_template_directory_uri(); ?>/css/images/location.svg">
                     <span class="location-name"><?= get_city($post->ID) ?></span>
                 </div>
-
+                <div class="mobile mobile_phone">
+                    <a class="nav-link phone-number mt-0" href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>"><?= carbon_get_theme_option('phone');?></a>
+                    <span>Звонок бесплатный</span>
+                </div> 
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -55,7 +58,11 @@
                             <a class="nav-link not_link_style" href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
                         </li>
                     </ul>
-                    <div class="nav-item mt-5 mt-md-0">
+                    <div class="mobile navbar-brand mx-auto mt-3 text-center location" data-toggle="modal" data-target="#citiesModal">
+                        <img src="<?= get_template_directory_uri(); ?>/css/images/location.svg">
+                        <span class="location-name"><?= get_city($post->ID) ?></span>
+                    </div>
+                    <div class="desktop nav-item mt-5 mt-md-0">
                         <a class="nav-link phone-number mt-0" href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>"><?= carbon_get_theme_option('phone');?></a>
                         <span>Звонок бесплатный</span>
                     </div> 

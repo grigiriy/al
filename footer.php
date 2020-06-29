@@ -19,17 +19,25 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
   </div>
 </section>
 
-
+<style>
+@media(max-width:767px){
+  .foot-col{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+</style>
 <footer class="footer" data-coords="<?= get_city_meta($post->ID,'coord') ?>" data-address="<?= get_city_meta($post->ID,'address') ?>">
   <div class="pt-5 pb-4 container">
     <div class="row">
-      <div class="col-12 col-sm-8 offset-0 offset-sm-2 offset-lg-0 col-lg-4">
-        <div class="footer-logo">      
+      <div class="col foot-col">
+        <div class="footer-logo w-100">      
         <a href="/"><img src="<?= get_template_directory_uri(); ?>/css/images/logo.png"></a>
           <p>Автоломбард&nbsp;<?= do_shortcode('[brand]'); ?> ©&nbsp;2020&nbsp;год</p>
         </div>
       </div>
-      <div class="col-12 col-sm-8 offset-0 offset-sm-2 offset-lg-0 col-lg-2">         
+      <div class="col foot-col">         
         <div class="footer-head">Ссылки:</div>
         <div class="footer-list">
           <a href="/">Автоломбард</a>
@@ -37,10 +45,16 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
           <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займы под залог авто</a>
           <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог ПТС</a>
           <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог Авто</a>
+          <div class="footer-list mobile">
+            <a href="<?= get_city_link($post->ID);?>bystrye-dengi-pod-pts/">Быстрые деньги</a>
+            <a href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
+            <a href="<?= get_city_link($post->ID);?>refinansirovanie/">Рефинансирование</a>
+            <a href="/kalkulyator/">Калькулятор</a>
+          </div>
         </div>
       </div>
 
-      <div class="col-12 col-sm-8 offset-0 offset-sm-2 offset-lg-0 col-lg-3">           
+      <div class="col foot-col desktop">           
         <div class="footer-list">
           <a href="<?= get_city_link($post->ID);?>bystrye-dengi-pod-pts/">Быстрые деньги</a>
           <a href="<?= get_city_link($post->ID);?>yuridicheskie-licza/">Юр. Лица</a>
@@ -49,7 +63,7 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
         </div>
       </div>
 
-      <div class="col-12 col-sm-8 offset-0 offset-sm-2 offset-lg-0 col-lg-3">           
+      <div class="col foot-col">           
         <div class="footer-head">Контакты:</div>
         <div class="foot-rezhim"><?= get_city($post->ID).', '.get_city_meta($post->ID,'address'); ?></div>
         <a href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>" class="phone-block-number uk-margin-remove-bottom foot-phone nowrap"><?= carbon_get_theme_option('phone');?></a>  

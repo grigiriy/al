@@ -24,6 +24,9 @@ h6,
 .nowrap {
   white-space: nowrap;
 }
+.mobile {
+  display: none;
+}
 h1,
 .h1,
 .footer_phone {
@@ -356,6 +359,9 @@ section {
 }
 
 @media (max-width: 1279px) {
+  .footer .foot-phone {
+    font-size: 24px;
+  }
   .nav-link,
   .phone-number,
   .location-name {
@@ -480,7 +486,7 @@ img.logo {
   }
   .logo {
     width: 80px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
   .location {
     max-width: 100px;
@@ -491,9 +497,6 @@ img.logo {
   .nowrap {
     white-space: normal;
   }
-}
-.mobile_phone {
-  display: none;
 }
 .first_screen_list {
   height: 60px;
@@ -525,6 +528,16 @@ img.logo {
 }
 
 @media (max-width: 991px) {
+  .mobile {
+    display: block;
+  }
+  .mobile_phone {
+    position: absolute;
+    width: 100%;
+  }
+  .desktop {
+    display: none;
+  }
   .under-input-wrapper {
     margin-top: -10px;
     padding-top: 0;
@@ -556,6 +569,9 @@ img.logo {
     top: 250px;
     left: 50%;
     max-width: 75%;
+  }
+  .navbar-collapse {
+    margin-top: 15px;
   }
 }
 .slick-arrow {
@@ -621,7 +637,7 @@ img.logo {
 }
 @media (max-width: 768px) {
   header {
-    height: 70px;
+    height: 50px;
   }
   .cities {
     column-gap: 3em;
@@ -647,17 +663,6 @@ img.logo {
   }
   .navbar-toggler {
     right: auto;
-  }
-  .mobile_phone {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 25px;
-    font-weight: bold;
-  }
-  .mobile_phone a {
-    font-size: 16px;
-    color: #e2003d;
   }
 }
 .uk-accordion li li {
@@ -686,6 +691,7 @@ img.logo {
   width: 60px;
   height: 60px;
   cursor: pointer;
+  z-index: 2;
 }
 .callback-bubble:not(.active) svg:last-child {
   display: none;
@@ -697,6 +703,7 @@ img.logo {
   right: 20px;
   bottom: 120px;
   border-radius: 20px;
+  z-index: 2;
 }
 
 #formModal form {
