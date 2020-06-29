@@ -185,7 +185,7 @@ function get_declension_city($atts){
 	), $atts );
 
   $word = get_city(get_the_ID());
-  return '<span class="nowrap">'.get_declension($word,$params['case']).'</span>';
+  return set_nowrap(get_declension($word,$params['case']));
 }
 add_shortcode('declension_city', 'get_declension_city');
 
@@ -194,9 +194,15 @@ function get_brand(){
 }
 add_shortcode('brand', 'get_brand');
 
+function set_nowrap($string){
+	$string = str_replace ( '-' , '‑' , $string );
+	$string = str_replace ( ' ' , '&nbsp;' , $string );
+	return $string;
+}
+
 function get_headline($post_id,$parent_id,$case){
   if ( is_page_template('main.php') ) {
-    $headline = 'Автоломбард под залог авто ПТС в городе <span class="nowrap">' . get_declension(get_the_title($post_id),$case).'</span>';
+    $headline = 'Автоломбард под залог авто ПТС в городе ' . set_nowrap(get_declension(get_the_title($post_id),$case));
   } else if ( is_page_template('page-calc.php') ) {
     $headline = 'Расчет кредита под залог авто';
   } else {
@@ -205,9 +211,9 @@ function get_headline($post_id,$parent_id,$case){
     if( get_the_title($post_id) === 'Круглосуточный автоломбард' ){
       $headline = get_the_title($post_id) . ' ' . get_bloginfo('name') . ' в вашем городе';
     } else if( get_the_title($post_id) === 'Возьмите деньги под залог ПТС спецтехники' ){
-      $headline = get_the_title($post_id) . ' ' . get_city($post_id);
+      $headline = get_the_title($post_id) . ' ' . set_nowrap(get_city($post_id));
     } else {
-      $headline = get_the_title($post_id) . ' в городе ' . get_declension($city,$case);
+      $headline = get_the_title($post_id) . ' в городе ' . set_nowrap(get_declension($city,$case));
     }
   }
   return $headline;

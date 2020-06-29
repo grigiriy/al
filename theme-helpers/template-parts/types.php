@@ -1,6 +1,6 @@
 <section>
   <div class="in-header">
-  <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] . ' <span class="nowrap">' . get_declension(get_city($post->ID),$subtitle_arr[1]).'</span> '.$subtitle_arr[2]; ?>
+  <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] .' '. set_nowrap(get_declension(get_city($post->ID),$subtitle_arr[1])).' '.$subtitle_arr[2]; ?>
     <h2 class="uk-h2 uk-text-center"><?= apply_filters( 'the_content', $subtitle ); ?></h2>
     <p class="uk-text-center padding-lr-50 subtitle">Мы выдаем займы под залог любых авто, мотоциклов, спецтехники или грузовиков.</p>
   </div>

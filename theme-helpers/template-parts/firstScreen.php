@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-12 mt-0 mt-lg-5">
-        <h1><?= get_headline($post->ID,$post->post_parent,'0') ?></h1>
+      <h1><?= get_headline($post->ID,$post->post_parent,'0') ?></h1>
         <div class="row">
           <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
             <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="">
