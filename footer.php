@@ -1,3 +1,5 @@
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ad3389a6-b7a1-40d0-a0a9-082e7fa02f7d&lang=ru_RU" type="text/javascript"></script>
+
 <section>
   <div class="text-center bg-transparent ">
     <p class="lead">Остались вопросы? Звоните по телефону автоломбарда:</p>

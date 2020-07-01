@@ -33,7 +33,24 @@
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/main.css">
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/slick.css">
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ad3389a6-b7a1-40d0-a0a9-082e7fa02f7d&lang=ru_RU" type="text/javascript"></script>
+
+<meta name="yandex-verification" content="300016d1ffd572f3" />
+<meta name="google-site-verification" content="QFwZthbsGxAm0tA91TAv2kBZaTQZda28sJ6n69uTq64" />
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   
+   ym(65306272, "init", {
+     clickmap:true,
+     trackLinks:true,
+     accurateTrackBounce:true
+    });
+  </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/65306272" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <body>
 <div class="app">
