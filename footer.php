@@ -3,7 +3,7 @@
     <p class="lead">Остались вопросы? Звоните по телефону автоломбарда:</p>
     <p class="bolder my-4 footer_phone"><a class="default-text nowrap" href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>"><?= carbon_get_theme_option('phone');?></a></p>
     <p class="lead mb-3">
-      <button type="submit" data-wait="Пожалуйста, подождите." class="new-button">Оставить заявку</button>
+      <button type="submit" data-wait="Пожалуйста, подождите." class="new-button" data-toggle="modal" data-target="#formModal">Оставить заявку</button>
     </p>
   </div>
 </section>
@@ -19,15 +19,6 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
   </div>
 </section>
 
-<style>
-@media(max-width:767px){
-  .foot-col{
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-</style>
 <footer class="footer" data-coords="<?= get_city_meta($post->ID,'coord') ?>" data-address="<?= get_city_meta($post->ID,'address') ?>">
   <div class="pt-5 pb-4 container">
     <div class="row">
@@ -41,8 +32,8 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
         <div class="footer-head">Ссылки:</div>
         <div class="footer-list">
           <a href="/">Автоломбард</a>
-          <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-pts/">Займы под залог ПТС</a>
-          <a href="<?= get_city_link($post->ID);?>zajmy-pod-zalog-avto/">Займы под залог авто</a>
+          <a href="<?= get_city_link($post->ID);?>zajm-pod-zalog-pts/">Займы под залог ПТС</a>
+          <a href="<?= get_city_link($post->ID);?>zajm-pod-zalog-avto/">Займы под залог авто</a>
           <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-pts/">Кредит под залог ПТС</a>
           <a href="<?= get_city_link($post->ID);?>kredit-pod-zalog-avto/">Кредит под залог Авто</a>
           <div class="footer-list mobile">

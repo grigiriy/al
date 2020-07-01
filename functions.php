@@ -211,9 +211,9 @@ function get_headline($post_id,$parent_id,$case){
     if( get_the_title($post_id) === 'Круглосуточный автоломбард' ){
       $headline = get_the_title($post_id) . ' ' . get_bloginfo('name') . ' в вашем городе';
     } else if( get_the_title($post_id) === 'Возьмите деньги под залог ПТС спецтехники' ){
-      $headline = get_the_title($post_id) . ' ' . set_nowrap(get_city($post_id));
+      $headline = get_the_title($post_id) . ' в городе ' . set_nowrap(get_city($post_id));
     } else {
-      $headline = get_the_title($post_id) . ' в городе ' . set_nowrap(get_declension($city,$case));
+      $headline = get_the_title($post_id) . ' в городе ' . set_nowrap(get_city($post_id));
     }
   }
   return $headline;

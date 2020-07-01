@@ -1,4 +1,17 @@
 $("input[name='phone']").mask('+7(999) 999-9999');
+$("input[name='your-tel']").mask('+7(999) 999-9999');
+
+var wpcf7Elm = document.querySelectorAll('.wpcf7');
+
+for (var i = 0; i < wpcf7Elm.length; i++) {
+  wpcf7Elm[i].addEventListener(
+    'wpcf7submit',
+    function (event) {
+      ym(65306272, 'reachGoal', 'zayavka');
+    },
+    false
+  );
+}
 
 function showCities(e) {
   // $(e).parent('ul').addClass('all_cities');

@@ -30,7 +30,5 @@
 </div>
 <div class="callback-popover position-fixed card p-5" style="display:none">
 <p class="h3 mb-3">Мы перезвоним за 20 секунд</p>
-<form action="">
-    <input class="uk-input w-input phone-input" type="text" placeholder="+7(___) ___-____" name="phone" data-name="phone">
-</form>
+<?= do_shortcode('[contact-form-7 id="3831"]'); ?>
 </div>

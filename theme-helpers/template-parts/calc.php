@@ -67,24 +67,7 @@
                                             <span class="sum-return" id="calc_payments_sum">1 169 846 ₽</span>
                                         </div>
                                     </div>
-     
-                                    <div class="form-line d-lg-flex d-block mt-5">
-                                        <div class="w-100 mt-0 mt-lg-3">
-                                            <input type="tel" name="phone" class="form-control form-control-phone" placeholder="+7 (___) ___-__-__">
-                                        </div>
-                                        <div class="w-100 ml-lg-2 ml-0 mt-3 mb-lg-0">
-                                            <button class="w-100 new-button" type="button">Отправить заявку</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="text-calc mt-5">
-                                        <label class="py-0 form-chek-small control control-checkbox font-basic">
-                                            <input class="uk-checkbox form-chek-small" type="checkbox" id="checkbox-10" name="checkbox-10" data-name="Checkbox 10" required="" checked=""> 
-                                            <noindex class=" font-weight-normal">Согласие с <a href="/politika-konfidencialnosti" target="_blank" class=" link">политикой конфиденциальности</a>. </noindex> 
-                                            <div class="control_indicator"></div>
-                                        </label>
-                                    </div>
-
+                                    <?= do_shortcode('[contact-form-7 id="7379"]');?>
                                 </div>
                             </div>
                         </div>

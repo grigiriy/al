@@ -152,7 +152,7 @@ a.not_link_style {
   color: #15008f !important;
 }
 .new-button {
-  background-color: #e2003d;
+  background-color: #e2003d !important;
   border-radius: 5px;
   -webkit-box-shadow: 4px 13px 46px -13px rgba(240, 43, 43, 1);
   -moz-box-shadow: 4px 13px 46px -13px rgba(240, 43, 43, 1);
@@ -528,13 +528,17 @@ img.logo {
 }
 
 @media (max-width: 991px) {
+  header nav > * {
+    z-index: 1;
+  }
   .mobile {
     display: block;
   }
-  .mobile_phone {
+  /* .mobile_phone {
     position: absolute;
     width: 100%;
-  }
+    top: 15px;
+  } */
   .desktop {
     display: none;
   }
@@ -715,6 +719,12 @@ img.logo {
 }
 
 @media (max-width: 450px) {
+  .form-line-right {
+    font-size: 22px !important;
+  }
+  .form-calculator__input {
+    font-size: 16px !important;
+  }
   .callback-popover {
     margin: 0 30px;
     right: auto;
@@ -770,5 +780,23 @@ img.logo {
   100% {
     -moz-box-shadow: 0 0 0 0 rgba(28, 103, 174, 0);
     box-shadow: 0 0 0 0 rgba(28, 103, 174, 0);
+  }
+}
+
+.wpcf7-response-output {
+  border: none !important;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.callback-popover .wpcf7-response-output,
+#formModal .wpcf7-response-output {
+  color: #000;
+}
+@media (max-width: 767px) {
+  .foot-col {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }

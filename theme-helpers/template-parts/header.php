@@ -3,13 +3,13 @@
         <div class="header">
             <nav class="navbar navbar-expand-lg navbar-light top-menu fixed-navbar">
                 <a href="/">
-                    <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png" class="logo mr-4" alt="logo">
+                    <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png" class="logo mr-0 mr-lg-4" alt="logo">
                 </a>
                 <div class="desktop navbar-brand mr-auto location" data-toggle="modal" data-target="#citiesModal">
                     <img src="<?= get_template_directory_uri(); ?>/css/images/location.svg">
                     <span class="location-name"><?= get_city($post->ID) ?></span>
                 </div>
-                <div class="mobile mobile_phone">
+                <div class="mobile mobile_phone"> 
                     <a class="nav-link phone-number mt-0" href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>"><?= carbon_get_theme_option('phone');?></a>
                     <span>Звонок бесплатный</span>
                 </div> 
