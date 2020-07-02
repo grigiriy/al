@@ -72,7 +72,70 @@ add_action(
   }
 );
 
+add_action('wp_ajax_send_request', 'send_request'); 
 
+function send_request(){
+
+  $token = 'a7e7b5f96eaa537578e8445651d49d30';
+  $source_from = 'autolombard-pts-zaim.ru';
+  
+  $city = $_POST['city'];
+  $dateto = $_POST['dateto'];
+  $every = $_POST['every'];
+  $pocent = $_POST['pocent'];
+  $total = $_POST['total'];
+  $slug = $_POST['slug'];
+  $num = $_POST['num'];
+  $phone = $_POST['phone'];
+  $name = $_POST['name'];
+  $model = $_POST['model'];
+  $year = $_POST['year'];
+  $sumcr = $_POST['sumcr'];
+    
+
+$fields = [
+  'token' => $token,
+  'name' => $name,
+  'phone' => $phone,
+  'email'=>'',
+  'sumcr' => $sumcr,
+  'avto' => $avto,
+  'year' => $year,
+  'km' => $km,
+  'mark' => $mark,
+  'model' => $model,
+  'vin' => $vin,
+  'ip' => $ip,
+  'region' => $region,
+  'city' => $city,
+  'slug' => $slug,
+  'num' => $num,
+  'dateto' => $dateto,
+  'every' => $every,
+  'pocent' => $pocent,
+  'total' => $total,
+  'quiz' => '',
+  'source_from' => $source_from,
+  'param' => [],
+  'message' => ''
+];
+
+$curl = curl_init(); 
+curl_setopt_array($curl,
+array(CURLOPT_SSL_VERIFYPEER => 0,
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => 'http://crm.avtolombard-credit.ru/api/send/lead',
+    CURLOPT_ENCODING => "utf-8",
+    CURLOPT_POST => true,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS => $fields));
+
+$result = curl_exec($curl);
+curl_close($curl);
+
+// $result = $fields;
+print_r($result);
+}
 
 
 add_action( 'carbon_fields_register_fields', 'crb_register_custom_fields' );

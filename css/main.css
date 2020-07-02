@@ -790,7 +790,8 @@ img.logo {
   text-align: center;
 }
 .callback-popover .wpcf7-response-output,
-#formModal .wpcf7-response-output {
+#formModal .wpcf7-response-output,
+.calculator__content .wpcf7-response-output{
   color: #000;
 }
 @media (max-width: 767px) {
@@ -799,4 +800,7 @@ img.logo {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+.form_source_id {
+  display: none;
 }

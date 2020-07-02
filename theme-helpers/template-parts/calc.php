@@ -5,9 +5,9 @@
             <?php $subtitle = ($subtitle_arr[1] === null || !isset($subtitle_arr[1]) || $subtitle_arr[1] === '' ) ? $subtitle_arr[0].' '.$subtitle_arr[2] : $subtitle_arr[0] .' '. set_nowrap(get_declension(get_city($post->ID),$subtitle_arr[1])).' '.$subtitle_arr[2]; ?>
                 <h2 class="text-center"><?= apply_filters( 'the_content', $subtitle ); ?></h2>            
                 <p class="subtitle">Узнайте сумму к возврату, ежемесячный платеж и ставку.</p>
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <form id="form-calculator" name="summ" action="#" method="POST"
+                <!-- <form class="row"> -->
+                    <!-- <div class="col-12 col-lg-6">
+                        <div id="form-calculator" name="summ" action="#" method="POST"
                         class="calculator__form form-calculator">
                             <label class="d-block w-100 mb-4">
                                 <div class="d-flex">
@@ -41,7 +41,7 @@
                                 </div>
                                     <div id="calc_pay_range2"></div>
                             </label>
-                        </form>
+                        </div>
                     </div>
 
                     <div class="col-12 col-lg-6 px-0 px-lg-3">
@@ -66,13 +66,13 @@
                                         <div class="form-line-right form-line-right-1">
                                             <span class="sum-return" id="calc_payments_sum">1 169 846 ₽</span>
                                         </div>
-                                    </div>
-                                    <?= do_shortcode('[contact-form-7 id="7379"]');?>
-                                </div>
+                                    </div> -->
+                                    <?= do_shortcode('[contact-form-7 id="3832" html_class="row"]');?>
+                                <!-- </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </form> -->
             </div>
         </div>
     </div>

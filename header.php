@@ -33,10 +33,6 @@
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/main.css">
 <link rel="stylesheet" href="/wp-content/themes/al_theme/css/slick.css">
 
-
-<meta name="yandex-verification" content="300016d1ffd572f3" />
-<meta name="google-site-verification" content="QFwZthbsGxAm0tA91TAv2kBZaTQZda28sJ6n69uTq64" />
-
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

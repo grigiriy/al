@@ -21,7 +21,7 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
   </div>
 </section>
 
-<footer class="footer" data-coords="<?= get_city_meta($post->ID,'coord') ?>" data-address="<?= get_city_meta($post->ID,'address') ?>">
+<footer class="footer" data-city="<?= get_city($post->ID); ?>" data-coords="<?= get_city_meta($post->ID,'coord') ?>" data-address="<?= get_city_meta($post->ID,'address') ?>">
   <div class="pt-5 pb-4 container">
     <div class="row">
       <div class="col foot-col">
