@@ -8,7 +8,7 @@ while ( have_posts() ) :
 the_post();
 
 switch (get_the_title()) {
-    case 'Кредит под залог ПТС авто':
+    case 'Кредит под залог ПТС':
         $page_type = 'credit_pts';
         break;
     case 'Кредит под залог авто':
@@ -41,6 +41,7 @@ set_query_var( 'subtitle_arr', [
     carbon_get_theme_option($page_type)[0]['advantages_case'],
     carbon_get_theme_option($page_type)[0]['advantages_sub_after']
 ]);
+
 get_template_part('theme-helpers/template-parts/advantages');
 set_query_var( 'text', 'advantages_text' );
 get_template_part('theme-helpers/template-parts/textBlock');

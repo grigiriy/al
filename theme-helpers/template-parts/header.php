@@ -63,7 +63,7 @@
                         <span class="location-name"><?= get_city($post->ID) ?></span>
                     </div>
                     <div class="desktop nav-item mt-5 mt-md-0">
-                        <a class="nav-link phone-number mt-0" href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>"><?= carbon_get_theme_option('phone');?></a>
+                        <a class="nav-link phone-number mt-0 nowrap" href="tel:<?= preg_replace('/[^0-9]/', '', carbon_get_theme_option('phone'));?>"><?= carbon_get_theme_option('phone');?></a>
                         <span>Звонок бесплатный</span>
                     </div> 
                     <div class="nav-item">

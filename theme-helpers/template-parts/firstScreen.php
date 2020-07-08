@@ -1,7 +1,7 @@
 <section class="main-block pt-5 pt-lg-0">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-12 mt-0 mt-lg-5">
+      <div class="col-lg-7 col-12 mt-0 mt-lg-5 pt-lg-5 pt-3 ml-lg-n5 ml-0">
       <h1><?= get_headline($post->ID,$post->post_parent,'0') ?></h1>
         <div class="row">
           <div class="col-lg-6 col-12 d-flex first_screen_list mb-4">
@@ -37,5 +37,17 @@
 </section>
 
 <?php
-set_query_var( 'form_arr', get_form_header('top',$post->ID));
+$form_header = get_form_header('top',$post->ID);
+
+if ( $text_page === 'zaim_auto' ) {
+  $form_header['title'] = 'Займ под залог автомобиля — 100% одобрение';
+} else if ( $text_page === 'fast_money' ) {
+  $form_header['title'] = 'Экспресс займы под залог ПТС';
+} else if ( $text_page === 'credit_auto' ) {
+  $form_header['title'] = 'Кредит под залог авто — 100% одобрение';
+} else if ( $text_page === 'credit_pts' ) {
+  $form_header['title'] = 'Кредит под залог ПТС - 100% одобрение';
+}
+set_query_var( 'form_arr', $form_header);
+
 get_template_part('theme-helpers/template-parts/form','horizontal'); ?>

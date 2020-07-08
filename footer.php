@@ -10,7 +10,17 @@
   </div>
 </section>
 <?php
-set_query_var( 'form_arr', get_form_header('foot',$post->ID));
+$form_footer = get_form_header('foot',$post->ID);
+if ( $text_page === 'zaim_auto' ) {
+  $form_footer['title'] = 'Займ под залог авто в [declension_city case="1"]';
+} else if ( $text_page === 'zaim_pts') {
+  $form_footer['title'] = 'Займ под залог ПТС в [declension_city case="1"]';
+} else if ( $text_page === 'credit_auto' ) {
+  $form_footer['title'] = 'Кредит под залог авто в [declension_city case="1"]';
+} else if ( $text_page === 'credit_pts' ) {
+  $form_footer['title'] = 'Кредит под залог ПТС в [declension_city case="1"]';
+}
+set_query_var( 'form_arr', $form_footer );
 get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
 
 
