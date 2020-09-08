@@ -72,12 +72,14 @@ add_action(
   }
 );
 
+add_action('wp_ajax_nopriv_send_request', 'send_request');
 add_action('wp_ajax_send_request', 'send_request'); 
 
 function send_request(){
 
   $token = 'a7e7b5f96eaa537578e8445651d49d30';
   $source_from = 'autolombard-pts-zaim.ru';
+  $userAgent = 'Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0';
   
   $city = $_POST['city'];
   $dateto = $_POST['dateto'];
@@ -124,6 +126,8 @@ $curl = curl_init();
 curl_setopt_array($curl,
 array(CURLOPT_SSL_VERIFYPEER => 0,
     CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_USERAGENT => $userAgent,
+    CURLOPT_REFERER => $_SERVER['REQUEST_URI'],
     CURLOPT_URL => 'http://crm.avtolombard-credit.ru/api/send/lead',
     CURLOPT_ENCODING => "utf-8",
     CURLOPT_POST => true,
@@ -225,6 +229,17 @@ function get_city($post_id){
   $city = strval($post_id) === '0' ? 'Москва' : get_the_title($post_id);
   return $city;
 }
+
+function get_canonical($post_id){
+  if( strval($post_id) === '0' || strval($post_id) === '239' || (strval(get_post($post_id)->post_parent) === '0' && get_post_meta($post_id)['_wp_page_template'][0] !== 'main.php' ) || strval(get_post($post_id)->post_parent) === '239' ){
+    return get_the_permalink($post_id);
+  } else {
+    $city = get_post_meta($post_id)['_wp_page_template'][0] === 'main.php' ? get_post($post_id)->post_name : get_post(get_post($post_id)->post_parent)->post_name;
+    $canonical =  str_replace ( $city.'/' , '' , get_the_permalink($post_id) );
+    return $canonical;
+  }
+}
+add_filter( 'the_seo_framework_rel_canonical_output', '__return_empty_string' );
 
 function get_city_meta($post_id,$meta){
   if( get_post_meta($post_id)['_wp_page_template'][0] !== 'main.php'){

@@ -36,7 +36,12 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
     <div class="row">
       <div class="col foot-col">
         <div class="footer-logo w-100">      
-        <a href="/"><img src="<?= get_template_directory_uri(); ?>/css/images/logo.png"></a>
+          <a href="/">
+          <picture>
+              <source srcset="<?= get_template_directory_uri(); ?>/css/images/logo.webp" type="image/webp">
+              <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png">
+          </picture>
+          </a>
           <p>Автоломбард&nbsp;<?= do_shortcode('[brand]'); ?> ©&nbsp;2020&nbsp;год</p>
         </div>
       </div>

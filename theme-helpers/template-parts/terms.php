@@ -10,32 +10,50 @@
 
         <div class="row subtitle">
             <div class="col-md-5 offset-md-2 offset-0 col-12 mb-3 d-flex uslov_list">
-                <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="tick">
+                <picture>
+                    <source srcset="<?= get_template_directory_uri(); ?>/css/images/tick.webp" type="image/webp">
+                    <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png"  alt="tick">
+                </picture>
                 <p><b>Сумма займа</b>
                 <br>от 25 000 до <br class="br-mobile">10 000 000 рублей</p>
             </div>
             <div class="col-md-4 offset-md-0 offset-0 col-12 mb-3 d-flex uslov_list">
-                <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="tick">
+                <picture>
+                    <source srcset="<?= get_template_directory_uri(); ?>/css/images/tick.webp" type="image/webp">
+                    <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png"  alt="tick">
+                </picture>
                 <p><b>Срок займа</b>
                 <br>от 1 до 36 месяцев</p>
             </div>
             <div class="col-md-5 offset-md-2 offset-0 col-12 mb-3 d-flex uslov_list">
-                <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="tick">
+                <picture>
+                    <source srcset="<?= get_template_directory_uri(); ?>/css/images/tick.webp" type="image/webp">
+                    <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png"  alt="tick">
+                </picture>
                 <p><b>Процентная ставка</b>
                 <br>от 24 до 42% годовых</p>
             </div>
             <div class="col-md-4 offset-md-0 offset-0 col-12 mb-3 d-flex uslov_list">
-                <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="tick">
+                <picture>
+                    <source srcset="<?= get_template_directory_uri(); ?>/css/images/tick.webp" type="image/webp">
+                    <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png"  alt="tick">
+                </picture>
                 <p><b>Без справок 2-НДФЛ</b>
                 <br>о подтверждении дохода</p>
             </div>
             <div class="col-md-5 offset-md-2 offset-0 col-12 mb-3 d-flex uslov_list">
-                <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="tick">
+                <picture>
+                    <source srcset="<?= get_template_directory_uri(); ?>/css/images/tick.webp" type="image/webp">
+                    <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png"  alt="tick">
+                </picture>
                 <p><b>Максимальная сумма займа</b>
                 <br>до 90% от рыночной стоимости автомобиля</p>
             </div>
             <div class="col-md-4 offset-md-0 offset-0 col-12 mb-3 d-flex uslov_list">
-                <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png" alt="tick">
+                <picture>
+                    <source srcset="<?= get_template_directory_uri(); ?>/css/images/tick.webp" type="image/webp">
+                    <img src="<?= get_template_directory_uri(); ?>/css/images/tick.png"  alt="tick">
+                </picture>
                 <p><b>Без комиссий и штрафов</b>
                 <br>за досрочное погашение</p>
             </div>

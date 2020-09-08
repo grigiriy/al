@@ -10,7 +10,10 @@
                 <div class="user pt-5 pl-1 ">
                     <div class="user-table ">
                         <div class="user-user-svg d-flex justify-content-center">
-                            <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_male.png" alt="user">
+                            <picture>
+                                <source srcset="<?= get_template_directory_uri(); ?>/css/images/req_icon_male.webp" type="image/webp">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_male.png"  alt="user">
+                            </picture>
                         </div>
                     </div>
                     <p class="pt-3 pt-3 h3 text-left pl-3">
@@ -29,7 +32,10 @@
                 <div class="auto pt-5 pl-1">
                     <div class="user-table ">
                         <div class="car-car-svg d-flex justify-content-center">
-                            <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_car.png" alt="user">
+                            <picture>
+                                <source srcset="<?= get_template_directory_uri(); ?>/css/images/req_icon_car.webp" type="image/webp">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_car.png"  alt="car">
+                            </picture>
                         </div>
                     </div>
                     <p class="pt-3 pt-3 h3 text-left pl-3">
@@ -48,7 +54,10 @@
                 <div class="auto pt-5 pl-1">
                     <div class="user-table">
                         <div class="user-user-svg d-flex justify-content-center">
-                            <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_doc.png" alt="user">
+                            <picture>
+                                <source srcset="<?= get_template_directory_uri(); ?>/css/images/req_icon_doc.webp" type="image/webp">
+                                <img src="<?= get_template_directory_uri(); ?>/css/images/req_icon_doc.png"  alt="docs">
+                            </picture>
                         </div>
                     </div>
                     <p class="pt-3 pt-3 h3 text-left pl-3">

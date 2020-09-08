@@ -3,7 +3,10 @@
         <div class="header">
             <nav class="navbar navbar-expand-lg navbar-light top-menu fixed-navbar">
                 <a href="/">
-                    <img src="<?= get_template_directory_uri(); ?>/css/images/logo.png" class="logo mr-0 mr-lg-4" alt="logo">
+                    <picture>
+                        <source srcset="<?= get_template_directory_uri(); ?>/css/images/logo.webp" type="image/webp">
+                        <img class="logo mr-0 mr-lg-4" src="<?= get_template_directory_uri(); ?>/css/images/logo.png">
+                    </picture>
                 </a>
                 <div class="desktop navbar-brand mr-auto location" data-toggle="modal" data-target="#citiesModal">
                     <img src="<?= get_template_directory_uri(); ?>/css/images/location.svg">

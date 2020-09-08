@@ -22,7 +22,10 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
                             с вами моментально</p>
                     </div>
                     <div class="d-flex ">
-                        <img class="mx-auto" src="<?= get_template_directory_uri(); ?>/css/images/load_give_arm.png" alt="">
+                        <picture>
+                            <source srcset="<?= get_template_directory_uri(); ?>/css/images/load_give_arm.webp" type="image/webp">
+                            <img class="mx-auto" src="<?= get_template_directory_uri(); ?>/css/images/load_give_arm.png">
+                        </picture>
                     </div>
                 </div>
                 <div class="arrow-load-give">
@@ -39,7 +42,10 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
                         <p class=" px-2">Для проверки и оценки стоимости вашего авто</p>
                     </div>
                     <div class="d-flex">
-                        <img class="mx-auto" src="<?= get_template_directory_uri(); ?>/css/images/load_give_car.png" alt="">
+                        <picture>
+                            <source srcset="<?= get_template_directory_uri(); ?>/css/images/load_give_car.webp" type="image/webp">
+                            <img class="mx-auto" src="<?= get_template_directory_uri(); ?>/css/images/load_give_car.png">
+                        </picture>
                     </div>
                 </div>
                 <div class="arrow-load-give">
@@ -56,7 +62,10 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
                         <p class=" px-2">Оформим с вами договор займа под залог ПТС</p>
                     </div>
                     <div class="d-flex ">
-                        <img class="mx-auto" src="<?= get_template_directory_uri(); ?>/css/images/liad_give_docum.png" alt="">
+                        <picture>
+                            <source srcset="<?= get_template_directory_uri(); ?>/css/images/liad_give_docum.webp" type="image/webp">
+                            <img class="mx-auto" src="<?= get_template_directory_uri(); ?>/css/images/liad_give_docum.png">
+                        </picture>
                     </div>
                 </div>
 
@@ -74,7 +83,10 @@ get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
                         <p class=" px-2">Выдаем деньги наличными или на карту любого банка</p>
                     </div>
                     <div class="d-flex ">
-                        <img class="mx-auto" src="<?= get_template_directory_uri(); ?>/css/images/load_give_money.png" alt="">
+                        <picture>
+                            <source srcset="<?= get_template_directory_uri(); ?>/css/images/load_give_money.webp" type="image/webp">
+                            <img class="mx-auto" src="<?= get_template_directory_uri(); ?>/css/images/load_give_money.png">
+                        </picture>
                     </div>
                 </div>
             </div>
