@@ -85,6 +85,8 @@ if($page_type !== 'moto'){
     get_template_part('theme-helpers/template-parts/faq');
 }
 
+get_template_part('theme-helpers/template-parts/bot_hunter');
+
 endwhile;
 get_footer();
 ?>

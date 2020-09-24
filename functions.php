@@ -348,3 +348,32 @@ add_filter( 'the_seo_framework_custom_field_description', function( $description
 add_filter( 'the_seo_framework_title_from_custom_field', function( $title, $args ) {
 	return wp_kses(do_shortcode( $title),'strip' );
 }, 10, 2 );
+
+
+
+
+$cities = get_posts([
+  'post_type' => 'page',
+  'numberposts' => '-1',
+  'orderby' => 'title',
+  'order' => 'ASC',
+  'meta_query' => [
+      [
+          'key'   => '_wp_page_template', 
+          'value' => 'main.php'
+      ],
+  ]
+]);
+$big_cities = get_posts([
+  'post_type' => 'page',
+  'category'    => 2,
+  'numberposts' => '-1',
+  'orderby' => 'title',
+  'order' => 'ASC',
+  'meta_query' => [
+      [
+          'key'   => '_wp_page_template', 
+          'value' => 'main.php'
+      ],
+  ]
+]);

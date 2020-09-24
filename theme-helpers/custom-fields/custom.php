@@ -42,7 +42,12 @@ Container::make( 'post_meta', 'Город' )
             ->set_width( 50 ),
         ]);
 
-
+Container::make( 'post_meta', 'Тексты' )
+    ->show_on_post_type( 'page' )
+    ->add_fields([
+        Field::make( 'checkbox', 'check_ya', 'яша' ),
+        Field::make( 'checkbox', 'check_go', 'гуголь' )
+    ]);
         
 Container::make( 'theme_options', 'Управление контентом' )
     ->add_tab( __('subtitles'), [

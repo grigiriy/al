@@ -1,4 +1,4 @@
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ad3389a6-b7a1-40d0-a0a9-082e7fa02f7d&lang=ru_RU" type="text/javascript"></script>
+<!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ad3389a6-b7a1-40d0-a0a9-082e7fa02f7d&lang=ru_RU" type="text/javascript"></script> -->
 
 <section>
   <div class="text-center bg-transparent ">
@@ -24,12 +24,12 @@ set_query_var( 'form_arr', $form_footer );
 get_template_part('theme-helpers/template-parts/form','horizontal'); ?>
 
 
-<section class="mt-0">
+<!-- <section class="mt-0">
   <div class="container-fluid container-map px-0" style="max-height:500px;overflow-y:hidden">
       <div id="main-map" data-zoom='10' style="height: 400px">
       </div>
   </div>
-</section>
+</section> -->
 
 <footer class="footer" data-city="<?= get_city($post->ID); ?>" data-coords="<?= get_city_meta($post->ID,'coord') ?>" data-address="<?= get_city_meta($post->ID,'address') ?>">
   <div class="pt-5 pb-4 container">

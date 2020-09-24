@@ -19,31 +19,9 @@
                         </svg>
                     </button>
                 </div>
-                <?php $cities = get_posts([
-                    'post_type' => 'page',
-                    'numberposts' => '-1',
-                    'orderby' => 'title',
-                    'order' => 'ASC',
-                    'meta_query' => [
-                        [
-                            'key'   => '_wp_page_template', 
-                            'value' => 'main.php'
-                        ],
-                    ]
-                ]);
-                $big_cities = get_posts([
-                    'post_type' => 'page',
-                    'category'    => 2,
-                    'numberposts' => '-1',
-                    'orderby' => 'title',
-                    'order' => 'ASC',
-                    'meta_query' => [
-                        [
-                            'key'   => '_wp_page_template', 
-                            'value' => 'main.php'
-                        ],
-                    ]
-                ]);
+                <?php
+                global $cities;
+                global $big_cities;
                 ?>
                 <div class="cities">
                     <div>

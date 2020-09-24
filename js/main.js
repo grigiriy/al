@@ -112,37 +112,72 @@ $('.slick_mob.slick_order').slick({
   ],
 });
 
-ymaps.ready(function () {
-  var coords = document.querySelector('footer').getAttribute('data-coords');
-  var address = document.querySelector('footer').getAttribute('data-address');
-  var myMap = new ymaps.Map(
-    'main-map',
-    {
-      center: coords.split(','),
-      zoom: 13,
-    },
-    {
-      searchControlProvider: 'yandex#search',
-    }
-  );
-  myMap.geoObjects.add(
-    new ymaps.Placemark(
-      coords.split(','),
-      {
-        balloonContent:
-          '<div class="balloon"><b>Автоломбард «ПТС ЗАЙМ»</b><br>' +
-          address +
-          '</div>',
-      },
-      {
-        preset: 'islands#icon',
-        iconColor: '#15008f',
-      }
-    )
-  );
-});
+// ymaps.ready(function () {
+//   var coords = document.querySelector('footer').getAttribute('data-coords');
+//   var address = document.querySelector('footer').getAttribute('data-address');
+//   var myMap = new ymaps.Map(
+//     'main-map',
+//     {
+//       center: coords.split(','),
+//       zoom: 13,
+//     },
+//     {
+//       searchControlProvider: 'yandex#search',
+//     }
+//   );
+//   myMap.geoObjects.add(
+//     new ymaps.Placemark(
+//       coords.split(','),
+//       {
+//         balloonContent:
+//           '<div class="balloon"><b>Автоломбард «ПТС ЗАЙМ»</b><br>' +
+//           address +
+//           '</div>',
+//       },
+//       {
+//         preset: 'islands#icon',
+//         iconColor: '#15008f',
+//       }
+//     )
+//   );
+// });
 
 function toggleCallBack(e) {
   $(e).siblings('.callback-popover').fadeToggle(300);
   $(e).toggleClass('active');
 }
+$('#bot_hunter')
+  .find('.slick')
+  .slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    mobileFirst: true,
+    slidesToScroll: 1,
+    arrows: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          initialSlide: 1,
+        },
+      },
+    ],
+  });
